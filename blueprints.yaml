@@ -1,0 +1,30 @@
+name: QBoss
+version: 0.1.0
+description: QBoss is a clean, lightweight and minimal HTML 5 theme for Grav built with the Kube CSS &amp; JS Framework
+icon: rebel
+author:
+  name: Jorge Tite
+  email: me@jorgetite.com
+homepage: https://github.com/jorgetite/grav-theme-qboss
+demo: http://demo.yoursite.com
+keywords: grav, theme, minimal, modern, responsive, html5, kube
+bugs: https://github.com/jorgetite/grav-theme-qboss/issues
+readme: https://github.com/jorgetite/grav-theme-qboss/blob/develop/README.md
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.4.0-rc.1' }
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
