@@ -1,4 +1,4 @@
-# QBoss - HTML 5 Theme for Grav
+# QBoss - Grav Theme
 
 QBoss is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav.org) built with the [Kube](https://imperavi.com/kube/) CSS &amp; JS Framework.
 
