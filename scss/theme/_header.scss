@@ -1,0 +1,78 @@
+#top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 0 36px;
+    height: 56px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+}
+
+#top #top-brand {
+    margin-right: 36px; }
+    #top #top-brand span,
+    #top #top-brand a {
+      display: block;
+      background: none;
+      text-indent: -9999px;
+      width: 70px;
+      line-height: 11px;
+      background-repeat: no-repeat;
+      background-image: url("../images/logo.png"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        #top #top-brand span,
+        #top #top-brand a {
+          background-image: url("../images/logo-2x.png");
+          background-size: 70px auto; } }
+  #top ul {
+    display: flex;
+    align-items: center;
+    margin: 0; }
+  #top nav li {
+    font-size: 16px; }
+  #top nav span,
+  #top nav a {
+    display: inline-block; }
+  #top nav a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none; }
+    #top nav a:hover {
+      -moz-transition: all linear 0.2s;
+      transition: all linear 0.2s;
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: underline; }
+  #top nav b a,
+  #top nav span {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4); }
+  #top nav b a {
+    text-decoration: underline; }
+    #top nav b a:hover {
+      color: #000; }
+  #top #top-nav-main {
+    padding-left: 36px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15); }
+    #top #top-nav-main li {
+      margin-right: 28px; }
+  #top #top-nav-extra {
+    margin-left: auto; }
+    #top #top-nav-extra li {
+      margin-left: 28px; }
+    #top #top-nav-extra li:last-child {
+      font-size: 14px; }
+      #top #top-nav-extra li:last-child span,
+      #top #top-nav-extra li:last-child a {
+        color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        line-height: 28px;
+        border-radius: 4px;
+        padding: 0 16px; }
+      #top #top-nav-extra li:last-child a:hover {
+        -moz-transition: all linear 0.2s;
+        transition: all linear 0.2s;
+        color: #000;
+        text-decoration: underline; }
+      #top #top-nav-extra li:last-child span {
+        color: rgba(0, 0, 0, 0.4);
+        border-color: rgba(0, 0, 0, 0.2); }

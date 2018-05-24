@@ -1,20 +1,24 @@
 body {
-    font-family: $qboss_text-font-family; 
+    font-family: $qboss-text-font-family; 
 }
 
 h1.title, h1, h2, h3, h4, h5, h6 {
-    font-family: $qboss_head-font-family; 
+    font-family: $qboss-head-font-family; 
     font-weight: 400;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: $qboss_head-font-family;
+    font-family: $qboss-head-font-family;
 }
 
 button, .button {
-    font-family: $qboss_text-font-family; 
+    font-family: $qboss-text-font-family; 
 }
 
 .notices {
-    font-family: $qboss_head-font-family
+    font: {
+        family: $qboss-head-font-family;
+        size: $font-size-small;
+    }
+    line-height: $base-line-small;
 }
