@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
@@ -37,12 +37,15 @@
             <div class="show-sm">
                 Show small
             </div>
-            <div id="top" class="hide-sm">
-    	        <div id="top-brand">
-    		        <span>QBoss</span>
+            <div id="topbar" class="hide-sm">
+    	        <div id="topbar-brand">
+                    <a href="{{ home_url }}">
+                        <img src="{{ url('theme://images/logo.png') }}" />
+                        <span>{{ config.site.title }}</span>
+                    </a>
     	        </div>
                 {% block header_navigation %}
-                    <nav id="top-nav-main">
+                    <nav id="topbar-nav">
                         {% include 'partials/navigation.html.twig' %}
                     </nav>
                 {% endblock %}
