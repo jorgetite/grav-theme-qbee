@@ -17,14 +17,69 @@ dependencies:
 
 form:
   validation: loose
+
   fields:
-    dropdown.enabled:
-        type: toggle
-        label: Dropdown in Menu
-        highlight: 1
-        default: 1
-        options:
-          1: PLUGIN_ADMIN.ENABLED
-          0: PLUGIN_ADMIN.DISABLED
-        validate:
-          type: bool
+    production-mode:
+      type: toggle
+      label: Production mode
+      help: When enabled, Quark will render with minified CSS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    page-width:
+      type: select
+      label: Grid size
+      help: The maximum width of the theme
+      size: small
+      deafult: 'size-fw'
+      options:
+        size-fw: None (full width)
+        size-lg: Large
+        size-md: Medium
+        size-md: Small
+
+    header_section:
+      type: section
+      title: Header Defaults
+      underline: true
+
+    header-sticky:
+      type: toggle
+      label: Sticky header
+      help: When enabled, the header will be always displayed at the top of the browser
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    header-transparent:
+      type: toggle
+      label: Transparent
+      help: When enabled, a transparent style will be used
+      highlight: 0
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    blog_section:
+      type: section
+      title: Blog Defaults
+      underline: true
+
+    blog-page:
+      type: text
+      label: Blog Page
+      help: The route to the blog page when working with blog sidebar
+      size: medium
+      default: '/blog'
