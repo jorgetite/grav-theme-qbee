@@ -55,22 +55,22 @@ $qboss-triad-color-b: #1e63e8 !default;
 // Pink
 $qboss-pink-800: #ad1457 !default;
 $qboss-pink-500: #e91e63 !default;
-$qboss-pink-200: #f48fb1 !default;
+$qboss-pink-200: #fce4ec !default;
 
 // Blue
 $qboss-blue-800: #1565c0 !default;
 $qboss-blue-500: #2196f3 !default;
-$qboss-blue-200: #90caf9 !default;
+$qboss-blue-200: #e3f2fd !default;
 
 // Green
 $qboss-green-800: #2e7d32 !default;
 $qboss-green-500: #4caf50 !default;
-$qboss-green-200: #a5d6a7 !default;
+$qboss-green-200: #e8f5e9 !default;
 
 // Amber
-$qboss-amber-800: #ff8f00 !default;
+$qboss-amber-800: #c49300 !default;
 $qboss-amber-500: #ffc107 !default;
-$qboss-amber-200: #ffe082 !default;
+$qboss-amber-200: #fff8e1 !default;
 
 
 // Text
@@ -80,8 +80,8 @@ $qboss-color-text-inverted: $qboss-gray-50 !default;
 $qboss-color-text-disabled: $qboss-gray-500 !default;
 
 // Links
-$qboss-color-link: $qboss-triad-color-b !default;
-$qboss-color-link-hover: $qboss-triad-color-r !default;
+$qboss-color-link: $qboss-gray-900 !default;
+$qboss-color-link-hover: $qboss-pink-500 !default;
 
 // Button
 $qboss-color-button-bw: $qboss-black-90 !default;

@@ -18,10 +18,12 @@
         }
     }
     a.site-brand {
-        color: $qboss-gray-900;
+        color: $qboss-gray-800;
         text-decoration: none;
         &:hover {
-            color: $qboss-gray-800;
+            -moz-transition: all linear 0.2s;
+            transition: all linear 0.2s;
+            color: $qboss-gray-700;
             text-decoration: none;
         }
     }

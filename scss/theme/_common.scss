@@ -59,7 +59,7 @@ body {
 // headings
 h1.title, h1, h2, h3, h4, h5, h6 {
     font-family: $qboss-head-font-family;
-    font-weight: 600;
+    font-weight: 500;
     color: $qboss-color-head;
 }
 
@@ -69,6 +69,27 @@ a {
     &:hover {
         color: $qboss-color-link-hover; 
     }
+}
+
+// emphasis
+strong, b {
+    font-weight: 600;
+}
+
+blockquote {
+    border-color: $qboss-black-25;
+    color: $qboss-gray-700;
+    font-weight: 300;
+}
+
+cite {
+    opacity: 0.9;
+}
+
+pre,
+pre code {
+  background-color: $qboss-gray-200;
+  color: $qboss-gray-900;
 }
 
 // buttons
@@ -201,40 +222,66 @@ img.site-logo {
 }
 
 .site-name {
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
+    color: inherit;
 }
 
 // notices
 .notices {
     padding: .5rem 1rem;
-    margin: 1rem 0;
+    margin: 1rem 2rem 1.5rem;
 
     p {
         margin-bottom: 0;
+        font-size: $font-size-small;
     }
 
     &.yellow {
         color: $qboss-amber-800;
         border-left: 12px solid $qboss-amber-500;
         background-color: $qboss-amber-200;
+        a {
+            color: $qboss-amber-800;
+            &:hover {
+                color: $qboss-amber-500;
+            }
+        }
     }
 
     &.red {
         color: $qboss-pink-800;
         border-left: 12px solid $qboss-pink-500;
         background-color: $qboss-pink-200;
+        a {
+            color: $qboss-pink-800;
+            &:hover {
+                color: $qboss-pink-500;
+            }
+        }
     }
 
     &.blue {
         color: $qboss-blue-800;
         border-left: 12px solid $qboss-blue-500;
         background-color: $qboss-blue-200;
+        a {
+            color: $qboss-blue-800;
+            &:hover {
+                color: $qboss-blue-500;
+            }
+        }
     }
 
     &.green {
         color: $qboss-green-800;
         border-left: 12px solid $qboss-green-500;
         background-color: $qboss-green-200;
+        a {
+            color: $qboss-green-800;
+            &:hover {
+                color: $qboss-green-500;
+            }
+        }
     }
 }
