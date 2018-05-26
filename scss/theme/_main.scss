@@ -1,5 +1,11 @@
 #main {
-    margin: 32px 48px 64px;
+    margin: 2rem 3rem 4rem;
+}
 
-    
+#site-error {
+    min-height: 25rem;
+    h1 {
+        border-left: .75rem solid $qboss-color-error;
+        padding-left: 1rem;
+    }
 }

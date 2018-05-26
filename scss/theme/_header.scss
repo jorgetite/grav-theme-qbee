@@ -1,80 +1,63 @@
-body {
-    border-top: 4px solid #000;
-}
-
 #navbar {    
-    padding: 20px 48px 24px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-
+    padding: 1.25rem 3rem 1.5rem;
+    border-bottom: 1px solid $qboss-black-5;
     .flex {
         align-items: center;
         justify-content: space-between;    
     }
-
     .site-brand {
         display: flex;
         align-items: center;
-
         .site-logo {
             max-width: 48px;
             max-height: 48px;
-            margin-right: 16px;
+            margin-right: 1rem;
         }
-
         .site-name {
-            font-size: $heading-font-size-2;
-            line-height: $heading-base-line-2;
             margin-bottom: 0;
         }
     }
-
     a.site-brand {
-        color: #000;
+        color: $qboss-gray-900;
         text-decoration: none;
-
         &:hover {
-            color: $qboss-color-text;
+            color: $qboss-gray-800;
             text-decoration: none;
         }
     }
-
     .site-nav {
         li {
-            font-size: 16px;
-            margin-left: 28px;
-            text-transform: uppercase;
-
+            font-size: $font-size;
+            font-weight: 300;
+            margin-left: 1.75rem;
             a {
-                color: rgba(0, 0, 0, 0.8);
+                color: $qboss-gray-800;
                 text-decoration: none;
-
+                border-bottom: 2px solid transparent;
                 &:hover {
-                    color: rgba(0, 0, 0, 0.6);
-                    text-decoration: underline;
+                    color: $qboss-gray-900;
+                    text-decoration: none;
+                    border-bottom: 2px solid $qboss-gray-900;
                 }
             }
-
             &:last-child {
-                font-size: 14px;
-
+                font-size: $font-size-small;
                 a {
-                    color: rgba(0, 0, 0, 0.7);
                     display: inline-block;
-                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    border: 1px solid $qboss-black-75;
                     text-decoration: none;
                     line-height: 28px;
                     border-radius: 4px;
                     padding: 0 16px;
-
                     &:hover {
                         -moz-transition: all linear 0.2s;
                         transition: all linear 0.2s;
-                        color: #000;
-                        text-decoration: underline; 
+                        text-decoration: none;
+                        background-color: $qboss-black-75;
+                        color: $qboss-gray-50;
                     }
                 }
             }
         }
     }
 }
-

@@ -16,7 +16,7 @@
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css/kube' ~ compress ~ '.css', 100) %}
-        {% do assets.addCss('theme://css/fonts' ~ compress ~ '.css', 99) %}
+        {% do assets.addCss('theme://css/font-montserrat' ~ compress ~ '.css', 99) %}
         {% do assets.addCss('https://use.fontawesome.com/releases/v5.0.13/css/all.css', 98) %}
         {% do assets.addCss('theme://css-compiled/theme' ~ compress ~ '.css', 01) %}
         {% do assets.addCss('theme://css/custom.css', 00) %}
@@ -59,21 +59,12 @@
 
     {% block footer %}
     <footer>
-        <div class="flex">
-            <p class="copyright">
-                {% block copy %}
-                Copyright © 2018 - Jorge Tite - All rights reserved
-                {% endblock %}
-            </p>
-            <nav class="site-nav">
-            {% block footer_navigation %}
-                {% include 'partials/navigation.html.twig' %}
+        <section class="copyright">
+            {% block copy %}
+                <p/>Copyright © 2018 - QBoss Theme - All rights reserved - QBoss Theme is released under the <a href="https://github.com/jorgetite/grav-theme-qboss/blob/master/LICENSE">MIT license</a></p>
             {% endblock %}
-            </nav>
-        </div>
-        <p class="qboss smaller">
-            <a href="https://github.com/jorgetite/grav-theme-qboss">QBoss Theme</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.jorgetite.com">Jorge Tite</a>
-        </p>
+            <p><a href="https://github.com/jorgetite/grav-theme-qboss">QBoss Theme</a> was <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="http://www.jorgetite.com">Jorge Tite</a></p>
+        </section>
     </footer>
     {% endblock %}
 
