@@ -294,11 +294,11 @@ img.site-logo {
     margin-bottom: 0;
     font-size: 14px; }
   .notices.yellow {
-    color: #c49300;
+    color: #aa7f00;
     border-left: 12px solid #ffc107;
     background-color: #fff8e1; }
     .notices.yellow a {
-      color: #c49300; }
+      color: #aa7f00; }
       .notices.yellow a:hover {
         color: #ffc107; }
   .notices.red {
