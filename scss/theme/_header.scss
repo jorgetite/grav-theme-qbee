@@ -1,36 +1,79 @@
-#topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 32px;
-    padding: 16px 64px 0 64px;
-    height: 80px;
-
-    background-color: rgb(149, 252, 31);
+body {
+    border-top: 4px solid #000;
 }
 
-#topbar-brand {
-    background-color: #ccc;
+#navbar {    
+    padding: 20px 48px 24px;
 
-    a {
+    .flex {
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    .site-brand {
         display: flex;
         align-items: center;
-        color: $qboss-color-text;
-        background-color: rgb(248, 233, 20);
 
-        img {
+        .site-logo {
             max-width: 48px;
             max-height: 48px;
+            margin-right: 16px;
+        }
+
+        .site-name {
+            font-size: $heading-font-size-2;
+            line-height: $heading-base-line-2;
+            margin-bottom: 0;
+        }
+    }
+
+    a.site-brand {
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            color: $qboss-color-text;
+            text-decoration: none;
+        }
+    }
+
+    .site-nav {
+        li {
+            font-size: 16px;
+            margin-left: 28px;
+            text-transform: uppercase;
+
+            a {
+                color: rgba(0, 0, 0, 0.8);
+                text-decoration: none;
+
+                &:hover {
+                    color: rgba(0, 0, 0, 0.6);
+                    text-decoration: underline;
+                }
+            }
+
+            &:last-child {
+                font-size: 14px;
+
+                a {
+                    color: rgba(0, 0, 0, 0.7);
+                    display: inline-block;
+                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    text-decoration: none;
+                    line-height: 28px;
+                    border-radius: 4px;
+                    padding: 0 16px;
+
+                    &:hover {
+                        -moz-transition: all linear 0.2s;
+                        transition: all linear 0.2s;
+                        color: #000;
+                        text-decoration: underline; 
+                    }
+                }
+            }
         }
     }
 }
 
-#topbar-nav {
-
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin: 0; 
-    }
-}

@@ -20,7 +20,7 @@
     {% endfor %}
 {% endmacro %}
 
-<ul {{ tree ? 'class="tree"' : '' }}>
+<ul class="flex {{ tree ? 'tree' : '' }}">
     {{ _self.nav_loop(pages) }}
 </ul>
 

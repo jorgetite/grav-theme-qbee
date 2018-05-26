@@ -1,0 +1,27 @@
+.site-nav {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+
+        li {
+            a {
+                display: inline-block;
+
+                &:hover {
+                    -moz-transition: all linear 0.2s;
+                    transition: all linear 0.2s;
+                }
+            }
+        }
+    }
+}
+
+img.site-logo {
+    width: 48px;
+}
+
+.site-name {
+    font-weight: 400;
+}

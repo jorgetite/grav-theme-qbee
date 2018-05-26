@@ -33,24 +33,19 @@
 </head>
 <body class="{{ page.header.body_classes }}">
     {% block header %}
-        <section id="header">
-            <div class="show-sm">
-                Show small
-            </div>
-            <div id="topbar" class="hide-sm">
-    	        <div id="topbar-brand">
-                    <a href="{{ home_url }}">
-                        <img src="{{ url('theme://images/logo.png') }}" />
-                        <span>{{ config.site.title }}</span>
-                    </a>
-    	        </div>
+    <nav id="navbar">
+        <div class="flex">
+            <a class="site-brand" href="{{ home_url }}">
+                <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
+                <h1 class="site-name">{{ config.site.title }}</h1>
+            </a>
+            <nav class="site-nav">
                 {% block header_navigation %}
-                    <nav id="topbar-nav">
-                        {% include 'partials/navigation.html.twig' %}
-                    </nav>
+                    {% include 'partials/navigation.html.twig' %}
                 {% endblock %}
-            </div>
-        </section>
+            </nav>
+        </div>
+    </nav>
     {% endblock %}
 
     <section id="main">
@@ -63,9 +58,23 @@
     </section>
 
     {% block footer %}
-        <footer>
-            Footer Here...
-        </footer> 
+    <footer>
+        <p class="copyright">
+            {% block copy %}
+            Copyright © 2018 - Jorge Tite - All rights reserved
+            {% endblock %}
+        </p>
+        <nav>
+        {% block footer_navigation %}
+            {% include 'partials/navigation.html.twig' %}
+        {% endblock %}
+        <nav>
+        <p class="qboss">QBoss Theme was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by Jorge Tite</p>
+    </footer> 
     {% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
 </body>
 </html>
