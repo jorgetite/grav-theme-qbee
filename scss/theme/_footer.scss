@@ -1,0 +1,46 @@
+footer {
+    padding: 12px 48px;
+    background-color: #1c1c1c;
+    color: #b7b7b7;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color:  #b7b7b7;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-aluminum;
+        }
+    }
+
+    .flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+    .site-nav {
+        order: 2;
+        margin-left: auto;
+
+        li {
+            font-size: 14px;
+            margin-left: 20px;
+        }
+    }
+
+    .qboss {
+        text-align: center;
+        margin: 20px 0;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}

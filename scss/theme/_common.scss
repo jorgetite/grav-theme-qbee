@@ -1,3 +1,12 @@
+pre {
+    background-color: #282a36;
+    
+    code {
+        background-color: #282a36;
+        color: #f8f8f2;
+    }
+}
+
 .site-nav {
     ul {
         display: flex;
@@ -24,4 +33,37 @@ img.site-logo {
 
 .site-name {
     font-weight: 400;
+}
+
+.notices {
+    padding: .5rem 1rem;
+    margin: 16px 0;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &.yellow {
+        color: rgb(192, 136, 31);
+        border-left: 12px solid rgb(247,185,69);
+        background-color: rgba(247,185,69,0.25);
+    }
+
+    &.red {
+        color: rgb(192, 40, 78);
+        border-left: 12px solid rgb(240,60,105);
+        background-color: rgba(240,60,105,0.25)
+    }
+
+    &.blue {
+        color: rgb(22, 93, 165);
+        border-left: 12px solid rgb(28,134,242);
+        background-color: rgba(28,134,242,0.25);
+    }
+
+    &.green {
+        color: rgb(38, 136, 126);
+        border-left: 12px solid rgb(53,190,177);
+        background-color: rgba(53,190,177, 0.25);
+    }
 }

@@ -59,18 +59,22 @@
 
     {% block footer %}
     <footer>
-        <p class="copyright">
-            {% block copy %}
-            Copyright © 2018 - Jorge Tite - All rights reserved
+        <div class="flex">
+            <p class="copyright">
+                {% block copy %}
+                Copyright © 2018 - Jorge Tite - All rights reserved
+                {% endblock %}
+            </p>
+            <nav class="site-nav">
+            {% block footer_navigation %}
+                {% include 'partials/navigation.html.twig' %}
             {% endblock %}
+            </nav>
+        </div>
+        <p class="qboss smaller">
+            <a href="https://github.com/jorgetite/grav-theme-qboss">QBoss Theme</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.jorgetite.com">Jorge Tite</a>
         </p>
-        <nav>
-        {% block footer_navigation %}
-            {% include 'partials/navigation.html.twig' %}
-        {% endblock %}
-        <nav>
-        <p class="qboss">QBoss Theme was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by Jorge Tite</p>
-    </footer> 
+    </footer>
     {% endblock %}
 
 {% block bottom %}
