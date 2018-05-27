@@ -19,7 +19,7 @@ form:
   validation: loose
 
   fields:
-    production-mode:
+    production_mode:
       type: toggle
       label: Production mode
       help: When enabled, QBoss will render with minified CSS
@@ -31,36 +31,36 @@ form:
       validate:
         type: bool
 
-    page-width:
+    page_width:
       type: select
       label: Grid size
       help: The maximum width of the theme
       size: small
-      deafult: 'size-fw'
+      deafult: ''
       options:
-        size-fw: None (full width)
-        size-lg: Large
-        size-md: Medium
-        size-md: Small
+        '': None (full width)
+        page-lg: Large
+        page-md: Medium
+        page-sm: Small
 
     header_section:
       type: section
       title: Header Defaults
       underline: true
 
-    header-sticky:
+    header_sticky:
       type: toggle
-      label: Sticky header
-      help: When enabled, the header will be always displayed at the top of the browser
-      highlight: 1
-      default: 1
+      label: Sticky Navigation
+      help: Sticky navigation makes it easy to affix menus to the top of the page whenever a user scrolls the page down.
+      highlight: 0
+      default: 0
       options:
         1: PLUGIN_ADMIN.ENABLED
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
 
-    header-transparent:
+    header_transparent:
       type: toggle
       label: Transparent
       help: When enabled, a transparent style will be used
