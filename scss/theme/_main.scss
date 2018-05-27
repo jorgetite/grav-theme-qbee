@@ -4,6 +4,12 @@
 
 #site-error {
     min-height: 25rem;
+
+    .h4 {
+        margin-bottom: 96px;
+        font-weight: 200;
+    }
+
     h1 {
         border-left: .75rem solid $qboss-color-error;
         padding-left: 1rem;

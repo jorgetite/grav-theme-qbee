@@ -424,6 +424,9 @@ img.site-logo {
 
 #site-error {
   min-height: 25rem; }
+  #site-error .h4 {
+    margin-bottom: 96px;
+    font-weight: 200; }
   #site-error h1 {
     border-left: 0.75rem solid #e91e63;
     padding-left: 1rem; }
