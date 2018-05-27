@@ -326,29 +326,47 @@ img.site-logo {
       .notices.green a:hover {
         color: #4caf50; }
 
+@media (max-width: 768px) {
+  .site-name {
+    font-weight: 700;
+    font-size: 24px; } }
+
+#nav-toggle-wrap {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px; }
+
+#nav-toggle {
+  margin-left: auto;
+  color: #424242;
+  text-decoration: none;
+  padding: 2px 8px; }
+
+#header .site-brand {
+  display: flex;
+  align-items: center; }
+  #header .site-brand .site-name {
+    margin-bottom: 0; }
+
+#header a.site-brand {
+  color: #424242;
+  text-decoration: none; }
+  #header a.site-brand:hover {
+    -moz-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    color: #616161;
+    text-decoration: none; }
+
 #navbar {
   padding: 1.25rem 3rem 1.5rem;
-  border-bottom: 1px solid #f2f2f2; }
-  #navbar .flex {
-    align-items: center;
-    justify-content: space-between; }
-  #navbar .site-brand {
-    display: flex;
-    align-items: center; }
-    #navbar .site-brand .site-logo {
-      max-width: 48px;
-      max-height: 48px;
-      margin-right: 1rem; }
-    #navbar .site-brand .site-name {
-      margin-bottom: 0; }
-  #navbar a.site-brand {
-    color: #424242;
-    text-decoration: none; }
-    #navbar a.site-brand:hover {
-      -moz-transition: all linear 0.2s;
-      transition: all linear 0.2s;
-      color: #616161;
-      text-decoration: none; }
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #navbar .site-brand .site-logo {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 1rem; }
   #navbar .site-nav li {
     font-size: 16px;
     font-weight: 300;
@@ -376,6 +394,24 @@ img.site-logo {
           text-decoration: none;
           background-color: #3f3f3f;
           color: #fafafa; }
+
+@media (max-width: 768px) {
+  #navbar {
+    display: block;
+    height: auto;
+    padding-bottom: 24px; }
+    #navbar .site-brand {
+      display: none; }
+    #navbar .site-nav {
+      padding: 0;
+      border: none; }
+      #navbar .site-nav ul {
+        display: block; }
+        #navbar .site-nav ul li {
+          text-align: center;
+          width: auto;
+          margin: 16px 0;
+          padding: 0; } }
 
 #main {
   margin: 2rem 3rem 4rem; }

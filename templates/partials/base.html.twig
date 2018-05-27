@@ -33,8 +33,17 @@
 </head>
 <body class="{{ page.header.body_classes }}">
     {% block header %}
-    <nav id="navbar">
-        <div class="flex">
+    <section id="header">
+        <div class="show-sm">
+            <div id="nav-toggle-wrap">
+                <a class="site-brand" href="{{ home_url }}">
+                    <h1 class="site-name">{{ config.site.title }}</h1>
+                </a>
+                <a href="#" id="nav-toggle" data-component="toggleme" data-target="#navbar"><i class="kube-menu"></i></a>
+            </div>
+        </div>
+
+        <nav id="navbar" class="hide-sm">
             <a class="site-brand" href="{{ home_url }}">
                 <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
                 <h1 class="site-name">{{ config.site.title }}</h1>
@@ -44,8 +53,8 @@
                     {% include 'partials/navigation.html.twig' %}
                 {% endblock %}
             </nav>
-        </div>
-    </nav>
+        </nav>
+    </section>
     {% endblock %}
 
     <section id="main">

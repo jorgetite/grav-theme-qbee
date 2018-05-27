@@ -285,3 +285,10 @@ img.site-logo {
         }
     }
 }
+
+@media (max-width: $sm) {
+    .site-name {
+        font-weight: 700;
+        font-size: $heading-font-size-3;
+    }    
+}

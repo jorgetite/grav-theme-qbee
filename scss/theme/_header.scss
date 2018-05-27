@@ -1,18 +1,20 @@
-#navbar {    
-    padding: 1.25rem 3rem 1.5rem;
-    border-bottom: 1px solid $qboss-black-5;
-    .flex {
-        align-items: center;
-        justify-content: space-between;    
-    }
+#nav-toggle-wrap {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+#nav-toggle {
+    margin-left: auto;
+    color: $qboss-color-text;
+    text-decoration: none;
+    padding: 2px 8px; 
+}
+
+#header {
     .site-brand {
         display: flex;
         align-items: center;
-        .site-logo {
-            max-width: 48px;
-            max-height: 48px;
-            margin-right: 1rem;
-        }
         .site-name {
             margin-bottom: 0;
         }
@@ -25,6 +27,22 @@
             transition: all linear 0.2s;
             color: $qboss-gray-700;
             text-decoration: none;
+        }
+    }
+}
+
+#navbar {
+    padding: 1.25rem 3rem 1.5rem;
+    border-bottom: 1px solid $qboss-black-5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .site-brand {
+        .site-logo {
+            max-width: 48px;
+            max-height: 48px;
+            margin-right: 1rem;
         }
     }
     .site-nav {
@@ -58,6 +76,30 @@
                         background-color: $qboss-black-75;
                         color: $qboss-gray-50;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #navbar {
+        display: block;
+        height: auto;
+        padding-bottom: 24px;
+        .site-brand {
+            display: none;
+        }
+        .site-nav {
+            padding: 0;
+            border: none; 
+            ul {
+                display: block;
+                li {
+                    text-align: center;
+                    width: auto;
+                    margin: 16px 0;
+                    padding: 0;
                 }
             }
         }
