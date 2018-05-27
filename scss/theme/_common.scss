@@ -181,6 +181,7 @@ select {
 
 .message.warning {
     background: $qboss-amber-500; 
+    color: $qboss-color-text;
 }
 
 .message.focus {
@@ -194,7 +195,8 @@ select {
 }
 
 .message.inverted {
-    background: $qboss-gray-50; 
+    background: $qboss-gray-50;
+    color: $qboss-color-text;
 }
 
 // site navigation
