@@ -1,17 +1,18 @@
 #nav-toggle-wrap {
     display: flex;
     align-items: center;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
 }
 
 #nav-toggle {
     margin-left: auto;
     color: $qboss-color-text;
     text-decoration: none;
-    padding: 2px 8px; 
+    padding: 0.25rem 0.5rem; 
 }
 
 #header {
+    border-bottom: 1px solid $qboss-black-5;
     .site-brand {
         display: flex;
         align-items: center;
@@ -33,7 +34,6 @@
 
 #navbar {
     padding: 1.25rem 3rem 1.5rem;
-    border-bottom: 1px solid $qboss-black-5;
     display: flex;
     align-items: center;
     justify-content: space-between;
