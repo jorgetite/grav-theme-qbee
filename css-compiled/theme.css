@@ -423,6 +423,7 @@ img.site-logo {
   margin: 2rem 3rem 4rem; }
 
 #site-error {
+  height: 100vh;
   min-height: 25rem; }
   #site-error .h4 {
     margin-bottom: 96px;

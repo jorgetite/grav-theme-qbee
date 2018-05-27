@@ -61,10 +61,9 @@
         {% include 'partials/messages.html.twig' ignore missing %}
     {% endblock %}
 
+    {% block hero %}{% endblock %}    
+
     <section id="main">
-        <section id="sub-nav">
-        </section>
-        {% block hero %}{% endblock %}
         {% block body %}
             <section id="content">
                 {% block content %}{% endblock %}

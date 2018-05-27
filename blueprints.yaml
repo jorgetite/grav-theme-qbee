@@ -22,7 +22,7 @@ form:
     production-mode:
       type: toggle
       label: Production mode
-      help: When enabled, Quark will render with minified CSS
+      help: When enabled, QBoss will render with minified CSS
       highlight: 1
       default: 1
       options:
@@ -71,15 +71,3 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-
-    blog_section:
-      type: section
-      title: Blog Defaults
-      underline: true
-
-    blog-page:
-      type: text
-      label: Blog Page
-      help: The route to the blog page when working with blog sidebar
-      size: medium
-      default: '/blog'

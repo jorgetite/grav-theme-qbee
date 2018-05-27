@@ -9,7 +9,7 @@ form:
             columns:
               fields:
                 column1:
-                   fields:
-                     header.body_classes:
-                       markdown: true
-                       description: 'Page classes space separated:'
+                  fields:
+                    header.body_classes:
+                      markdown: true
+                      description: 'Page classes space separated'
