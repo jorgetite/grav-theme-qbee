@@ -1,24 +1,25 @@
 #main {
-    margin: 2rem 3rem 4rem;
+    section {
+        padding: 2rem 1rem 4rem 1rem;
+
+        &.accent, 
+        &.callout {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    }
 }
 
 #site-error {
-    min-height: 25rem;
-
-    .h4 {
-        margin-bottom: 96px;
-        font-weight: 200;
+    .container {
+        min-height: 25rem;
     }
-
     h1 {
         border-left: .75rem solid $qboss-color-error;
         padding-left: 1rem;
     }
-}
-
-@media (max-width: $sm) {
-    #main{
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+    h2 {
+        font-weight: 300;
+        margin-bottom: 3rem;
     }
 }

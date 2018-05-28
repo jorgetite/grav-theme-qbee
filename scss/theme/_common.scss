@@ -1,55 +1,5 @@
 @charset "UTF-8";
 
-// colors
-.black {
-    color: $qboss-black-90; 
-}
-  
-.inverted {
-    color: $qboss-gray-50; 
-}
-
-.error {
-    color: $qboss-pink-500; 
-}
-
-.success {
-    color: $qboss-green-500;
-}
-
-.warning {
-    color: $qboss-amber-500; 
-}
-
-.focus {
-    color: $qboss-blue-500; 
-}
-
-// background colors
-.bg-black {
-    background-color: $qboss-black-90; 
-}
-
-.bg-inverted {
-    background-color: $qboss-gray-50; 
-}
-
-.bg-error {
-    background-color: $qboss-pink-500; 
-}
-
-.bg-success {
-    background-color: $qboss-green-500; 
-}
-
-.bg-warning {
-    background-color: $qboss-amber-500; 
-}
-
-.bg-focus {
-    background-color: $qboss-blue-500; 
-}
-
 // body
 body {
     border-top: 4px solid $qboss-black-90;
@@ -61,7 +11,7 @@ body {
 // headings
 h1.title, h1, h2, h3, h4, h5, h6 {
     font-family: $qboss-head-font-family;
-    font-weight: 500;
+    font-weight: 600;
     color: $qboss-color-head;
 }
 
@@ -71,6 +21,27 @@ a {
     &:hover {
         color: $qboss-color-link-hover; 
     }
+}
+
+// Top Space
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+figure,
+div.notices {
+	+ h2,
+	+ h3,
+	+ h4,
+	+ h5,
+	+ h6 {
+		margin-top: $base-line * 2;
+	}
 }
 
 // emphasis
@@ -220,6 +191,25 @@ select {
     }
 }
 
+// sections
+section {
+    &.section,
+    &.callout, 
+    &.intense {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &.intense {
+        background-color: $qboss-gray-100;
+    }    
+}
+.container {
+    display: block;
+    //margin: auto;
+}
+
+
 // site logo
 img.site-logo {
     width: 48px;
@@ -290,15 +280,52 @@ img.site-logo {
     }
 }
 
-@media (max-width: $sm) {
-    .site-name {
-        font-weight: 700;
-        font-size: $heading-font-size-3;
-    }    
+// colors
+.black {
+    color: $qboss-black-90; 
+}
+  
+.inverted {
+    color: $qboss-gray-50; 
+}
 
-    .notices {
-        padding: .5rem .5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
+.error {
+    color: $qboss-pink-500; 
+}
+
+.success {
+    color: $qboss-green-500;
+}
+
+.warning {
+    color: $qboss-amber-500; 
+}
+
+.focus {
+    color: $qboss-blue-500; 
+}
+
+// background colors
+.bg-black {
+    background-color: $qboss-black-90; 
+}
+
+.bg-inverted {
+    background-color: $qboss-gray-50; 
+}
+
+.bg-error {
+    background-color: $qboss-pink-500; 
+}
+
+.bg-success {
+    background-color: $qboss-green-500; 
+}
+
+.bg-warning {
+    background-color: $qboss-amber-500; 
+}
+
+.bg-focus {
+    background-color: $qboss-blue-500; 
 }

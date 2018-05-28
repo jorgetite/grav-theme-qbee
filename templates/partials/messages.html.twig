@@ -2,15 +2,16 @@
 
 {% if grav.messages.all %}
     <section id="messages">
-    {% for message in grav.messages.fetch %}
+        <div class="container">
+        {% for message in grav.messages.fetch %}
+            {% set scope = message.scope|e %}
+            {% set type = type_mapping[scope] %}
 
-        {% set scope = message.scope|e %}
-        {% set type = type_mapping[scope] %}
-
-        <div class="message {{ type }}" data-component="message">
-            {{ message.message|raw }}
-            <span class="close small"></span>
+            <div class="message {{ type }}" data-component="message">
+                {{ message.message|raw }}
+                <span class="close small"></span>
+            </div>
+        {% endfor %}
         </div>
-    {% endfor %}
     </section>
 {% endif %}

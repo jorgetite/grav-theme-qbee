@@ -1,9 +1,11 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-	<div id="site-error">
-		<p class="h4">{{ 'QBOSS.ERROR.MESSAGE'|t }}</p>
-		<h1>{{ 'QBOSS.ERROR.TITLE'|t }} {{ page.header.http_response_code }}</h1>
-		<div>{{ page.content }}</div>
-	</div>
+    <section id="site-error" class="callout">
+        <div class="container">
+			<h1>{{ 'QBOSS.ERROR.TITLE'|t }} {{ page.header.http_response_code }}</h1>
+			<h2>{{ 'QBOSS.ERROR.MESSAGE'|t }}</h2>
+			<div>{{ page.content }}</div>
+        </div>
+    </section>
 {% endblock %}
