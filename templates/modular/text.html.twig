@@ -1,0 +1,19 @@
+{% set image = page.media.images|first %}
+{% set bgimg = image and page.header.image_position == 'back' %}
+
+<section class="module {{page.header.class}}" {% if bgimg %}style="background-image: url({{ image.url }});"{% endif %}>
+    <div class="container">
+        {% if image and page.header.image_position != 'back' %}
+            <div class="row gutters">
+                <div class="col col-6 {% if page.header.image_position == 'left' %}first{% else %}last{% endif %}">
+                    <img src="{{ image.url }}" />
+                </div>
+                <div class="col col-6">
+                    {{ content }}
+                </div>
+            </div>
+        {% else %}
+            {{ content }}
+        {% endif %}
+    </div>
+</section>

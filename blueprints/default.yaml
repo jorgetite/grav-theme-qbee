@@ -13,3 +13,48 @@ form:
                     header.body_classes:
                       markdown: true
                       description: 'Page classes space separated'
+        buttons:
+          type: tab
+          title: QBoss
+          fields:
+            qboss_menu:
+              type: section
+              title: Menu Item Options
+              underline: true
+            header.menu_item_class:
+              toggleable: true
+              type: text
+              size: medium
+              label: Menu item class
+              description: 'The menu item class for this page'
+              markdown: true
+            header.menu_item_icon:
+              toggleable: true
+              type: text
+              size: medium
+              label: Menu item icon
+              description: 'The menu item icon for this page'
+              markdown: true
+            qboss_style:
+              type: section
+              title: Style Options
+              underline: true
+            header.class:
+              type: select
+              label: Display Style
+              description: 'The display style for this page'
+              size: medium
+              default: regular
+              options:
+                regular: Normal
+                callout: Call-out
+            header.bg_class:
+              type: select
+              label: Background Style
+              description: 'The background style for this page'
+              size: medium
+              options:
+                gray-50: White
+                gray-100: Light gray
+                gray-200: Dark gray
+                gray-900: Black
