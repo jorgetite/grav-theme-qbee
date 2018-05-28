@@ -1,3 +1,5 @@
+{% set nav_style = theme_var('header_nav_style') %}
+
 <section id="header">
     <div class="show-sm">
         <div id="nav-toggle-wrap">
@@ -13,7 +15,7 @@
             <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
             <h1 class="site-name">{{ config.site.title }}</h1>
         </a>
-        <nav class="site-nav">
+        <nav class="site-nav {{ nav_style }}">
             {% block header_navigation %}
                 {% include 'partials/navigation.html.twig' %}
             {% endblock %}

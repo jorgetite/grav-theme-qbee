@@ -432,35 +432,49 @@ img.site-logo {
     max-width: 48px;
     max-height: 48px;
     margin-right: 1rem; }
-  #navbar .site-nav li {
+  #navbar nav.site-nav li {
     font-size: 16px;
     font-weight: 300;
     margin-left: 1.75rem; }
-    #navbar .site-nav li a {
+    #navbar nav.site-nav li a {
       color: #424242;
       text-decoration: none;
       border-bottom: 2px solid transparent; }
-      #navbar .site-nav li a:hover {
+      #navbar nav.site-nav li a:hover {
+        -moz-transition: all linear 0.2s;
+        transition: all linear 0.2s;
         color: #212121;
         text-decoration: none;
         border-bottom-color: #212121; }
-      #navbar .site-nav li a.active {
+      #navbar nav.site-nav li a.active {
         border-bottom-color: #212121; }
-    #navbar .site-nav li:last-child {
-      font-size: 14px; }
-      #navbar .site-nav li:last-child a {
-        display: inline-block;
-        border: 1px solid #3f3f3f;
+  #navbar nav.site-nav.nav-buttons li {
+    font-size: 14px;
+    margin-left: 1.25rem; }
+    #navbar nav.site-nav.nav-buttons li a {
+      display: inline-block;
+      border: 1px solid #3f3f3f;
+      text-decoration: none;
+      line-height: 28px;
+      border-radius: 4px;
+      padding: 0 16px; }
+      #navbar nav.site-nav.nav-buttons li a:hover {
         text-decoration: none;
-        line-height: 28px;
-        border-radius: 4px;
-        padding: 0 16px; }
-        #navbar .site-nav li:last-child a:hover {
-          -moz-transition: all linear 0.2s;
-          transition: all linear 0.2s;
-          text-decoration: none;
-          background-color: #3f3f3f;
-          color: #fafafa; }
+        background-color: #3f3f3f;
+        color: #fafafa; }
+  #navbar nav.site-nav.nav-last-bttn li:last-child {
+    font-size: 14px; }
+    #navbar nav.site-nav.nav-last-bttn li:last-child a {
+      display: inline-block;
+      border: 1px solid #3f3f3f;
+      text-decoration: none;
+      line-height: 28px;
+      border-radius: 4px;
+      padding: 0 16px; }
+      #navbar nav.site-nav.nav-last-bttn li:last-child a:hover {
+        text-decoration: none;
+        background-color: #3f3f3f;
+        color: #fafafa; }
   #navbar.fixed {
     background: rgba(250, 250, 250, 0.98);
     box-shadow: 0 1px 2px rgba(25, 25, 25, 0.25); }

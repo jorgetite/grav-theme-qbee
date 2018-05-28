@@ -1,5 +1,5 @@
 {% set compress = theme_var('production_mode') ? '.min' : '' %}
-
+{{ dump(page.children.visible) }}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
