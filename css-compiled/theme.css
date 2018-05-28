@@ -443,7 +443,9 @@ img.site-logo {
       #navbar .site-nav li a:hover {
         color: #212121;
         text-decoration: none;
-        border-bottom: 2px solid #212121; }
+        border-bottom-color: #212121; }
+      #navbar .site-nav li a.active {
+        border-bottom-color: #212121; }
     #navbar .site-nav li:last-child {
       font-size: 14px; }
       #navbar .site-nav li:last-child a {
