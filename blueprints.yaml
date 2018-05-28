@@ -19,6 +19,11 @@ form:
   validation: loose
 
   fields:
+    theme_section:
+      type: section
+      title: Theme Defaults
+      underline: true
+
     production_mode:
       type: toggle
       label: Production mode
@@ -31,18 +36,6 @@ form:
       validate:
         type: bool
 
-    page_width:
-      type: select
-      label: Grid size
-      help: The maximum width of the theme
-      size: small
-      deafult: ''
-      options:
-        '': None (full width)
-        page-lg: Large
-        page-md: Medium
-        page-sm: Small
-
     header_section:
       type: section
       title: Header Defaults
@@ -52,18 +45,6 @@ form:
       type: toggle
       label: Sticky Navigation
       help: Sticky navigation makes it easy to affix menus to the top of the page whenever a user scrolls the page down.
-      highlight: 0
-      default: 0
-      options:
-        1: PLUGIN_ADMIN.ENABLED
-        0: PLUGIN_ADMIN.DISABLED
-      validate:
-        type: bool
-
-    header_transparent:
-      type: toggle
-      label: Transparent
-      help: When enabled, a transparent style will be used
       highlight: 0
       default: 0
       options:

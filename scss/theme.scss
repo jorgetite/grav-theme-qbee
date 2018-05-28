@@ -4,12 +4,11 @@
     Copyright (c) 2018, Jorge Tite.
 	  License: MIT
 *******************************************************************/
-@charset "UTF-8";
 
 // imports
 @import 'kube/kube';
 @import 'theme/variables';
-@import 'theme/common.scss';
+@import 'theme/common';
 @import 'theme/header';
 @import 'theme/main';
 @import 'theme/footer';
