@@ -1,176 +1,6 @@
-@charset "UTF-8";
-
-// body
-body {
-    border-top: 4px solid $qboss-black-90;
-    background-color: $qboss-gray-50;
-    color: $qboss-color-text;
-    font-family: $qboss-text-font-family;
-}
-
-// headings
-h1.title, h1, h2, h3, h4, h5, h6 {
-    font-family: $qboss-head-font-family;
-    font-weight: 600;
-    color: $qboss-color-head;
-}
-
-// links
-a {
-    color: $qboss-color-link; 
-    &:hover {
-        color: $qboss-color-link-hover; 
-    }
-}
-
-// Top Space
-p,
-ul,
-ol,
-dl,
-blockquote,
-hr,
-pre,
-table,
-form,
-figure,
-div.notices {
-	+ h2,
-	+ h3,
-	+ h4,
-	+ h5,
-	+ h6 {
-		margin-top: $base-line * 2;
-	}
-}
-
-// emphasis
-strong, b {
-    font-weight: 600;
-}
-
-blockquote {
-    border-color: $qboss-black-25;
-    color: $qboss-gray-700;
-    font-weight: 300;
-}
-
-cite {
-    opacity: 0.9;
-}
-
-pre,
-pre code {
-  background-color: $qboss-gray-200;
-  color: $qboss-gray-900;
-}
-
-// buttons
-button,
-.button {
-    font-family: $qboss-text-font-family;
-}
-
-.button {
-    @include button($qboss-color-button-blue-text, $qboss-color-button-blue);
-}
-
-.button.secondary {
-    @include button($qboss-color-button-bw-text, $qboss-color-button-bw);
-}
-
-.button.red {
-    @include button($qboss-color-button-red-text, $qboss-color-button-red);
-}
-
-.button.green {
-    @include button($qboss-color-button-green-text, $qboss-color-button-green);
-}
-
-// input fields
-input,
-textarea,
-select {
-    &:focus {
-    	border-color: $qboss-blue-500;
-        box-shadow: 0 0 1px $qboss-blue-500 inset;
-    }
-    &.error {
-        background-color: $qboss-pink-200;
-        border-color: lighten($qboss-pink-500, 15%);
-    	&:focus {
-            border-color: $qboss-pink-500;
-            box-shadow: 0 0 1px $qboss-pink-500 inset;;
-    	}
-	}
-    &.success  {
-        background-color: $qboss-green-200;
-        border-color: lighten($qboss-green-500, 15%);
-    	&:focus {
-            border-color: $qboss-green-500;
-            box-shadow: 0 0 1px $qboss-green-500 inset;;
-    	}
-    }
-    &:disabled,
-    &.disabled {
-    	color: $qboss-color-text-disabled;
-	}
-}
-
-.req {
-    color: $qboss-pink-500;
-}
-
-// labels
-.label.success {
-    @include label($qboss-color-text-inverted, $qboss-green-500);
-}
-.label.error {
-    @include label($qboss-color-text-inverted, $qboss-pink-500);
-}
-.label.warning {
-    @include label($qboss-color-text, $qboss-amber-500);
-}
-.label.focus {
-    @include label($qboss-color-text-inverted, $qboss-blue-500);
-}
-.label.black {
-    @include label($qboss-color-text-inverted, $qboss-black-90);
-}
-.label.inverted {
-    @include label($qboss-color-text, $qboss-color-inverted);
-}
-
-// messages
-.message.error {
-    background: $qboss-pink-500;
-    color: $qboss-color-text-inverted; 
-}
-  
-.message.success {
-    background: $qboss-green-500;
-    color: $qboss-color-text-inverted; 
-}
-
-.message.warning {
-    background: $qboss-amber-500; 
-    color: $qboss-color-text;
-}
-
-.message.focus {
-    background: $qboss-blue-500;
-    color: $qboss-color-text-inverted; 
-}
-
-.message.black {
-    background: $qboss-black-90;
-    color: $qboss-color-text-inverted; 
-}
-
-.message.inverted {
-    background: $qboss-gray-50;
-    color: $qboss-color-text;
-}
+/* ==============================================
+    Theme common elements
+============================================== */
 
 // site navigation
 .site-nav {
@@ -191,6 +21,7 @@ select {
     }
 }
 
+
 // sections
 section {
     &.section,
@@ -200,9 +31,6 @@ section {
         justify-content: center;
         align-items: center;
     }
-    &.intense {
-        background-color: $qboss-gray-100;
-    }    
 }
 .container {
     display: block;
@@ -225,107 +53,20 @@ img.site-logo {
 .notices {
     padding: .5rem 1rem;
     margin: 1rem 2rem 1.5rem;
-
     p {
         margin-bottom: 0;
         font-size: $font-size-small;
     }
-
     &.yellow {
-        color: $qboss-amber-800;
-        border-left: 12px solid $qboss-amber-500;
-        background-color: $qboss-amber-200;
-        a {
-            color: $qboss-amber-800;
-            &:hover {
-                color: $qboss-amber-500;
-            }
-        }
+        @include notices($qboss-color-warning);
     }
-
     &.red {
-        color: $qboss-pink-800;
-        border-left: 12px solid $qboss-pink-500;
-        background-color: $qboss-pink-200;
-        a {
-            color: $qboss-pink-800;
-            &:hover {
-                color: $qboss-pink-500;
-            }
-        }
+        @include notices($qboss-color-error);
     }
-
     &.blue {
-        color: $qboss-blue-800;
-        border-left: 12px solid $qboss-blue-500;
-        background-color: $qboss-blue-200;
-        a {
-            color: $qboss-blue-800;
-            &:hover {
-                color: $qboss-blue-500;
-            }
-        }
+        @include notices($qboss-color-focus);
     }
-
     &.green {
-        color: $qboss-green-800;
-        border-left: 12px solid $qboss-green-500;
-        background-color: $qboss-green-200;
-        a {
-            color: $qboss-green-800;
-            &:hover {
-                color: $qboss-green-500;
-            }
-        }
+        @include notices($qboss-color-success);
     }
-}
-
-// colors
-.black {
-    color: $qboss-black-90; 
-}
-  
-.inverted {
-    color: $qboss-gray-50; 
-}
-
-.error {
-    color: $qboss-pink-500; 
-}
-
-.success {
-    color: $qboss-green-500;
-}
-
-.warning {
-    color: $qboss-amber-500; 
-}
-
-.focus {
-    color: $qboss-blue-500; 
-}
-
-// background colors
-.bg-black {
-    background-color: $qboss-black-90; 
-}
-
-.bg-inverted {
-    background-color: $qboss-gray-50; 
-}
-
-.bg-error {
-    background-color: $qboss-pink-500; 
-}
-
-.bg-success {
-    background-color: $qboss-green-500; 
-}
-
-.bg-warning {
-    background-color: $qboss-amber-500; 
-}
-
-.bg-focus {
-    background-color: $qboss-blue-500; 
 }

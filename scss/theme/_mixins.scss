@@ -1,0 +1,30 @@
+@mixin notices($color)
+{
+    color: darken($color, 20%);
+    border-left: 0.5rem solid $color;
+    background-color: lighten($color, 40%);
+    a {
+        color: darken($color, 20%);
+        &:hover {
+            color: $color;
+        }
+    }
+}
+
+@mixin nav-button()
+{
+    font-size: $font-size-small;
+    a {
+        display: inline-block;
+        border: 1px solid $qboss-color-black;
+        text-decoration: none;
+        line-height: 28px;
+        border-radius: 4px;
+        padding: 0 16px;
+        &:hover {
+            text-decoration: none;
+            background-color: $qboss-color-black;
+            color: $qboss-color-text-inverted;
+        }
+    }
+}

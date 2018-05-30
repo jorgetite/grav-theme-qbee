@@ -1,15 +1,15 @@
 footer {
     padding: .5rem 3rem;
-    border-top: 1px solid $qboss-black-10;
+    border-top: 1px solid $qboss-color-black;
     .copyright {
         p {
             text-align: center;
             font-size: $font-size-smaller;
-            color: $qboss-gray-600;
+            color: $qboss-color-text-light;
             a {
-                color: $qboss-gray-600;
+                color: $qboss-color-text-light;
                 &:hover {
-                    color: $qboss-gray-900;
+                    color: $qboss-color-text-dark;
                 }
             }
         }

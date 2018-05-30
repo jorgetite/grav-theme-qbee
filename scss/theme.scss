@@ -8,8 +8,10 @@
 // imports
 @import 'kube/kube';
 @import 'theme/variables';
+@import 'theme/mixins';
+@import 'theme/overrides';
 @import 'theme/common';
 @import 'theme/header';
 @import 'theme/main';
 @import 'theme/footer';
-@import 'theme/breakpoints'
+@import 'theme/media'

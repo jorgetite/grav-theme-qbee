@@ -1,0 +1,225 @@
+/* ==============================================
+    Kube Overrides
+============================================== */
+
+
+// body
+body {
+    background-color: $qboss-color-back;
+    color: $qboss-color-text;
+    font-family: $qboss-text-font-family;
+}
+
+// headings
+h1.title, h1, h2, h3, h4, h5, h6 {
+    color: $qboss-color-head;
+    font-family: $qboss-head-font-family;
+    font-weight: 700;
+}
+
+// input fields
+input, textarea, select {
+    font-family: $qboss-mono-font-family;
+}
+
+/// buttons
+button, .button {
+    font-family: Lato, Arial, sans-serif; 
+}
+
+// links
+a {
+    color: $qboss-color-link; 
+    &:hover, 
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        color: $qboss-color-link-hover; 
+    }
+}
+
+// blockquote
+blockquote {
+    border-color: rgba($qboss-color-black, 0.25);
+    color: $qboss-color-text-light;
+}
+
+// Top Space
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+figure,
+div.notices {
+	+ h2,
+	+ h3,
+	+ h4,
+	+ h5,
+	+ h6 {
+		margin-top: $base-line * 2;
+	}
+}
+
+cite {
+    opacity: 0.9;
+}
+
+pre,
+pre code {
+  background-color: $qboss-color-bg-01;
+  color: $qboss-color-text-dark;
+}
+
+// buttons
+.button {
+    @include button($qboss-color-text-inverted, $qboss-color-blue);
+}
+
+.button.primary {
+    @include button($qboss-color-text-inverted, $qboss-color-pink);
+}
+
+.button.secondary {
+    @include button($qboss-color-text-inverted, $qboss-color-black);
+}
+
+.button.command {
+    @include button($qboss-color-text-inverted, $qboss-color-green);
+}
+
+// input fields
+input,
+textarea,
+select {
+    &:focus {
+    	border-color: $qboss-color-focus;
+    }
+    &.error {
+	    background-color: rgba($qboss-color-error, .1);
+    	border-color: lighten($qboss-color-error, 15%);
+    	&:focus {
+            border-color: $qboss-color-error;
+    	}
+	}
+    &.success  {
+    	background-color: rgba($qboss-color-success, .1);
+    	border-color: lighten($qboss-color-success, 15%);
+    	&:focus {
+            border-color: $qboss-color-success;
+    	}
+    }
+    &:disabled,
+    &.disabled {
+    	color: $qboss-color-text-disabled;
+	}
+}
+
+.req {
+    color: $qboss-color-error;
+}
+
+// labels
+.label.success {
+    @include label($qboss-color-text-inverted, $qboss-color-success);
+}
+.label.error {
+    @include label($qboss-color-text-inverted, $qboss-color-error);
+}
+.label.warning {
+    @include label($qboss-color-text, $qboss-color-warning);
+}
+.label.focus {
+    @include label($qboss-color-text-inverted, $qboss-color-focus);
+}
+.label.black {
+    @include label($qboss-color-text-inverted, $qboss-color-black);
+}
+.label.inverted {
+    @include label($qboss-color-text, $qboss-color-white);
+}
+
+// messages
+.message.error {
+    background: $qboss-color-error;
+    color: $qboss-color-text-inverted; 
+}
+  
+.message.success {
+    background: $qboss-color-success;
+    color: $qboss-color-text-inverted; 
+}
+
+.message.warning {
+    background: $qboss-color-warning; 
+    color: $qboss-color-text;
+}
+
+.message.focus {
+    background: $qboss-color-focus;
+    color: $qboss-color-text-inverted; 
+}
+
+.message.black {
+    background: $qboss-color-black;
+    color: $qboss-color-text-inverted; 
+}
+
+.message.inverted {
+    background: $qboss-color-white;
+    color: $qboss-color-text;
+}
+
+// colors
+.black {
+    color: $qboss-color-black; 
+}
+  
+.inverted {
+    color: $qboss-color-white; 
+}
+
+.error {
+    color: $qboss-color-error; 
+}
+
+.success {
+    color: $qboss-color-success;
+}
+
+.warning {
+    color: $qboss-color-warning; 
+}
+
+.focus {
+    color: $qboss-color-focus; 
+}
+
+// background colors
+.bg-black {
+    background-color: $qboss-color-black; 
+}
+
+.bg-inverted {
+    background-color: $qboss-color-white; 
+}
+
+.bg-error {
+    background-color: $qboss-color-error; 
+}
+
+.bg-success {
+    background-color: $qboss-color-success; 
+}
+
+.bg-warning {
+    background-color: $qboss-color-warning; 
+}
+
+.bg-focus {
+    background-color: $qboss-color-focus; 
+}

@@ -12,7 +12,7 @@
 }
 
 #header {
-    border-bottom: 1px solid $qboss-black-5;
+    border-bottom: 1px solid rgba($qboss-color-black, 0.15);
     .site-brand {
         display: flex;
         align-items: center;
@@ -21,12 +21,10 @@
         }
     }
     a.site-brand {
-        color: $qboss-gray-800;
         text-decoration: none;
         &:hover {
             -moz-transition: all linear 0.2s;
             transition: all linear 0.2s;
-            color: $qboss-gray-700;
             text-decoration: none;
         }
     }
@@ -37,6 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+	transition: all 0.5s;
 
     .site-brand {
         .site-logo {
@@ -51,61 +50,34 @@
             font-weight: 300;
             margin-left: 1.75rem;
             a {
-                color: $qboss-gray-800;
                 text-decoration: none;
                 border-bottom: 2px solid transparent;
                 &:hover {
                     -moz-transition: all linear 0.2s;
                     transition: all linear 0.2s;
-                    color: $qboss-gray-900;
+                    color: $qboss-color-text-dark;
                     text-decoration: none;
-                    border-bottom-color: $qboss-gray-900;
+                    border-bottom-color: $qboss-color-text-dark;
                 }
                 &.active {
-                    border-bottom-color: $qboss-gray-900;
+                    border-bottom-color: $qboss-color-text-dark;
                 }
             }
         }
         &.nav-buttons {
             li {
-                font-size: $font-size-small;
                 margin-left: 1.25rem;
-                a {
-                    display: inline-block;
-                    border: 1px solid $qboss-black-75;
-                    text-decoration: none;
-                    line-height: 28px;
-                    border-radius: 4px;
-                    padding: 0 16px;
-                    &:hover {
-                        text-decoration: none;
-                        background-color: $qboss-black-75;
-                        color: $qboss-gray-50;
-                    }
-                }
+                @include nav-button();
             }
         }
         &.nav-last-bttn {
             li:last-child {
-                font-size: $font-size-small;
-                a {
-                    display: inline-block;
-                    border: 1px solid $qboss-black-75;
-                    text-decoration: none;
-                    line-height: 28px;
-                    border-radius: 4px;
-                    padding: 0 16px;
-                    &:hover {
-                        text-decoration: none;
-                        background-color: $qboss-black-75;
-                        color: $qboss-gray-50;
-                    }
-                }
+                @include nav-button();
             }
         }
     }
     &.fixed {
-        background: rgba($qboss-gray-50, 0.98);
-        box-shadow: 0 1px 2px rgba($qboss-black-90, 0.25);
+        background: rgba($qboss-color-back, 0.98);
+        box-shadow: 0 1px 2px rgba($qboss-color-black, 0.3);
     }
 }
