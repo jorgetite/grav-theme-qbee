@@ -77,19 +77,19 @@ pre code {
 
 // buttons
 .button {
-    @include button($qboss-color-text-inverted, $qboss-color-blue);
+    @include qboss-button($qboss-color-text-inverted, $qboss-color-blue);
 }
 
 .button.primary {
-    @include button($qboss-color-text-inverted, $qboss-color-pink);
+    @include qboss-button($qboss-color-text-inverted, $qboss-color-pink);
 }
 
 .button.secondary {
-    @include button($qboss-color-text-inverted, $qboss-color-black);
+    @include qboss-button($qboss-color-text-inverted, $qboss-color-black);
 }
 
 .button.command {
-    @include button($qboss-color-text-inverted, $qboss-color-green);
+    @include qboss-button($qboss-color-text-inverted, $qboss-color-green);
 }
 
 // input fields

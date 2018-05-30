@@ -1,16 +1,3 @@
-#nav-toggle-wrap {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-}
-
-#nav-toggle {
-    margin-left: auto;
-    color: $qboss-color-text;
-    text-decoration: none;
-    padding: 0.25rem 0.5rem; 
-}
-
 #header {
     border-bottom: 1px solid rgba($qboss-color-black, 0.15);
     .site-brand {
@@ -24,10 +11,24 @@
         text-decoration: none;
         &:hover {
             -moz-transition: all linear 0.2s;
+            -webkit-transition: all linear 0.2s;
             transition: all linear 0.2s;
             text-decoration: none;
         }
     }
+}
+
+#navbar-sm {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+#nav-toggle {
+    margin-left: auto;
+    color: $qboss-color-text;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem; 
 }
 
 #navbar {
@@ -35,49 +36,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-	transition: all 0.5s;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 
     .site-brand {
+        .site-name {
+            height: 48px;
+            border: 1px solid $qboss-color-black;
+            overflow: hidden;
+        }
         .site-logo {
             max-width: 48px;
             max-height: 48px;
             margin-right: 1rem;
         }
     }
-    nav.site-nav {
-        li {
-            font-size: $font-size;
-            font-weight: 300;
-            margin-left: 1.75rem;
-            a {
-                text-decoration: none;
-                border-bottom: 2px solid transparent;
-                &:hover {
-                    -moz-transition: all linear 0.2s;
-                    transition: all linear 0.2s;
-                    color: $qboss-color-text-dark;
+    nav.site-menu {
+        ul {
+            justify-content: flex-end;
+            li {
+                font-size: $font-size;
+                font-weight: 300;
+                margin-left: 1.75rem;
+                a {
                     text-decoration: none;
-                    border-bottom-color: $qboss-color-text-dark;
-                }
-                &.active {
-                    border-bottom-color: $qboss-color-text-dark;
+                    border-bottom: 2px solid transparent;
+                    &:hover {
+                        -moz-transition: all linear 0.2s;
+                        transition: all linear 0.2s;
+                        color: $qboss-color-text-dark;
+                        text-decoration: none;
+                        border-bottom-color: $qboss-color-text-dark;
+                    }
+                    &.active {
+                        border-bottom-color: $qboss-color-text-dark;
+                    }
                 }
             }
         }
+/*
         &.nav-buttons {
             li {
                 margin-left: 1.25rem;
-                @include nav-button();
+                @include qboss-menu-button();
             }
         }
         &.nav-last-bttn {
             li:last-child {
-                @include nav-button();
+                @include qboss-menu-button();
             }
         }
+*/
     }
     &.fixed {
-        background: rgba($qboss-color-back, 0.98);
+        background: rgba($qboss-color-back, 0.97);
         box-shadow: 0 1px 2px rgba($qboss-color-black, 0.3);
     }
 }

@@ -2,12 +2,21 @@
     Theme common elements
 ============================================== */
 
-// site navigation
-.site-nav {
+// site branding
+img.site-logo {
+    width: 48px;
+}
+
+.site-name {
+    text-transform: uppercase;
+    color: inherit;
+}
+
+// navigation menu
+nav.site-menu {
     ul {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
         margin: 0;
         li {
             a {
@@ -21,8 +30,19 @@
     }
 }
 
-
 // sections
+[class*="-section"] {
+    overflow: hidden;
+    display: flex;
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 section {
     &.section,
     &.callout, 
@@ -32,41 +52,27 @@ section {
         align-items: center;
     }
 }
-.container {
-    display: block;
-    //margin: auto;
-}
 
 
-// site logo
-img.site-logo {
-    width: 48px;
-}
-
-.site-name {
-    font-weight: 800;
-    text-transform: uppercase;
-    color: inherit;
-}
 
 // notices
 .notices {
     padding: .5rem 1rem;
     margin: 1rem 2rem 1.5rem;
-    p {
+    > p {
         margin-bottom: 0;
         font-size: $font-size-small;
     }
     &.yellow {
-        @include notices($qboss-color-warning);
+        @include qboss-notices($qboss-color-warning);
     }
     &.red {
-        @include notices($qboss-color-error);
+        @include qboss-notices($qboss-color-error);
     }
     &.blue {
-        @include notices($qboss-color-focus);
+        @include qboss-notices($qboss-color-focus);
     }
     &.green {
-        @include notices($qboss-color-success);
+        @include qboss-notices($qboss-color-success);
     }
 }
