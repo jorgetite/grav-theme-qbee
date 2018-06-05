@@ -46,14 +46,12 @@
 #navbar-sm {
     display: flex;
     align-items: center;
-//    padding: 0.5rem 1rem;
 }
 
 #nav-toggle {
     margin-left: auto;
     color: $qboss-color-text;
     text-decoration: none;
-//    padding: 0.25rem 0.5rem; 
 }
 
 #navbar {
@@ -85,18 +83,10 @@
                 }
             }
         }
-/*
-        &.nav-buttons {
-            li {
-                margin-left: 1.25rem;
-                @include qboss-menu-button();
-            }
-        }
-        &.nav-last-bttn {
+        &.menu-last-bttn {
             li:last-child {
-                @include qboss-menu-button();
+                @include qboss-menu-button($qboss-color-text, $qboss-color-back, $qboss-color-text-inverted, $qboss-color-back-inverted);
             }
         }
-*/
     }
 }

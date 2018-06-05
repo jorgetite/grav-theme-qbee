@@ -53,13 +53,12 @@ form:
       validate:
         type: bool
 
-    header_nav_style:
+    qboss_menu_style:
       type: select
       label: Navigation Style
       help: This setting control how top level navigation items are renderend.
       size: medium
-      default: 'nav-links'
+      default: 'menu-links'
       options:
-        'nav-links': All menu items as links
-        'nav-buttons': All menu items as buttons
-        'nav-last-bttn': Last menu item as button
+        'menu-links': All menu items as links
+        'menu-last-bttn': Last menu item as button

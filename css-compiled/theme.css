@@ -451,37 +451,38 @@ section.section, section.callout, section.intense {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  #navbar nav.site-menu {
-    /*
-        &.nav-buttons {
-            li {
-                margin-left: 1.25rem;
-                @include qboss-menu-button();
-            }
-        }
-        &.nav-last-bttn {
-            li:last-child {
-                @include qboss-menu-button();
-            }
-        }
-*/ }
-    #navbar nav.site-menu ul {
-      justify-content: flex-end; }
-      #navbar nav.site-menu ul li {
-        font-size: 16px;
-        font-weight: 300;
-        margin-left: 1.75rem; }
-        #navbar nav.site-menu ul li a {
+  #navbar nav.site-menu ul {
+    justify-content: flex-end; }
+    #navbar nav.site-menu ul li {
+      font-size: 16px;
+      font-weight: 300;
+      margin-left: 1.75rem; }
+      #navbar nav.site-menu ul li a {
+        text-decoration: none;
+        border-bottom: 2px solid transparent; }
+        #navbar nav.site-menu ul li a:hover {
+          -moz-transition: all linear 0.2s;
+          transition: all linear 0.2s;
+          color: #212121;
           text-decoration: none;
-          border-bottom: 2px solid transparent; }
-          #navbar nav.site-menu ul li a:hover {
-            -moz-transition: all linear 0.2s;
-            transition: all linear 0.2s;
-            color: #212121;
-            text-decoration: none;
-            border-bottom-color: #212121; }
-          #navbar nav.site-menu ul li a.active {
-            border-bottom-color: #212121; }
+          border-bottom-color: #212121; }
+        #navbar nav.site-menu ul li a.active {
+          border-bottom-color: #212121; }
+  #navbar nav.site-menu.menu-last-bttn li:last-child {
+    font-size: 14px; }
+    #navbar nav.site-menu.menu-last-bttn li:last-child a {
+      display: inline-block;
+      background-color: #fafafa;
+      color: #616161;
+      border: 1px solid #616161;
+      text-decoration: none;
+      line-height: 28px;
+      border-radius: 4px;
+      padding: 0 16px; }
+      #navbar nav.site-menu.menu-last-bttn li:last-child a:hover {
+        text-decoration: none;
+        background-color: #212121;
+        color: #f5f5f5; }
 
 .hero.image-bg {
   position: relative;
@@ -533,10 +534,9 @@ footer {
 
 @media (max-width: 768px) {
   .site-name {
-    font-weight: 700;
     font-size: 24px; }
   .notices {
-    padding: .5rem .5rem;
+    padding: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem; }
   #navbar {
@@ -554,7 +554,4 @@ footer {
           text-align: center;
           width: auto;
           margin: 16px 0;
-          padding: 0; }
-  footer {
-    padding-left: 1rem;
-    padding-right: 1rem; } }
+          padding: 0; } }

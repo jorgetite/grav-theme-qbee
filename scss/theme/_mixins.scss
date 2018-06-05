@@ -30,21 +30,22 @@
     }
 }
 
-@mixin qboss-menu-button($color-text, $color-back)
+@mixin qboss-menu-button($color-text, $color-back, $color-hover-text, $color-hover-back)
 {
     font-size: $font-size-small;
     a {
         display: inline-block;
-        border: 1px solid $color-text;
+        background-color: $color-back;
         color: $color-text;
+        border: 1px solid $color-text;
         text-decoration: none;
         line-height: 28px;
         border-radius: 4px;
         padding: 0 16px;
         &:hover {
             text-decoration: none;
-            background-color: $qboss-color-black;
-            color: $qboss-color-text-inverted;
+            background-color: $color-hover-back;
+            color: $color-hover-text;
         }
     }
 }

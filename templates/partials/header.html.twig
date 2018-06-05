@@ -1,5 +1,5 @@
 {% set header_sticky = theme_var('qboss_header_sticky') %}
-{% set nav_style = theme_var('header_nav_style') %}
+{% set menu_style = theme_var('qboss_menu_style') %}
 
 <section id="header" class="{% if header_sticky %}sticky{% endif %}" {% if header_sticky %}data-component="sticky"{% endif %}>
     <div class="container">
@@ -15,7 +15,7 @@
                 <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
                 <h1 class="site-name">{{ config.site.title }}</h1>
             </a>
-            <nav class="site-menu {{ nav_style }}">
+            <nav class="site-menu {{ menu_style }}">
                 {% block header_navigation %}
                     {% include 'partials/navigation.html.twig' %}
                 {% endblock %}
