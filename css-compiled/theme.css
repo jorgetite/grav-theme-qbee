@@ -4,9 +4,9 @@
     Copyright (c) 2018, Jorge Tite.
 	  License: MIT
 *******************************************************************/
-/* ==============================================
-    Kube Overrides
-============================================== */
+/*-------------------------------------
+    1. Kube Overrides
+-------------------------------------*/
 body {
   background-color: #fafafa;
   color: #616161;
@@ -326,9 +326,9 @@ select.disabled {
 .bg-focus {
   background-color: #00e5ff; }
 
-/* ==============================================
-    Theme common elements
-============================================== */
+/*-------------------------------------
+    2. Common Elements
+-------------------------------------*/
 img.site-logo {
   width: 48px; }
 
@@ -353,7 +353,9 @@ nav.site-menu ul {
 .container {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px; }
 
 section.section, section.callout, section.intense {
   display: flex;
@@ -399,48 +401,56 @@ section.section, section.callout, section.intense {
       .notices.green a:hover {
         color: #00e676; }
 
+/*-------------------------------------
+    4. Header
+-------------------------------------*/
 #header {
-  border-bottom: 1px solid rgba(33, 33, 33, 0.15); }
-  #header .site-brand {
-    display: flex;
-    align-items: center; }
-    #header .site-brand .site-name {
-      margin-bottom: 0; }
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.15);
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
   #header a.site-brand {
+    display: flex;
+    align-items: center;
     text-decoration: none; }
     #header a.site-brand:hover {
       -moz-transition: all linear 0.2s;
       -webkit-transition: all linear 0.2s;
       transition: all linear 0.2s;
       text-decoration: none; }
+    #header a.site-brand .site-name {
+      margin-bottom: 0; }
+    #header a.site-brand .site-logo {
+      max-width: 48px;
+      max-height: 48px;
+      margin-right: 1rem; }
+  #header.sticky {
+    position: absolute; }
+  #header.fixed {
+    position: fixed;
+    background-color: rgba(250, 250, 250, 0.98); }
+    #header.fixed #navbar {
+      padding: 1rem 0; }
 
 #navbar-sm {
   display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem; }
+  align-items: center; }
 
 #nav-toggle {
   margin-left: auto;
   color: #616161;
-  text-decoration: none;
-  padding: 0.25rem 0.5rem; }
+  text-decoration: none; }
 
 #navbar {
-  padding: 1.25rem 3rem 1.5rem;
+  padding: 1.5rem 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  -moz-transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
-  #navbar .site-brand .site-name {
-    height: 48px;
-    border: 1px solid #212121;
-    overflow: hidden; }
-  #navbar .site-brand .site-logo {
-    max-width: 48px;
-    max-height: 48px;
-    margin-right: 1rem; }
+  justify-content: space-between; }
   #navbar nav.site-menu {
     /*
         &.nav-buttons {
@@ -472,9 +482,13 @@ section.section, section.callout, section.intense {
             border-bottom-color: #212121; }
           #navbar nav.site-menu ul li a.active {
             border-bottom-color: #212121; }
-  #navbar.fixed {
-    background: rgba(250, 250, 250, 0.97);
-    box-shadow: 0 1px 2px rgba(33, 33, 33, 0.3); }
+
+.hero.image-bg {
+  position: relative;
+  background-size: cover;
+  background: url("../images/welcomeBg.jpg");
+  width: 100%;
+  height: 700px; }
 
 #main section {
   padding: 2rem 1rem 4rem 1rem; }
@@ -529,7 +543,7 @@ footer {
     display: block;
     height: auto;
     padding-bottom: 24px; }
-    #navbar .site-brand {
+    #navbar a.site-brand {
       display: none; }
     #navbar nav.site-menu {
       padding: 0;

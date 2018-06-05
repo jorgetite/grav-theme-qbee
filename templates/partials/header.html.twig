@@ -1,22 +1,25 @@
+{% set header_sticky = theme_var('qboss_header_sticky') %}
 {% set nav_style = theme_var('header_nav_style') %}
 
-<section id="header">
-    <nav id="navbar-sm" class="show-sm">
-        <a class="site-brand" href="{{ home_url }}">
-            <h1 class="site-name">{{ config.site.title }}</h1>
-        </a>
-        <a href="#" id="nav-toggle" data-component="toggleme" data-target="#navbar"><i class="kube-menu"></i></a>
-    </nav>
-
-    <nav id="navbar" class="hide-sm" {% if theme.header_sticky %}data-component="sticky"{% endif %}>
-        <a class="site-brand" href="{{ home_url }}">
-            <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
-            <h1 class="site-name">{{ config.site.title }}</h1>
-        </a>
-        <nav class="site-menu {{ nav_style }}">
-            {% block header_navigation %}
-                {% include 'partials/navigation.html.twig' %}
-            {% endblock %}
+<section id="header" class="{% if header_sticky %}sticky{% endif %}" {% if header_sticky %}data-component="sticky"{% endif %}>
+    <div class="container">
+        <nav id="navbar-sm" class="show-sm">
+            <a class="site-brand" href="{{ home_url }}">
+                <h1 class="site-name">{{ config.site.title }}</h1>
+            </a>
+            <a href="#" id="nav-toggle" data-component="toggleme" data-target="#navbar"><i class="kube-menu"></i></a>
         </nav>
-    </nav>
+
+        <nav id="navbar" class="hide-sm">
+            <a class="site-brand" href="{{ home_url }}">
+                <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
+                <h1 class="site-name">{{ config.site.title }}</h1>
+            </a>
+            <nav class="site-menu {{ nav_style }}">
+                {% block header_navigation %}
+                    {% include 'partials/navigation.html.twig' %}
+                {% endblock %}
+            </nav>
+        </nav>
+    </div>
 </section>
