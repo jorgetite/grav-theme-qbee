@@ -21,10 +21,10 @@ form:
   fields:
     theme_section:
       type: section
-      title: Theme Defaults
+      title: Theme Settings
       underline: true
 
-    production_mode:
+    qboss_prod_mode:
       type: toggle
       label: Production mode
       help: When enabled, QBoss will render with minified CSS and JS

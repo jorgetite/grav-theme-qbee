@@ -1,4 +1,4 @@
-{% set compress = theme_var('production_mode') ? '.min' : '' %}
+{% set ext = theme_var('qboss_prod_mode') ? '.min' : '' %}
 
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
@@ -15,28 +15,42 @@
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
-        {% do assets.addCss('theme://css/kube' ~ compress ~ '.css', 100) %}
-        {% do assets.addCss('theme://css/font-montserrat' ~ compress ~ '.css', 99) %}
-        {% do assets.addCss('theme://css/font-lato' ~ compress ~ '.css', 98) %}
-        {% do assets.addCss('theme://css/font-inconsolata' ~ compress ~ '.css', 97) %}
+        {% do assets.addCss('theme://css/kube' ~ ext ~ '.css', 100) %}
+        {% do assets.addCss('theme://css/font-montserrat' ~ ext ~ '.css', 99) %}
+        {% do assets.addCss('theme://css/font-lato' ~ ext ~ '.css', 98) %}
+        {% do assets.addCss('theme://css/font-inconsolata' ~ ext ~ '.css', 97) %}
         {% do assets.addCss('https://use.fontawesome.com/releases/v5.0.13/css/all.css', 96) %}
-        {% do assets.addCss('theme://css-compiled/theme' ~ compress ~ '.css', 01) %}
+        {% do assets.addCss('theme://css-compiled/theme' ~ ext ~ '.css', 01) %}
         {% do assets.addCss('theme://css/custom.css', 00) %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
-        {% do assets.addJs('theme://js/kube' ~ compress ~ '.js', 99)%}
+        {% do assets.addJs('theme://js/kube' ~ ext ~ '.js', 99)%}
+        {% do assets.addJs('theme://js/jquery.stellar.min.js', 98)%}
+        {% do assets.addJs('theme://js/theme.js', 01)%}
     {% endblock %}
     {{ assets.js() }}
 
 {% endblock head%}
 </head>
 <body class="{{ header.body_classes }}">
+    <section id="loader">
+    </section>
+
+    <section id="splash">
+    </section>
+
     {% block header %}
         {% include 'partials/header.html.twig' ignore missing %}
     {% endblock %}
+
+    <section id="hero" class="hero image-bg" data-stellar-background-ratio="0.2" data-stellar-vertical-offset="0">
+        <div>
+            <p>Some text here</p>
+        </div>
+    </section>
 
     {% block messages %}
         {% include 'partials/messages.html.twig' ignore missing %}
