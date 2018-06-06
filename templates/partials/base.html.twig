@@ -39,26 +39,19 @@
     <section id="loader">
     </section>
 
-    <section id="splash">
-    </section>
+    {% block splash %}{% endblock %}
 
     {% block header %}
         {% include 'partials/header.html.twig' ignore missing %}
     {% endblock %}
 
-    <section id="hero" class="hero image-bg" data-stellar-background-ratio="0.2" data-stellar-vertical-offset="0">
-        <div>
-            <p>Some text here</p>
-        </div>
-    </section>
+    {% block hero %}{% endblock %}
 
     {% block messages %}
         {% include 'partials/messages.html.twig' ignore missing %}
     {% endblock %}
 
     <section id="main">
-        {% block hero %}{% endblock %}
-    
         {% block body %}
             {% block content %}{% endblock %}
         {% endblock %}
