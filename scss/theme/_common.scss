@@ -36,23 +36,24 @@ nav.site-menu {
     display: flex;
 }
 
+section.sm-padding {
+    padding: 2rem 0;
+}
+
+section.md-padding {
+    padding: 4rem 0;
+}
+
+section.lg-padding {
+    padding: 8rem 0;
+}
+
 .container {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-}
-
-
-section {
-    &.section,
-    &.callout, 
-    &.intense {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 // notices

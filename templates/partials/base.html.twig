@@ -51,11 +51,7 @@
         {% include 'partials/messages.html.twig' ignore missing %}
     {% endblock %}
 
-    <section id="main">
-        {% block body %}
-            {% block content %}{% endblock %}
-        {% endblock %}
-    </section>
+    {% block main %}{% endblock %}
 
     {% block footer %}
         {% include 'partials/footer.html.twig' ignore missing %}
