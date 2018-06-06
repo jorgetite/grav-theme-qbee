@@ -8,7 +8,7 @@
     {% endfor %}
 {% endblock %}
 
-{% block main %}
+{% block sections %}
     {% for module in page.collection() if module.template != 'modular/splash' %}
         <div id="{{ _self.pageLinkName(module.menu) }}"></div>
         {{ module.content }}
