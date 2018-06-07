@@ -1,0 +1,24 @@
+/*-------------------------------------
+    3. Splash section
+-------------------------------------*/
+
+#splash {
+    height: 100vh;
+    width: 100vw;
+//    position: relative;
+//    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ccc;
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .splash-text {
+        text-align: center;
+    }
+}

@@ -28,7 +28,6 @@
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
         {% do assets.addJs('theme://js/kube' ~ ext ~ '.js', 99)%}
-        {% do assets.addJs('theme://js/jquery.stellar.min.js', 98)%}
         {% do assets.addJs('theme://js/theme.js', 01)%}
     {% endblock %}
     {{ assets.js() }}
@@ -36,8 +35,6 @@
 {% endblock head%}
 </head>
 <body class="{{ header.body_classes }}">
-    <section id="loader">
-    </section>
 
     {% block splash %}{% endblock %}
 
@@ -57,8 +54,8 @@
         {% include 'partials/footer.html.twig' ignore missing %}
     {% endblock %}
 
-{% block bottom %}
-    {{ assets.js('bottom') }}
-{% endblock %}
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+    {% endblock %}
 </body>
 </html>
