@@ -17,44 +17,20 @@ form:
           type: tab
           title: QBoss
           fields:
-            qboss_menu:
-              type: section
-              title: Menu Item Options
-              underline: true
-            header.menu_item_class:
-              toggleable: true
-              type: text
-              size: medium
-              label: Menu item class
-              description: 'The menu item class for this page'
-              markdown: true
-            header.menu_item_icon:
-              toggleable: true
-              type: text
-              size: medium
-              label: Menu item icon
-              description: 'The menu item icon for this page'
-              markdown: true
             qboss_style:
               type: section
               title: Style Options
               underline: true
-            header.class:
+            header.qboss_padding:
               type: select
-              label: Display Style
-              description: 'The display style for this page'
+              label: Top & Bottom Padding
+              description: 'The top and bottom padding for this page content'
               size: medium
-              default: regular
+              default: md-pad
               options:
-                regular: Normal
-                callout: Call-out
-            header.bg_class:
-              type: select
-              label: Background Style
-              description: 'The background style for this page'
-              size: medium
-              options:
-                gray-50: White
-                gray-100: Light gray
-                gray-200: Dark gray
-                gray-900: Black
+                no-pad: No padding
+                xs-pad: Smaller (16px)
+                sm-pad: Small (32px)
+                md-pad: Midium (64px)
+                lg-pad: Large (96px)
+                xl-pad: Larger (128px)

@@ -8,7 +8,7 @@ form:
         content:
           fields:
             header.media_order:
-              label: Page Media (first one will be displayed next to your content)
+              label: Page Media (first one will be displayed with your content)
             header.image_position:
               type: select
               label: Image position

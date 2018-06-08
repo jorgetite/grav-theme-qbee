@@ -350,13 +350,22 @@ nav.site-menu ul {
   overflow: hidden;
   display: flex; }
 
-section.sm-padding {
+.no-pad {
+  padding: 0; }
+
+.xs-pad {
+  padding: 1rem 0; }
+
+.sm-pad {
   padding: 2rem 0; }
 
-section.md-padding {
+.md-pad {
   padding: 4rem 0; }
 
-section.lg-padding {
+.lg-pad {
+  padding: 6rem 0; }
+
+.xl-pad {
   padding: 8rem 0; }
 
 .container {
