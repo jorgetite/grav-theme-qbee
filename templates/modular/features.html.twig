@@ -1,0 +1,19 @@
+<section class="modular-section {{page.header.qboss_padding}}">
+    <div class="container">
+        {{ content }}
+        
+        <div class="row gutters">
+        {% for feature in page.header.features %}
+            <div class="feature col col-4">
+                <i class="fa fa-fw {{ feature.icon }}"></i>
+                {% if feature.header %}
+                    <h6>{{ feature.header }}</h6>
+                {% endif %}
+                {% if feature.text %}
+                    <p>{{ feature.text }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
