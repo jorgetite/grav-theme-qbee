@@ -426,9 +426,7 @@ nav.site-menu ul {
   color: #fafafa; }
   .splash-section .container {
     height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center; }
+    width: 100%; }
   .splash-section .splash-content {
     text-align: center; }
 
