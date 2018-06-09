@@ -3,7 +3,23 @@
 {% block body %}
     <section id="{{page.header.modular_id}}" class="default-section {{page.header.modular_padding}}">
         <div class="container">
-            {{ page.content }}
+            {% if page.header.show_heading %}
+                <div class="row auto">
+                    <div class="col">
+                        <div class="heading">
+                            <h2>{{page.header.title}}</h2>
+                            {%if page.header.subtitle %}
+                                <h3>{{page.header.subtitle}}</h3>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="row auto">
+                <div class="col">
+                    {{ page.content }}
+                </div>
+            </div>
         </div>
     </section>
 {% endblock %}
