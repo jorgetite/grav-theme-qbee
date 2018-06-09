@@ -3,7 +3,6 @@
 {% block body %}
     {% include 'partials/fragments/default.html.twig' with {
         id: page.header.modular_id, 
-        section: 'default-section',
-        padding: page.header.modular_padding
+        classes: ['default-section', page.header.modular_padding]|join(' ')
     } %}
 {% endblock %}
