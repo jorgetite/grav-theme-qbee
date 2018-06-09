@@ -1,15 +1,14 @@
-#hero {
+.hero {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-color: #999;
-
+ 
     .container {
         width: 100%;
         display: flex;
         align-items: center;
     }
-    .hero-text {
+    .hero-content {
         display: block;
         width: 100%;
     }

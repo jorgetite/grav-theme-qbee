@@ -1,8 +1,8 @@
 {% set bg_image = page.header.qboss_bg_image ? page.media[page.header.qboss_bg_image] : page.media.images|first %}
 
-<section id="splash" class="modular-section {{page.header.qboss_padding}}" {% if bg_image %}style="background-image: url({{ bg_image.url }});"{% endif %}>
+<section id="{{page.header.modular_id}}" class="splash modular-section {{page.header.modular_padding}}" {% if bg_image %}style="background-image: url({{ bg_image.url }});"{% endif %}>
     <div class="container row align-center">
-        <div class="splash-text col col-10">
+        <div class="splash-content col col-10">
             <h1 class="title">{{page.header.title}}</h1>
             {{ content }}
         </div>

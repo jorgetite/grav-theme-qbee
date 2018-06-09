@@ -4,33 +4,67 @@ form:
   fields:
     tabs:
       fields:
-        advanced:
+        content:
           fields:
-            columns:
-              fields:
-                column1:
-                  fields:
-                    header.body_classes:
-                      markdown: true
-                      description: 'Page classes space separated'
+            header.subtitle:
+              type: text
+              style: vertical
+              label: Subtitle
+
         buttons:
           type: tab
           title: QBoss
           fields:
-            qboss_style:
-              type: section
-              title: Style Options
-              underline: true
-            header.qboss_padding:
-              type: select
-              label: Top & Bottom Padding
-              description: 'The top and bottom padding for this page content'
-              size: medium
-              default: md-pad
-              options:
-                no-pad: No padding
-                xs-pad: Smaller (16px)
-                sm-pad: Small (32px)
-                md-pad: Midium (64px)
-                lg-pad: Large (96px)
-                xl-pad: Larger (128px)
+            columns:
+              type: columns
+              fields:
+                column1:
+                  type: column
+                  fields:
+                    qboss_module:
+                      type: section
+                      title: Page/Modular Settings
+                      underline: true
+                    header.show_heading:
+                      type: toggle
+                      label: Show Heading
+                      help: Whether the Title and Subtitle of this page/modular is displayed or not.
+                      highlight: 1
+                      default: 1
+                      options:
+                        1: PLUGIN_ADMIN.ENABLED
+                        0: PLUGIN_ADMIN.DISABLED
+                      validate:
+                        type: bool
+                column2:
+                  type: column
+                  fields:
+                    qboss_style:
+                      type: section
+                      title: Page/Modular Style
+                      underline: true
+                    header.modular_classes:
+                      type: text
+                      label: Modular CSS Classes
+                      markdown: true
+                      description: 'Modular classes space separated'
+                    header.modular_id:
+                      type: text
+                      size: small
+                      label: Modular Element ID
+                      description: 'The HTML element ID'
+                      validate:
+                        rule: slug
+                    header.modular_padding:
+                      type: select
+                      label: Top & Bottom Padding
+                      description: 'The top and bottom padding for this page content'
+                      size: medium
+                      default: md-pad
+                      options:
+                        no-pad: No padding
+                        xs-pad: Smaller (16px)
+                        sm-pad: Small (32px)
+                        md-pad: Midium (64px)
+                        lg-pad: Large (96px)
+                        xl-pad: Larger (128px)
