@@ -24,10 +24,8 @@
 
 .error-section {
     .container {
-        display: flex;
         min-height: 25rem;
         height: 70vh;
-        width: 100%;
     }
     h1 {
         border-left: .75rem solid $qboss-color-accent;

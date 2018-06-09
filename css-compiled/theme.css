@@ -369,7 +369,6 @@ nav.site-menu ul {
   padding: 8rem 0; }
 
 .container {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -548,10 +547,8 @@ nav.site-menu ul {
     font-weight: 500; }
 
 .error-section .container {
-  display: flex;
   min-height: 25rem;
-  height: 70vh;
-  width: 100%; }
+  height: 70vh; }
 
 .error-section h1 {
   border-left: 0.75rem solid #f50057;
