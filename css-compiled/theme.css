@@ -524,7 +524,13 @@ nav.site-menu ul {
   height: 700px; }
 
 /*-------------------------------------
-    Features
+    Text Section
+-------------------------------------*/
+.text-section {
+  background-color: azure; }
+
+/*-------------------------------------
+    Features Section
 -------------------------------------*/
 .feature-item {
   background-color: #fafafa;
