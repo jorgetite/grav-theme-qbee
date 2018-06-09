@@ -1,5 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block body %}
-    {% include 'partials/fragments/default.html.twig' with {section: 'default-section'} %}
+    {% include 'partials/fragments/default.html.twig' with {
+        id: page.header.modular_id, 
+        section: 'default-section',
+        padding: page.header.modular_padding
+    } %}
 {% endblock %}
