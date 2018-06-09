@@ -436,11 +436,6 @@ nav.site-menu ul {
     4. Header
 -------------------------------------*/
 #header {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
   border-bottom: 1px solid rgba(33, 33, 33, 0.15);
   -moz-transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
@@ -461,12 +456,12 @@ nav.site-menu ul {
       max-height: 48px;
       margin-right: 1rem; }
   #header.sticky {
-    position: absolute; }
+    position: relative;
+    z-index: 100; }
   #header.fixed {
     position: fixed;
-    background-color: rgba(250, 250, 250, 0.98); }
-    #header.fixed #navbar {
-      padding: 1rem 0; }
+    background-color: rgba(250, 250, 250, 0.98);
+    box-shadow: 0 0 4px rgba(33, 33, 33, 0.3); }
 
 #navbar-sm {
   display: flex;
@@ -478,7 +473,7 @@ nav.site-menu ul {
   text-decoration: none; }
 
 #navbar {
-  padding: 1.5rem 0;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
