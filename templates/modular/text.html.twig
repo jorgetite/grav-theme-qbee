@@ -1,7 +1,7 @@
 {% set image = page.media.images|first %}
 {% set bgimg = image and page.header.image_position == 'back' %}
 
-<section id="{{page.header.modular_id}}" class="modular-section {{page.header.modular_padding}}" {% if bgimg %}style="background-image: url({{ image.url }});"{% endif %}>
+<section id="{{page.header.modular_id}}" class="text-section {{page.header.modular_padding}}" {% if bgimg %}style="background-image: url({{ image.url }});"{% endif %}>
     <div class="container">
         {% if image and page.header.image_position != 'back' %}
             <div class="row gutters">

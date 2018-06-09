@@ -1,13 +1,13 @@
 /*-------------------------------------
     Features
 -------------------------------------*/
-.feature {
-    text-align: center;
-    padding: 2rem 1.25rem;
-    border: 1px solid transparent;
-    @include transition(all ease 0.3s);
+.feature-item {
     background-color: $qboss-color-white;
     margin-bottom: 2%;
+    padding: 2rem 1.25rem;
+    border: 1px solid transparent;
+    text-align: center;
+    @include transition(all ease 0.3s);
     &:hover {
         border-color:  $qboss-color-divider;
     }
@@ -22,12 +22,12 @@
     }
 }
 
-
-
-#error {
+.error-section {
     .container {
+        display: flex;
         min-height: 25rem;
-        height: 50vh;
+        height: 70vh;
+        width: 100%;
     }
     h1 {
         border-left: .75rem solid $qboss-color-accent;

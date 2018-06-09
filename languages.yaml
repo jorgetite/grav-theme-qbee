@@ -30,7 +30,7 @@ en:
       SUMMARY: "Here is the summary of what you wrote to us:"
     ERROR:
       TITLE: Error
-      MESSAGE: "Oops! Something went wrong..."
+      MESSAGE: "Oops, something went wrong..."
 es:
   QBOSS:
     BLOG:
@@ -63,4 +63,4 @@ es:
       SUMMARY: "Este es un resumen de lo escrito:"
     ERROR:
       TITLE: Error
-      MESSAGE: "Oh no! Ha ocurrido algo inesperado..."
+      MESSAGE: "Oh no, ha ocurrido algo inesperado..."

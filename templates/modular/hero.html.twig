@@ -1,6 +1,6 @@
 {% set bg_image = page.header.qboss_bg_image ? page.media[page.header.qboss_bg_image] : page.media.images|first %}
    
-<section id="{{page.header.modular_id}}" class="hero modular-section {{page.header.modular_padding}}" {% if bg_image %}style="background-image: url({{ bg_image.url }});"{% endif %}>
+<section id="{{page.header.modular_id}}" class="hero-section {{page.header.modular_padding}}" {% if bg_image %}style="background-image: url({{ bg_image.url }});"{% endif %}>
     <div class="container">
         <div class="hero-content">
             {{ content }}

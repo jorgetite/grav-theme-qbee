@@ -417,7 +417,7 @@ nav.site-menu ul {
 /*-------------------------------------
     3. Splash section
 -------------------------------------*/
-.splash {
+.splash-section {
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -425,12 +425,12 @@ nav.site-menu ul {
   background-position: center center;
   background-color: #212121;
   color: #fafafa; }
-  .splash .container {
+  .splash-section .container {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center; }
-  .splash .splash-content {
+  .splash-section .splash-content {
     text-align: center; }
 
 /*-------------------------------------
@@ -509,15 +509,15 @@ nav.site-menu ul {
         background-color: #212121;
         color: #f5f5f5; }
 
-.hero {
+.hero-section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
-  .hero .container {
+  .hero-section .container {
     width: 100%;
     display: flex;
     align-items: center; }
-  .hero .hero-content {
+  .hero-section .hero-content {
     display: block;
     width: 100%; }
 
@@ -531,31 +531,33 @@ nav.site-menu ul {
 /*-------------------------------------
     Features
 -------------------------------------*/
-.feature {
-  text-align: center;
+.feature-item {
+  background-color: #fafafa;
+  margin-bottom: 2%;
   padding: 2rem 1.25rem;
   border: 1px solid transparent;
+  text-align: center;
   -moz-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-  background-color: #fafafa;
-  margin-bottom: 2%; }
-  .feature:hover {
+  transition: all ease 0.3s; }
+  .feature-item:hover {
     border-color: rgba(33, 33, 33, 0.15); }
-  .feature .feature-icon {
+  .feature-item .feature-icon {
     font-size: 48px;
     margin-bottom: 0.5rem; }
-  .feature .feature-content h3 {
+  .feature-item .feature-content h3 {
     font-weight: 500; }
 
-#error .container {
+.error-section .container {
+  display: flex;
   min-height: 25rem;
-  height: 50vh; }
+  height: 70vh;
+  width: 100%; }
 
-#error h1 {
+.error-section h1 {
   border-left: 0.75rem solid #f50057;
   padding-left: 1rem; }
 
-#error h2 {
+.error-section h2 {
   font-weight: 300;
   margin-bottom: 3rem; }
 
