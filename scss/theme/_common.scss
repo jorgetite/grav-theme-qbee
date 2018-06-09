@@ -22,8 +22,7 @@ nav.site-menu {
             a {
                 display: inline-block;
                 &:hover {
-                    -moz-transition: all linear 0.2s;
-                    transition: all linear 0.2s;
+                    @include transition(all linear 0.3s);
                 }
             }
         }

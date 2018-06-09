@@ -343,8 +343,8 @@ nav.site-menu ul {
   nav.site-menu ul li a {
     display: inline-block; }
     nav.site-menu ul li a:hover {
-      -moz-transition: all linear 0.2s;
-      transition: all linear 0.2s; }
+      -moz-transition: all linear 0.3s;
+      transition: all linear 0.3s; }
 
 [class*="-section"] {
   overflow: hidden;
@@ -438,16 +438,14 @@ nav.site-menu ul {
 #header {
   border-bottom: 1px solid rgba(33, 33, 33, 0.15);
   -moz-transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s; }
   #header a.site-brand {
     display: flex;
     align-items: center;
     text-decoration: none; }
     #header a.site-brand:hover {
-      -moz-transition: all linear 0.2s;
-      -webkit-transition: all linear 0.2s;
-      transition: all linear 0.2s;
+      -moz-transition: all linear 0.3s;
+      transition: all linear 0.3s;
       text-decoration: none; }
     #header a.site-brand .site-name {
       margin-bottom: 0; }
@@ -487,9 +485,8 @@ nav.site-menu ul {
         text-decoration: none;
         border-bottom: 2px solid transparent; }
         #navbar nav.site-menu ul li a:hover {
-          -webkit-transition: all linear 0.2s;
-          -moz-transition: all linear 0.2s;
-          transition: all linear 0.2s;
+          -moz-transition: all linear 0.3s;
+          transition: all linear 0.3s;
           color: #212121;
           text-decoration: none;
           border-bottom-color: #212121; }
@@ -538,9 +535,8 @@ nav.site-menu ul {
   text-align: center;
   padding: 2rem 1.25rem;
   border: 1px solid transparent;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  transition: 0.4s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
   background-color: #fafafa;
   margin-bottom: 2%; }
   .feature:hover {
