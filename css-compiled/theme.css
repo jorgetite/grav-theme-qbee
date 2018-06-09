@@ -17,8 +17,8 @@ h1.title, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 700; }
 
-input, textarea, select {
-  font-family: Consolas, Monaco, monospace; }
+pre, code, samp, var, kbd {
+  font-family: "Inconsolata", Monaco, monospace; }
 
 button, .button {
   font-family: Lato, Arial, sans-serif; }
@@ -492,6 +492,7 @@ nav.site-menu ul {
         text-decoration: none;
         border-bottom: 2px solid transparent; }
         #navbar nav.site-menu ul li a:hover {
+          -webkit-transition: all linear 0.2s;
           -moz-transition: all linear 0.2s;
           transition: all linear 0.2s;
           color: #212121;
@@ -534,6 +535,26 @@ nav.site-menu ul {
   background: url("../images/welcomeBg.jpg");
   width: 100%;
   height: 700px; }
+
+/*-------------------------------------
+    Features
+-------------------------------------*/
+.feature {
+  text-align: center;
+  padding: 30px 20px;
+  border: 1px solid transparent;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+  background-color: #fafafa;
+  margin-bottom: 2%; }
+  .feature:hover {
+    border-color: rgba(33, 33, 33, 0.15); }
+  .feature .feature-icon {
+    font-size: 48px;
+    margin-bottom: 0.5rem; }
+  .feature .feature-content h3 {
+    font-weight: 500; }
 
 #error .container {
   min-height: 25rem;

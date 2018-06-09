@@ -1,3 +1,31 @@
+/*-------------------------------------
+    Features
+-------------------------------------*/
+.feature {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid transparent;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    background-color: $qboss-color-white;
+    margin-bottom: 2%;
+    &:hover {
+        border-color:  $qboss-color-divider;
+    }
+    .feature-icon {
+        font-size: $heading-font-size-1;
+        margin-bottom: 0.5rem;
+    }
+    .feature-content {
+        h3 {
+            font-weight: 500;
+        }
+    }
+}
+
+
+
 #error {
     .container {
         min-height: 25rem;
