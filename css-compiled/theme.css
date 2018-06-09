@@ -511,9 +511,7 @@ nav.site-menu ul {
   background-repeat: no-repeat;
   background-position: center top; }
   .hero-section .container {
-    width: 100%;
-    display: flex;
-    align-items: center; }
+    width: 100%; }
   .hero-section .hero-content {
     display: block;
     width: 100%; }
