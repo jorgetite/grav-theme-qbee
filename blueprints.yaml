@@ -24,7 +24,7 @@ form:
       title: Theme Settings
       underline: true
 
-    qboss_prod_mode:
+    production_mode:
       type: toggle
       label: Production mode
       help: When enabled, QBoss will render with minified CSS and JS

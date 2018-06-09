@@ -372,7 +372,8 @@ nav.site-menu ul {
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
-  padding-right: 16px; }
+  padding-right: 16px;
+  width: 100%; }
 
 .notices {
   padding: .5rem 1rem;
@@ -425,8 +426,7 @@ nav.site-menu ul {
   background-color: #212121;
   color: #fafafa; }
   .splash-section .container {
-    height: 100%;
-    width: 100%; }
+    height: 100%; }
   .splash-section .splash-content {
     text-align: center; }
 
@@ -510,8 +510,6 @@ nav.site-menu ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
-  .hero-section .container {
-    width: 100%; }
   .hero-section .hero-content {
     display: block;
     width: 100%; }

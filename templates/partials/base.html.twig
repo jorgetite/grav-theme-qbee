@@ -1,4 +1,4 @@
-{% set ext = theme_var('qboss_prod_mode') ? '.min' : '' %}
+{% set ext = theme_var('production_mode') ? '.min' : '' %}
 
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
@@ -48,7 +48,7 @@
         {% include 'partials/messages.html.twig' ignore missing %}
     {% endblock %}
 
-    {% block sections %}{% endblock %}
+    {% block body %}{% endblock %}
 
     {% block footer %}
         {% include 'partials/footer.html.twig' ignore missing %}
