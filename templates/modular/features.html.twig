@@ -4,7 +4,7 @@
         
         <div class="row gutters">
         {% for feature in page.header.features %}
-            <div class="feature col col-4">
+            <div class="feature col {{page.header.columns}}">
                 <div class="feature-icon">
                     <i class="fas fa-fw {{ feature.icon }}"></i>
                 </div>
