@@ -4,7 +4,8 @@
     {% include 'partials/fragments/default.html.twig' 
         with {
             id: page.header.modular_id, 
-            classes: ['default-section', page.header.modular_padding]|join(' ')
+            classes: ['default-section', page.header.modular_padding]|join(' '),
+            colw: 'auto'
         } 
     %}
 {% endblock %}

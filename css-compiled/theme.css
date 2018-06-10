@@ -573,7 +573,7 @@ nav.site-menu ul {
   .feature-item .feature-content h3 {
     font-weight: 500; }
 
-.error-section .error-row {
+.error-section .container-row {
   min-height: 25rem;
   height: 70vh; }
 

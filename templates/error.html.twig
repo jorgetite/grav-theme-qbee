@@ -4,7 +4,9 @@
     {% include 'partials/fragments/error.html.twig' 
         with {
             id: page.header.modular_id, 
-            classes: ['error-section', page.header.modular_padding]|join(' ')
+            classes: ['error-section', page.header.modular_padding]|join(' '),
+            center: true,
+            middle: true
         } 
     %}
 {% endblock %}
