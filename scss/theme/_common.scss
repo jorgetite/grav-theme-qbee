@@ -70,7 +70,7 @@ nav.site-menu {
         color: $qboss-color-white;
         font-weight: 700;
         text-transform: uppercase;
-        & + h2 {
+        + h2 {
             color: $qboss-color-text-light;
             font-weight: 300;
         }
@@ -79,7 +79,7 @@ nav.site-menu {
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 1.25rem;
-        & + h3 {
+        + h3 {
             font-weight: 300;
             font-size: $heading-font-size-6;
             line-height: $heading-base-line-6;
