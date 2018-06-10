@@ -11,10 +11,18 @@
     background-color: $qboss-color-black;
     color: $qboss-color-white;
 
-    .container {
+    .splash-row {
         height: 100%;
     }
-    .splash-content {
-        text-align: center;
+    .heading {
+        h1 {
+            color: $qboss-color-white;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: $qboss-color-text-light;
+            font-weight: 300;
+        }
     }
 }

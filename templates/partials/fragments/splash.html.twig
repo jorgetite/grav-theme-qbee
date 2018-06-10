@@ -1,0 +1,19 @@
+{% extends 'partials/fragment.html.twig' %}
+
+{% block container %}
+    <div class="splash-row row">
+        <div class="col col-10 push-center push-middle text-center">
+            {% if page.header.show_heading %}
+                <div class="heading">
+                    <h1 class="title">{{page.header.title}}</h1>
+                    {% if page.header.subtitle %}
+                        <h2>{{page.header.subtitle}}</h2>
+                    {% endif %}
+                </div>
+            {% endif %}
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

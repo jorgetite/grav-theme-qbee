@@ -448,10 +448,15 @@ nav.site-menu ul {
   background-position: center center;
   background-color: #212121;
   color: #fafafa; }
-  .splash-section .container {
+  .splash-section .splash-row {
     height: 100%; }
-  .splash-section .splash-content {
-    text-align: center; }
+  .splash-section .heading h1 {
+    color: #fafafa;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .splash-section .heading h2 {
+    color: #757575;
+    font-weight: 300; }
 
 /*-------------------------------------
     4. Header
