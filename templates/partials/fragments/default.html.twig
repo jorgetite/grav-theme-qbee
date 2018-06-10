@@ -1,8 +1,8 @@
 {% extends 'partials/fragment.html.twig' %}
 
 {% block container %}
-    <div class="container-row row{% if colw == 'auto' %} auto{% endif %}">
-        <div class="col{% if colw and colw != 'auto' %} {{colw}}{% endif %}{% if center %} push-center{% endif %}{% if middle %} push-middle{% endif %}">
+    <div class="container-row row {% if row_clss %}{{row_clss}}{% endif %}">
+        <div class="col {% if col_clss %}{{col_clss}}{% endif %}">
             {% block heading %}
                 {% if page.header.show_heading %}
                     <div class="heading">

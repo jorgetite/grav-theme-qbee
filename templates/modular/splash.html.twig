@@ -1,6 +1,9 @@
 {% include 'partials/fragments/splash.html.twig' 
     with {
         id: page.header.modular_id,
-        classes: ['splash-section', page.header.modular_padding]|join(' ')
+        classes: ['splash-section', page.header.modular_padding]|join(' '),
+        colw: 'col-10',
+        center: true,
+        middle: true
     } 
 %}
