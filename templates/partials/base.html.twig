@@ -54,7 +54,10 @@
     {% block messages %}
         {% if grav.messages.all %}
             {% include 'partials/fragments/messages.html.twig'
-                with {id: 'messages'}
+                with {
+                    id: 'messages',
+                    classes: 'msg-section'
+                }
             %}
         {% endif %}
     {% endblock %}
@@ -62,7 +65,12 @@
     {% block body %}{% endblock %}
 
     {% block footer %}
-        {% include 'partials/footer.html.twig' ignore missing %}
+        {% include 'partials/fragments/footer.html.twig'
+            with {
+                id: 'footer',
+                classes: 'footer-section xs-pad'
+            }
+         %}
     {% endblock %}
 
     {% block bottom %}

@@ -581,16 +581,15 @@ nav.site-menu ul {
   font-weight: 300;
   margin-bottom: 3rem; }
 
-footer {
-  padding: .5rem 3rem;
-  border-top: 1px solid #212121; }
-  footer .copyright p {
+#footer {
+  border-top: 1px solid rgba(33, 33, 33, 0.15); }
+  #footer .copyright p {
     text-align: center;
     font-size: 12px;
     color: #757575; }
-    footer .copyright p a {
+    #footer .copyright p a {
       color: #757575; }
-      footer .copyright p a:hover {
+      #footer .copyright p a:hover {
         color: #212121; }
 
 @media (min-width: 768px) {
