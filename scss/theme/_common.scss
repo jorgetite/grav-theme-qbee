@@ -66,28 +66,35 @@ nav.site-menu {
     text-align: center;
     margin-bottom: 5rem;
 
-    h2, h3 {
-        font-weight: 300;
+    h1.title {
+        color: $qboss-color-white;
+        font-weight: 700;
+        text-transform: uppercase;
+        & + h2 {
+            color: $qboss-color-text-light;
+            font-weight: 300;
+        }
     }
-    h2 {
-        font-size: $heading-font-size-1;
-        line-height: $heading-base-line-1;
-        font-weight: 300;
-    }
-    h3 {
-        font-size: $heading-font-size-6;
-        line-height: $heading-base-line-6;
-        position: relative;
-        &:before {
-            position: absolute;
-            content: '';
-            width: 3rem;
-            height: 2px;
-            top: -12px;
-            left: 50%;
-            margin-left: -1.5rem;
-            background: $qboss-color-accent;
-        }    
+    h2:first-child {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+        & + h3 {
+            font-weight: 300;
+            font-size: $heading-font-size-6;
+            line-height: $heading-base-line-6;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 3rem;
+                height: 2px;
+                top: -12px;
+                left: 50%;
+                margin-left: -1.5rem;
+                background: $qboss-color-accent;    
+            }
+        }
     }
 }
 

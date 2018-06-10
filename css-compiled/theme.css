@@ -32,7 +32,7 @@ a {
 
 blockquote {
   border-color: rgba(33, 33, 33, 0.25);
-  color: #757575; }
+  color: #9e9e9e; }
 
 p + h2,
 p + h3,
@@ -378,25 +378,31 @@ nav.site-menu ul {
 .heading {
   text-align: center;
   margin-bottom: 5rem; }
-  .heading h2, .heading h3 {
-    font-weight: 300; }
-  .heading h2 {
-    font-size: 48px;
-    line-height: 52px;
-    font-weight: 300; }
-  .heading h3 {
-    font-size: 16px;
-    line-height: 24px;
-    position: relative; }
-    .heading h3:before {
-      position: absolute;
-      content: '';
-      width: 3rem;
-      height: 2px;
-      top: -12px;
-      left: 50%;
-      margin-left: -1.5rem;
-      background: #f50057; }
+  .heading h1.title {
+    color: #fafafa;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .heading h1.title + h2 {
+      color: #9e9e9e;
+      font-weight: 300; }
+  .heading h2:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem; }
+    .heading h2:first-child + h3 {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      position: relative; }
+      .heading h2:first-child + h3:before {
+        position: absolute;
+        content: '';
+        width: 3rem;
+        height: 2px;
+        top: -12px;
+        left: 50%;
+        margin-left: -1.5rem;
+        background: #f50057; }
 
 .notices {
   padding: .5rem 1rem;
@@ -450,13 +456,6 @@ nav.site-menu ul {
   color: #fafafa; }
   .splash-section .splash-row {
     height: 100%; }
-  .splash-section .heading h1 {
-    color: #fafafa;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .splash-section .heading h2 {
-    color: #757575;
-    font-weight: 300; }
 
 /*-------------------------------------
     4. Header
@@ -592,9 +591,9 @@ nav.site-menu ul {
   #footer .copyright p {
     text-align: center;
     font-size: 12px;
-    color: #757575; }
+    color: #9e9e9e; }
     #footer .copyright p a {
-      color: #757575; }
+      color: #9e9e9e; }
       #footer .copyright p a:hover {
         color: #212121; }
 
