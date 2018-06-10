@@ -1,8 +1,10 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block body %}
-    {% include 'partials/fragments/default.html.twig' with {
-        id: page.header.modular_id, 
-        classes: ['default-section', page.header.modular_padding]|join(' ')
-    } %}
+    {% include 'partials/fragments/default.html.twig' 
+        with {
+            id: page.header.modular_id, 
+            classes: ['default-section', page.header.modular_padding]|join(' ')
+        } 
+    %}
 {% endblock %}

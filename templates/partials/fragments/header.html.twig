@@ -1,0 +1,22 @@
+{% extends 'partials/fragment.html.twig' %}
+
+{% block container %}
+    <nav id="navbar-sm" class="show-sm">
+        <a class="site-brand" href="{{ home_url }}">
+            <h1 class="site-name">{{ config.site.title }}</h1>
+        </a>
+        <a href="#" id="nav-toggle" data-component="toggleme" data-target="#navbar"><i class="kube-menu"></i></a>
+    </nav>
+
+    <nav id="navbar" class="hide-sm">
+        <a class="site-brand" href="{{ home_url }}">
+            <img class="site-logo" src="{{ url('theme://images/logo.png') }}" />
+            <h1 class="site-name">{{ config.site.title }}</h1>
+        </a>
+        <nav class="site-menu {{ theme.menu_style }}">
+            {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+            {% endblock %}
+        </nav>
+    </nav>
+{% endblock %}

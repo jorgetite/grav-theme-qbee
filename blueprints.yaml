@@ -41,7 +41,7 @@ form:
       title: Header Defaults
       underline: true
 
-    qboss_header_sticky:
+    header_sticky:
       type: toggle
       label: Sticky Navigation
       help: Sticky navigation makes it easy to affix menus to the top of the page whenever a user scrolls the page down.
@@ -53,7 +53,7 @@ form:
       validate:
         type: bool
 
-    qboss_menu_style:
+    menu_style:
       type: select
       label: Navigation Style
       help: This setting control how top level navigation items are renderend.

@@ -1,4 +1,4 @@
-<section {% if id %}id="{{id}}"{% endif %} {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %}>
+<section {% if id %}id="{{id}}"{% endif %} {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {% if component %}data-component="{{component}}"{% endif %}>
     <div class="container">
         {% block container %}{% endblock %}
     </div>
