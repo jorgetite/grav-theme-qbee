@@ -1,13 +1,10 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block body %}
-    <section id="{{page.header.modular_id}}" class="error-section {{page.header.modular_padding}}">
-        <div class="container row align-middle">
-            <div class="col push-center">
-                <h1>{{ 'QBOSS.ERROR.TITLE'|t }} {{ page.header.http_response_code }}</h1>
-                <h2>{{ 'QBOSS.ERROR.MESSAGE'|t }}</h2>
-                <div>{{ page.content }}</div>
-            </div>
-        </div>
-    </section>
+    {% include 'partials/fragments/error.html.twig' 
+        with {
+            id: page.header.modular_id, 
+            classes: ['error-section', page.header.modular_padding]|join(' ')
+        } 
+    %}
 {% endblock %}

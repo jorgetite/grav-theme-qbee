@@ -569,15 +569,16 @@ nav.site-menu ul {
   .feature-item .feature-content h3 {
     font-weight: 500; }
 
-.error-section .container {
+.error-section .error-row {
   min-height: 25rem;
   height: 70vh; }
 
-.error-section h1 {
-  border-left: 0.75rem solid #f50057;
-  padding-left: 1rem; }
-
 .error-section h2 {
+  border-left: 0.75rem solid #d32f2f;
+  padding-left: 1rem;
+  font-weight: 700; }
+
+.error-section h3 {
   font-weight: 300;
   margin-bottom: 3rem; }
 
