@@ -52,7 +52,11 @@
     {% block hero %}{% endblock %}
 
     {% block messages %}
-        {% include 'partials/messages.html.twig' ignore missing %}
+        {% if grav.messages.all %}
+            {% include 'partials/fragments/messages.html.twig'
+                with {id: 'messages'}
+            %}
+        {% endif %}
     {% endblock %}
 
     {% block body %}{% endblock %}
