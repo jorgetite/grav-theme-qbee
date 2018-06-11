@@ -1,0 +1,26 @@
+title: Profile
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        features:
+          type: tab
+          title: Skills
+          fields:
+            header.skills:
+              name: skills
+              type: list
+              label: Skills
+
+              fields:
+                .icon:
+                  type: iconpicker
+                  label: Icon
+                .header:
+                  type: text
+                  label: Header
+                .value:
+                  type: text
+                  label: Value (0 to 100)

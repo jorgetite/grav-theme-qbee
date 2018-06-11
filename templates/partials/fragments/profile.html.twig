@@ -1,0 +1,25 @@
+{% extends 'partials/fragments/default.html.twig' %}
+{% set colw = modular_image ? 'col-4' : 'col-6' %}
+
+{% block content %}
+    <div class="content row gutters">
+        {% if modular_image %}
+            <div class="col {{colw}} text-center {% if page.header.image_position == 'left' %}first{% else %}last{% endif %}">
+                <img src="{{ modular_image.url }}" />
+            </div>
+        {% endif %}
+        <div class="col {{colw}}">
+            {{page.content}}
+        </div>
+        <div class="skill-list col {{colw}}">
+            {% for skill in page.header.skills %}
+                <div class="skill-item">
+                    {% if skill.header %}
+                        <h6>{{ skill.header }}</h6>
+                    {% endif %}
+                    <progress value="{{skill.value}}" max="100"></progress>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
