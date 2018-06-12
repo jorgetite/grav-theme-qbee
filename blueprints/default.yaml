@@ -65,7 +65,7 @@ form:
                       type: section
                       title: Page/Module Style
                       underline: true
-                    header.modular_padding:
+                    header.module_padding:
                       type: select
                       label: Top & Bottom Padding
                       description: 'The top and bottom padding for this page content'
@@ -78,6 +78,11 @@ form:
                         md-pad: Midium (64px)
                         lg-pad: Large (96px)
                         xl-pad: Larger (128px)
+                    header.module_image:
+                      type: filepicker
+                      label: Hero Image
+                      preview_images: true
+                      description: 'If not specified, this defaults to the first image found in the page''s folder'
             qboss_advanced:
               type: section
               title: Advanced Settings
