@@ -39,7 +39,7 @@
 
     {% block splash %}{% endblock %}
 
-    {% if header.show_page_header %}
+    {% if header.show_page_header is not defined or header.show_page_header %}
         {% block header %}
             {% include 'partials/fragments/header.html.twig'  
                 with {
@@ -66,14 +66,16 @@
 
     {% block body %}{% endblock %}
 
-    {% block footer %}
-        {% include 'partials/fragments/footer.html.twig'
-            with {
-                id: 'footer',
-                classes: 'footer-section xs-pad'
-            }
-         %}
-    {% endblock %}
+    {% if header.show_page_footer is not defined or header.show_page_footer %}
+        {% block footer %}
+            {% include 'partials/fragments/footer.html.twig'
+                with {
+                    id: 'footer',
+                    classes: 'footer-section xs-pad'
+                }
+            %}
+        {% endblock %}
+    {% endif %}
 
     {% block bottom %}
         {{ assets.js('bottom') }}

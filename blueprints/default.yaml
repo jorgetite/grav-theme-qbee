@@ -47,6 +47,17 @@ form:
                         0: PLUGIN_ADMIN.DISABLED
                       validate:
                         type: bool
+                    header.show_page_footer:
+                      type: toggle
+                      label: Show Footer
+                      help: Controls whether the page footer is displayed or not.
+                      highlight: 1
+                      default: 1
+                      options:
+                        1: PLUGIN_ADMIN.ENABLED
+                        0: PLUGIN_ADMIN.DISABLED
+                      validate:
+                        type: bool
                 column2:
                   type: column
                   fields:
