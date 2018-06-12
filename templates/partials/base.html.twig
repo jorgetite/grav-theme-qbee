@@ -39,15 +39,17 @@
 
     {% block splash %}{% endblock %}
 
-    {% block header %}
-        {% include 'partials/fragments/header.html.twig'  
-            with {
-                id: 'header',
-                classes: sticky_cls,
-                component: sticky_cls 
-            }
-        %}
-    {% endblock %}
+    {% if header.show_page_header %}
+        {% block header %}
+            {% include 'partials/fragments/header.html.twig'  
+                with {
+                    id: 'header',
+                    classes: sticky_cls,
+                    component: sticky_cls 
+                }
+            %}
+        {% endblock %}
+    {% endif %}
 
     {% block hero %}{% endblock %}
 

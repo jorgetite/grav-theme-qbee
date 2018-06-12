@@ -21,14 +21,25 @@ form:
                 column1:
                   type: column
                   fields:
-                    qboss_module:
+                    qboss_layout:
                       type: section
-                      title: Page/Modular Settings
+                      title: Page/Module Layout
                       underline: true
-                    header.show_heading:
+                    header.show_module_heading:
                       type: toggle
-                      label: Show Heading
-                      help: Whether the Title and Subtitle of this page/modular is displayed or not.
+                      label: Show Title & Subtitle
+                      help: Controls whether the page/module Title and Subtitle are displayed or not.
+                      highlight: 1
+                      default: 1
+                      options:
+                        1: PLUGIN_ADMIN.ENABLED
+                        0: PLUGIN_ADMIN.DISABLED
+                      validate:
+                        type: bool
+                    header.show_page_header:
+                      type: toggle
+                      label: Show Header
+                      help: Controls whether the page header is displayed or not.
                       highlight: 1
                       default: 1
                       options:
@@ -41,20 +52,8 @@ form:
                   fields:
                     qboss_style:
                       type: section
-                      title: Page/Modular Style
+                      title: Page/Module Style
                       underline: true
-                    header.modular_classes:
-                      type: text
-                      label: Modular CSS Classes
-                      markdown: true
-                      description: 'Modular classes space separated'
-                    header.modular_id:
-                      type: text
-                      size: small
-                      label: Modular Element ID
-                      description: 'The HTML element ID'
-                      validate:
-                        rule: slug
                     header.modular_padding:
                       type: select
                       label: Top & Bottom Padding
@@ -68,3 +67,21 @@ form:
                         md-pad: Midium (64px)
                         lg-pad: Large (96px)
                         xl-pad: Larger (128px)
+            qboss_advanced:
+              type: section
+              title: Advanced Settings
+              underline: true
+
+              fields:
+                header.modular_classes:
+                  type: text
+                  label: Modular CSS Classes
+                  markdown: true
+                  description: 'Modular classes space separated'
+                header.modular_id:
+                  type: text
+                  size: small
+                  label: Modular Element ID
+                  description: 'The HTML element ID'
+                  validate:
+                    rule: slug
