@@ -84,15 +84,15 @@ form:
               underline: true
 
               fields:
-                header.modular_classes:
+                header.module_classes:
                   type: text
-                  label: Modular CSS Classes
+                  label: Module CSS Classes
                   markdown: true
                   description: 'Modular classes space separated'
-                header.modular_id:
+                header.module_id:
                   type: text
-                  size: small
-                  label: Modular Element ID
-                  description: 'The HTML element ID'
+                  size: medium
+                  label: Module Element ID
+                  description: 'This section HTML element ID'
                   validate:
                     rule: slug
