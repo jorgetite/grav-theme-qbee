@@ -5,16 +5,13 @@ form:
   fields:
     tabs:
       fields:
-        content:
+        buttons:
           fields:
-            header.media_order:
-              label: Page Media (first one will be displayed with your content)
-            header.image_position:
-              type: select
-              label: Image position
-              classes: fancy
-              default: left
-              options:
-                'left': 'Left'
-                'right': 'Right'
-                'back': 'Background'
+            columns:
+              fields:
+                column2:
+                  fields:
+                    header.module_image_position:
+                      options:
+                        left: 'Left'
+                        right: 'Right'

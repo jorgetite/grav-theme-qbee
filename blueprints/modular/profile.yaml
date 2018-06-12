@@ -5,7 +5,17 @@ form:
   fields:
     tabs:
       fields:
-        features:
+        buttons:
+          fields:
+            columns:
+              fields:
+                column2:
+                  fields:
+                    header.module_image_position:
+                      options:
+                        left: 'Left'
+                        right: 'Right'
+        skils:
           type: tab
           title: Skills
           fields:

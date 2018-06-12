@@ -80,9 +80,18 @@ form:
                         xl-pad: Larger (128px)
                     header.module_image:
                       type: filepicker
-                      label: Hero Image
+                      label: Image
                       preview_images: true
-                      description: 'If not specified, this defaults to the first image found in the page''s folder'
+                      description: 'When not specified, this defaults to the first image found in the page''s folder if image position is not ''None'''
+                    header.module_image_position:
+                      type: select
+                      label: Image position
+                      size: medium
+                      classes: fancy
+                      default: none
+                      options:
+                        none: 'None'
+                        back: 'Background'
             qboss_advanced:
               type: section
               title: Advanced Settings
