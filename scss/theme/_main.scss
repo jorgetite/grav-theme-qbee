@@ -29,6 +29,35 @@
     }
 }
 
+/*-------------------------------------
+    Profile Section
+-------------------------------------*/
+.skill-item {
+    margin-bottom: 1.5rem;
+    h6 {
+        margin-bottom: 0;
+    }
+    .skill-meter {
+        position: relative;
+        .skill-value {
+            display: block;
+            position: absolute;
+            top: -24px;
+            left: 0%;
+            padding: 4px;
+            color: #fff;
+            background: #828282;
+            border-radius: 4px 6px 4px 1px;
+            font-size: $font-size - 6px;
+            line-height: 16px;
+        }
+    }
+}
+
+/*-------------------------------------
+    Error Section
+-------------------------------------*/
+
 .error-section {
     .container-row {
         min-height: 25rem;

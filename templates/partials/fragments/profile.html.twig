@@ -17,7 +17,15 @@
                     {% if skill.header %}
                         <h6>{{ skill.header }}</h6>
                     {% endif %}
-                    <progress value="{{skill.value}}" max="100"></progress>
+                    <div class="skill-meter">
+                        <progress value="{{skill.value}}" max="100">
+                            <div class="progress-bar" role="presentation">
+                                <span class="progress-meter" style="width: {{skill.value}}%;">
+                                </span>
+                            </div>
+                        </progress>
+                        <span class="skill-value" style="left: {{skill.value}}%;">{{skill.value}}%</span>
+                    </div>
                 </div>
             {% endfor %}
         </div>

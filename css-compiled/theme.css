@@ -404,6 +404,40 @@ nav.site-menu ul {
         margin-left: -1.5rem;
         background: #f50057; }
 
+progress {
+  background-color: #a6a7ab;
+  width: 100%;
+  height: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 90px;
+  /*For firefox*/
+  /*For webkit browsers*/
+  /*For IE*/ }
+  progress::-moz-progress-bar {
+    background: #f50057;
+    border-radius: 90px; }
+  progress::-webkit-progress-bar {
+    background: #a6a7ab;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 90px; }
+  progress::-webkit-progress-value {
+    background: #f50057;
+    border-radius: 90px; }
+  progress::-ms-fill {
+    background: #f50057;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 90px; }
+  progress .progress-bar {
+    height: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #a6a7ab;
+    border-radius: 90px; }
+  progress .progress-meter {
+    background-color: #f50057;
+    display: block;
+    height: 0.5rem;
+    border-radius: 90px; }
+
 .notices {
   padding: .5rem 1rem;
   margin: 1rem 2rem 1.5rem; }
@@ -573,6 +607,30 @@ nav.site-menu ul {
   .feature-item .feature-content h3 {
     font-weight: 500; }
 
+/*-------------------------------------
+    Profile Section
+-------------------------------------*/
+.skill-item {
+  margin-bottom: 1.5rem; }
+  .skill-item h6 {
+    margin-bottom: 0; }
+  .skill-item .skill-meter {
+    position: relative; }
+    .skill-item .skill-meter .skill-value {
+      display: block;
+      position: absolute;
+      top: -24px;
+      left: 0%;
+      padding: 4px;
+      color: #fff;
+      background: #828282;
+      border-radius: 4px 6px 4px 1px;
+      font-size: 10px;
+      line-height: 16px; }
+
+/*-------------------------------------
+    Error Section
+-------------------------------------*/
 .error-section .container-row {
   min-height: 25rem;
   height: 70vh; }
