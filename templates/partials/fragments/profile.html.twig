@@ -1,11 +1,11 @@
 {% extends 'partials/fragments/default.html.twig' %}
-{% set colw = modular_image ? 'col-4' : 'col-6' %}
+{% set colw = module_image ? 'col-4' : 'col-6' %}
 
 {% block content %}
     <div class="content row gutters">
-        {% if modular_image %}
-            <div class="col {{colw}} text-center {% if page.header.image_position == 'left' %}first{% else %}last{% endif %}">
-                <img src="{{ modular_image.url }}" />
+        {% if render_image and img_position != 'back' %}
+            <div class="col {{colw}} text-center {% if img_position == 'left' %}first{% else %}last{% endif %}">
+                <img src="{{ module_image.url }}" />
             </div>
         {% endif %}
         <div class="col {{colw}}">
