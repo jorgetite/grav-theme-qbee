@@ -373,6 +373,14 @@ nav.site-menu ul {
   background-repeat: no-repeat;
   background-position: center center; }
 
+.back-flare {
+  background: #833ab4;
+  background: linear-gradient(90deg, rgba(131, 58, 180, 0.8) 0%, rgba(253, 29, 29, 0.9) 50%, rgba(252, 176, 69, 0.8) 100%); }
+
+.back-qboss {
+  background: #212121;
+  background-image: linear-gradient(to top, #373942, #31333d, #2c2e38, #262833, #21232e); }
+
 .container {
   margin-left: auto;
   margin-right: auto;
