@@ -7,6 +7,7 @@ form:
         content:
           fields:
             header.subtitle:
+              ordering@: header.title
               type: text
               style: vertical
               label: Subtitle
@@ -103,6 +104,13 @@ form:
                   label: Module CSS Classes
                   markdown: true
                   description: 'Modular classes space separated'
+                header.module_id:
+                  type: text
+                  size: medium
+                  label: Module Element ID
+                  description: 'This section HTML element ID'
+                  validate:
+                    rule: slug
                 header.module_id:
                   type: text
                   size: medium
