@@ -7,7 +7,7 @@
     {% set styles = styles ~ 'background-image: url(' ~ module_image.url ~ ');' %}
 {% endif %}
 
-<section {% if id %}id="{{id}}"{% endif %} {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {% if component %}data-component="{{component}}"{% endif %}>
+<section {% if id %}id="{{id}}"{% endif %} {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {% if component %}data-component="{{component}}"{% endif %} {% if render_image and img_position == 'back' %}data-paroller-factor="0.5"{% endif %}>
     <div class="container">
         {% block container %}{% endblock %}
     </div>

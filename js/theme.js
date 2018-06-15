@@ -10,6 +10,6 @@
 
         let win = $(window);
 
-        //win.stellar();
+        $("[data-paroller-factor]").paroller();
     });
 })(jQuery);
