@@ -4,7 +4,13 @@
     <div class="row auto">
         <div class="col copyright">
             {% block copy %}
-                <p/>Copyright © 2018 - QBoss Theme - All rights reserved - QBoss Theme is released under the <a href="https://github.com/jorgetite/grav-theme-qboss/blob/master/LICENSE">MIT license</a></p>
+                <p/>
+                    {% if theme.site_copy is not empty %}
+                        {{ theme.site_copy }}
+                    {% else %}
+                    Copyright © 2018 - QBoss Theme - All rights reserved - QBoss Theme is released under the <a href="https://github.com/jorgetite/grav-theme-qboss/blob/master/LICENSE">MIT license</a>
+                    {% endif %}
+                </p>
             {% endblock %}
             <p><a href="https://github.com/jorgetite/grav-theme-qboss">QBoss Theme</a> was <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="http://www.jorgetite.com">Jorge Tite</a></p>
         </div>

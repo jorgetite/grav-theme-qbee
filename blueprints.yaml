@@ -83,9 +83,14 @@ form:
         type: bool
 
     site_logo:
-      toggleable: true
       type: text
       placeholder: 'images/logo.png'
       size: medium
       label: Site Logo
       description: 'The relative path of the site logo image, defaults to ''images/logo.png''.'
+
+    site_copy:
+      type: text
+      placeholder: 'copyright'
+      label: Copyright
+      description: 'The site copyright notice.'
