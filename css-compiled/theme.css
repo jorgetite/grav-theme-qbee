@@ -410,6 +410,15 @@ nav.site-menu ul {
         margin-left: -1.5rem;
         background: #f50057; }
 
+.img-wrap {
+  box-shadow: 0 0 20px #d2d3d5;
+  padding: 2rem;
+  text-align: center; }
+  .img-wrap img {
+    max-width: 28rem; }
+    .img-wrap img.profile {
+      max-width: 18rem; }
+
 progress {
   background-color: #a6a7ab;
   width: 100%;

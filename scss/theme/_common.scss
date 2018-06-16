@@ -104,6 +104,21 @@ nav.site-menu {
     }
 }
 
+// images
+.img-wrap {
+    box-shadow: 0 0 20px $qboss-color-shadow;
+    padding: 2rem;
+    text-align: center;
+
+    img {
+        max-width: 28rem;
+
+        &.profile {
+            max-width: 18rem;
+        }
+    }
+}
+
 // progress bar
 progress {
     background-color: $qboss-color-bg-04;
