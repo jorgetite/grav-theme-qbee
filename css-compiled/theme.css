@@ -329,13 +329,6 @@ select.disabled {
 /*-------------------------------------
     2. Common Elements
 -------------------------------------*/
-img.site-logo {
-  width: 48px; }
-
-.site-name {
-  text-transform: uppercase;
-  color: inherit; }
-
 nav.site-menu ul {
   display: flex;
   align-items: center;
@@ -518,10 +511,14 @@ progress {
       transition: all linear 0.3s;
       text-decoration: none; }
     #header a.site-brand .site-name {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: #212121;
+      font-size: 32px;
+      font-weight: 700; }
     #header a.site-brand .site-logo {
-      max-width: 48px;
-      max-height: 48px;
+      max-width: 32px;
+      max-height: 32px;
       margin-right: 1rem; }
   #header .container-wrap.sticky {
     position: relative;

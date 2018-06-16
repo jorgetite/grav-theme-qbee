@@ -16,10 +16,14 @@
         }
         .site-name {
             margin-bottom: 0;
+            text-transform: uppercase;
+            color: $qboss-color-black;
+            font-size: 32px;
+            font-weight: 700;
         }
         .site-logo {
-            max-width: 48px;
-            max-height: 48px;
+            max-width: 32px;
+            max-height: 32px;
             margin-right: 1rem;
         }
     }
