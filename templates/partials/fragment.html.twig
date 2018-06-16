@@ -21,7 +21,9 @@
 {% endif %}
 
 <section {% if id %}id="{{id}}"{% endif %} {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {{ _self.explode_data_attribs(data_atts) }}>
+    {% block section %}
     <div class="container">
         {% block container %}{% endblock %}
     </div>
+    {% endblock %}
 </section>

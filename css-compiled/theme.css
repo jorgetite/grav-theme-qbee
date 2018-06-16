@@ -505,6 +505,7 @@ progress {
     4. Header
 -------------------------------------*/
 #header {
+  height: 4rem;
   border-bottom: 1px solid rgba(33, 33, 33, 0.15);
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s; }
@@ -522,10 +523,10 @@ progress {
       max-width: 48px;
       max-height: 48px;
       margin-right: 1rem; }
-  #header.sticky {
+  #header .container-wrap.sticky {
     position: relative;
     z-index: 100; }
-  #header.fixed {
+  #header .container-wrap.fixed {
     position: fixed;
     background-color: rgba(250, 250, 250, 0.98);
     box-shadow: 0 0 4px rgba(33, 33, 33, 0.3); }

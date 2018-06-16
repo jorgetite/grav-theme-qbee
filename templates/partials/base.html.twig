@@ -1,5 +1,4 @@
 {% set assets_ext = theme_var('production_mode') ? '.min' : '' %}
-{% set sticky_cls = theme_var('header_sticky') ? 'sticky' : '' %}
 
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
@@ -43,11 +42,7 @@
     {% if header.show_page_header is not defined or header.show_page_header %}
         {% block header %}
             {% include 'partials/fragments/header.html.twig'  
-                with {
-                    id: 'header',
-                    classes: sticky_cls,
-                    data_atts: {'component': sticky_cls} 
-                }
+                with { id: 'header'}
             %}
         {% endblock %}
     {% endif %}

@@ -3,6 +3,7 @@
 -------------------------------------*/
 
 #header {
+    height: 4rem;
     border-bottom: 1px solid $qboss-color-divider;
     @include transition(all ease 0.5s);
     a.site-brand {
@@ -22,14 +23,16 @@
             margin-right: 1rem;
         }
     }
-    &.sticky {
-        position: relative;
-        z-index: 100;        
-    }
-    &.fixed {
-        position: fixed;
-        background-color: rgba($qboss-color-white, 0.98);
-        box-shadow: 0 0 4px rgba($qboss-color-black, 0.3);
+    .container-wrap {
+        &.sticky {
+            position: relative;
+            z-index: 100;
+        }
+        &.fixed {
+            position: fixed;
+            background-color: rgba($qboss-color-white, 0.98);
+            box-shadow: 0 0 4px rgba($qboss-color-black, 0.3);
+        }    
     }
 }
 
