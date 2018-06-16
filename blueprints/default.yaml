@@ -83,7 +83,7 @@ form:
                       type: filepicker
                       label: Image
                       preview_images: true
-                      description: 'When not specified, this defaults to the first image found in the page''s folder if image position is not ''None'''
+                      description: 'When not specified, this defaults to the first image found in the page''s folder if image position is not ''None''.'
                     header.module_image_position:
                       type: select
                       label: Image position
@@ -99,22 +99,47 @@ form:
               underline: true
 
               fields:
+                header.module_id:
+                  type: text
+                  size: medium
+                  label: Element ID
+                  description: 'This module HTML element ID.'
+                  validate:
+                    rule: slug
                 header.module_classes:
                   type: text
-                  label: Module CSS Classes
+                  label: CSS Classes
                   markdown: true
-                  description: 'Modular classes space separated'
-                header.module_id:
+                  description: 'CSS classes applied to this module.'
+                header.module_styles:
+                  type: text
+                  label: In-line CSS
+                  markdown: true
+                  description: 'In-line CSS styles applied to this module.'
+                header.parallax_enabled:
+                  type: toggle
+                  label: Parallax Scrolling Effect
+                  desciption: Enables parallax scrolling effect on modules with background image.
+                  highlight: 0
+                  default: 0
+                  options:
+                    1: PLUGIN_ADMIN.ENABLED
+                    0: PLUGIN_ADMIN.DISABLED
+                  validate:
+                    type: bool
+                header.parallax_direction:
+                  type: select
+                  label: Parallax Direction
+                  description: 'Sets the direction (vertical, horizontal) of the elements while scrolling.'
+                  size: medium
+                  classes: fancy
+                  default: vertical
+                  options:
+                    vertical: 'Vertical'
+                    horizontal: 'Horizontal'
+                header.parallax_factor:
                   type: text
                   size: medium
-                  label: Module Element ID
-                  description: 'This section HTML element ID'
-                  validate:
-                    rule: slug
-                header.module_id:
-                  type: text
-                  size: medium
-                  label: Module Element ID
-                  description: 'This section HTML element ID'
-                  validate:
-                    rule: slug
+                  default: 0.5
+                  label: Enable Parallax
+                  description: Sets elements offset and speed. It can be positive (0.5) or negative (-0.5). Less means slower.
