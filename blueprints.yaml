@@ -21,7 +21,7 @@ form:
   fields:
     theme_section:
       type: section
-      title: Theme Settings
+      title: General Settings
       underline: true
 
     production_mode:
@@ -35,11 +35,6 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-
-    header_section:
-      type: section
-      title: Header Defaults
-      underline: true
 
     header_sticky:
       type: toggle
@@ -62,3 +57,35 @@ form:
       options:
         'menu-links': All menu items as links
         'menu-last-bttn': Last menu item as button
+
+    show_site_name:
+      type: toggle
+      label: Show Site Title
+      help: Sets whether the site title is displayed in the header or not.
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    
+    show_site_logo:
+      type: toggle
+      label: Show Site Logo
+      help: Sets whether the site logo is displayed in the header or not.
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    site_logo:
+      toggleable: true
+      type: text
+      placeholder: 'images/logo.png'
+      size: medium
+      label: Site Logo
+      description: 'The relative path of the site logo image, defaults to ''images/logo.png''.'
