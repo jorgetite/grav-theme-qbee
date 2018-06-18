@@ -48,20 +48,6 @@ form:
                         0: PLUGIN_ADMIN.DISABLED
                       validate:
                         type: bool
-                    header.module_image:
-                      type: filepicker
-                      label: Image
-                      preview_images: true
-                      description: 'When not specified, this defaults to the first image found in the page''s folder if image position is not ''None''.'
-                    header.module_image_position:
-                      type: select
-                      label: Image position
-                      size: medium
-                      classes: fancy
-                      default: none
-                      options:
-                        none: 'None'
-                        back: 'Background'
                     header.show_page_footer:
                       type: toggle
                       label: Show Footer
@@ -82,8 +68,8 @@ form:
                       underline: true
                     header.module_padding:
                       type: select
-                      label: Top & Bottom Padding
-                      description: 'The top and bottom padding for this page content'
+                      label: Padding
+                      description: 'Set the top and bottom padding.'
                       size: medium
                       default: md-pad
                       options:
@@ -98,6 +84,7 @@ form:
                       label: CSS Classes
                       markdown: true
                       description: 'CSS classes applied to this module.'
+
             qboss_advanced:
               type: section
               title: Advanced Settings
@@ -110,12 +97,26 @@ form:
                   label: Element ID
                   description: 'This module HTML element ID.'
                   validate:
-                    rule: slug
+                  rule: slug
                 header.module_styles:
                   type: text
                   label: In-line CSS
                   markdown: true
                   description: 'In-line CSS styles applied to this module.'
+                header.module_image:
+                  type: filepicker
+                  label: Module Image
+                  preview_images: true
+                  description: 'When not specified, this defaults to the first image found in the page''s folder if image position is not ''None''.'
+                header.module_image_position:
+                  type: select
+                  label: Image position
+                  size: medium
+                  classes: fancy
+                  default: none
+                  options:
+                    none: 'None'
+                    back: 'Background'
                 header.parallax_enabled:
                   type: toggle
                   label: Parallax Scrolling Effect
@@ -142,4 +143,4 @@ form:
                   size: medium
                   default: 0.5
                   label: Parallax Factor
-                  description: Sets elements offset and speed. It can be positive (0.5) or negative (-0.5). Less means slower.
+                  description: Sets elements offset and speed. It can be positive (0.5) or negative (-0.5). Less means slower.                      

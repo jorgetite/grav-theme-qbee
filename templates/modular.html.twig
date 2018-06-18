@@ -1,23 +1,19 @@
 {% extends 'partials/base.html.twig' %}
-{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
 {% block splash %}
     {% for module in page.collection() if module.template == 'modular/splash' %}
-        <div id="_{{ _self.pageLinkName(module.menu) }}" class="invisible"></div>
         {{ module.content }}
     {% endfor %}
 {% endblock %}
 
 {% block hero %}
     {% for module in page.collection() if module.template == 'modular/hero' %}
-        <div id="_{{ _self.pageLinkName(module.menu) }}" class="invisible"></div>
         {{ module.content }}
     {% endfor %}
 {% endblock %}
 
 {% block body %}
     {% for module in page.collection() if not (module.template in ['modular/splash', 'modular/hero']) %}
-        <div id="_{{ _self.pageLinkName(module.menu) }}" class="invisible"></div>
         {{ module.content }}
     {% endfor %}
 {% endblock %}

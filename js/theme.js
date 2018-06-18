@@ -10,6 +10,13 @@
 
         let win = $(window);
 
+        // single page navigation
+        $("#onpage-menu").onePageNav({
+            currentClass: 'active',
+            filter: ':not(.external)'
+        });
+
+        // enable paralllax 
         $("[data-paroller-factor]").paroller();
     });
 })(jQuery);

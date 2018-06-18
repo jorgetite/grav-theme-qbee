@@ -29,6 +29,7 @@
         {% do assets.addJs('jquery', 100) %}
         {% do assets.addJs('theme://js/kube' ~ assets_ext ~ '.js', 99)%}
         {% do assets.addJs('theme://js/jquery.paroller' ~ assets_ext ~ '.js', {'priority': 98, 'group': 'bottom'})%}
+        {% do assets.addJs('theme://js/jquery.onePageNav' ~ assets_ext ~ '.js', {'priority': 97, 'group': 'bottom'})%}
         {% do assets.addJs('theme://js/theme.js', {'priority': 1, 'group': 'bottom'})%}
     {% endblock %}
     {{ assets.js() }}

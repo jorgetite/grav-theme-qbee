@@ -6,6 +6,7 @@
     {% endfor %}
 {% endmacro %}
 
+{% set module_id = id ? id : (page.header.module_id ? page.header.module_id : '_' ~ page.menu|lower|replace({' ':'_'})) %}
 {% set module_image = page.header.module_image ? page.media[page.header.module_image] : page.media.images|first %}
 {% set render_image = module_image and page.header.module_image_position is defined and page.header.module_image_position != 'none' %}
 {% set img_position = render_image ? page.header.module_image_position : '' %}
@@ -18,7 +19,7 @@
     {% endif %}
 {% endif %}
 
-<section {% if id %}id="{{id}}"{% endif %} {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {{ _self.explode_data_attribs(data_atts) }}>
+<section id="{{module_id}}" {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {{ _self.explode_data_attribs(data_atts) }}>
     {% block section %}
     <div class="container">
         {% block container %}{% endblock %}

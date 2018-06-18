@@ -7,11 +7,9 @@ form:
       fields:
         buttons:
           fields:
-            columns:
+            qboss_advanced:
               fields:
-                column2:
-                  fields:
-                    header.module_image_position:
-                      options:
-                        left: 'Left'
-                        right: 'Right'
+                header.module_image_position:
+                  options:
+                    left: 'Left'
+                    right: 'Right'
