@@ -26,17 +26,6 @@ form:
                       type: section
                       title: Page/Module Layout
                       underline: true
-                    header.show_module_heading:
-                      type: toggle
-                      label: Show Title & Subtitle
-                      help: Controls whether the page/module Title and Subtitle are displayed or not.
-                      highlight: 1
-                      default: 1
-                      options:
-                        1: PLUGIN_ADMIN.ENABLED
-                        0: PLUGIN_ADMIN.DISABLED
-                      validate:
-                        type: bool
                     header.show_page_header:
                       type: toggle
                       label: Show Header
@@ -52,6 +41,17 @@ form:
                       type: toggle
                       label: Show Footer
                       help: Controls whether the page footer is displayed or not.
+                      highlight: 1
+                      default: 1
+                      options:
+                        1: PLUGIN_ADMIN.ENABLED
+                        0: PLUGIN_ADMIN.DISABLED
+                      validate:
+                        type: bool
+                    header.show_module_heading:
+                      type: toggle
+                      label: Show Title & Subtitle
+                      help: Controls whether the page/module Title and Subtitle are displayed or not.
                       highlight: 1
                       default: 1
                       options:

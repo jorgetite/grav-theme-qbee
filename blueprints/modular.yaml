@@ -10,6 +10,8 @@ form:
               fields:
                 column1:
                   fields:
+                    header.show_module_heading:
+                      unset@: true
                     header.onpage_menu:
                       type: toggle
                       label: Single Page Menu
@@ -21,3 +23,9 @@ form:
                         0: PLUGIN_ADMIN.DISABLED
                       validate:
                         type: bool
+                column2:
+                  unset@: true
+
+            qboss_advanced:
+              unset@: true
+                
