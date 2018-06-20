@@ -1,6 +1,6 @@
-/*-------------------------------------
-    2. Common Elements
--------------------------------------*/
+/*---------------------------------------------------------------------------
+|    QBoss - Common Elements
+|--------------------------------------------------------------------------*/
 
 // navigation menu
 nav.site-menu {
@@ -28,19 +28,19 @@ nav.site-menu {
     padding: 0;
 }
 .xs-pad {
-    padding: 1rem 0;
+    padding: $qboss-padding-xs;
 }
 .sm-pad {
-    padding: 2rem 0;
+    padding: $qboss-padding-sm;
 }
 .md-pad {
-    padding: 4rem 0;
+    padding: $qboss-padding-md;
 }
 .lg-pad {
-    padding: 6rem 0;
+    padding: $qboss-padding-lg;
 }
 .xl-pad {
-    padding: 8rem 0;
+    padding: $qboss-padding-xl;
 }
 
 .back-img {
@@ -49,56 +49,46 @@ nav.site-menu {
     background-position: center center;
 }
 
-.back-flare {
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,.8) 0%, rgba(253,29,29,.9) 50%, rgba(252,176,69,.8) 100%);
-}
-
-.back-qboss {
-    background: $qboss-color-black;
-    background-image: linear-gradient(to top, #373942, #31333d, #2c2e38, #262833, #21232e);
-}
-
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%;
 }
 
 // heading
 .heading {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 
     h1.title {
-        color: $qboss-color-white;
+        color: $qboss-color-head-dark;
         font-weight: 900;
         text-transform: uppercase;
         + h2 {
-            color: $qboss-color-text-light;
+            color: $qboss-color-head-light;
             font-weight: 300;
         }
     }
     h2:first-child {
+        margin-bottom: 1.25rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 1.25rem;
         + h3 {
+            position: relative;
             font-weight: 300;
             font-size: $heading-font-size-6;
             line-height: $heading-base-line-6;
-            position: relative;
             &:before {
                 position: absolute;
-                content: '';
                 width: 3rem;
                 height: 2px;
                 top: -12px;
                 left: 50%;
                 margin-left: -1.5rem;
                 background: $qboss-color-accent;    
+                content: '';
             }
         }
     }
@@ -121,7 +111,7 @@ nav.site-menu {
 
 // progress bar
 progress {
-    background-color: $qboss-color-bg-04;
+    background-color: $qboss-color-progress-back;
     width: 100%;
     height: 0.5rem;
     margin: 0.5rem 0;
@@ -129,40 +119,39 @@ progress {
 
     /*For firefox*/
     &::-moz-progress-bar { 
-        background: $qboss-color-accent;
+        background: $qboss-color-progress-meter;
         border-radius: 90px;
     }
     /*For webkit browsers*/
     &::-webkit-progress-bar {
-        background: $qboss-color-bg-04;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+        background: $qboss-color-progress-back;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
         border-radius: 90px;
     }
     &::-webkit-progress-value {
-        background: $qboss-color-accent;
+        background: $qboss-color-progress-meter;
         border-radius: 90px;
     }
     /*For IE*/
     &::-ms-fill { 
-        background: $qboss-color-accent;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+        background: $qboss-color-progress-meter;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
         border-radius: 90px;
     }
 
     .progress-bar {
         height: 0.5rem;
         margin: 0.5rem 0;
-        background-color: $qboss-color-bg-04;
+        background-color: $qboss-color-progress-back;
         border-radius: 90px;
     }
     .progress-meter {
-        background-color: $qboss-color-accent;
+        background-color: $qboss-color-progress-meter;
         display: block;
         height: 0.5rem;
         border-radius: 90px;
     }
 }
-
 
 // notices
 .notices {

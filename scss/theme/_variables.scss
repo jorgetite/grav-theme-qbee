@@ -5,15 +5,15 @@
 
 // FONT FAMILY
 // ---------------------------------------------------------------------------
-$qboss-text-font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
-$qboss-head-font-family: 'Montserrat', Helvetica, sans-serif !default;
-$qboss-mono-font-family: 'Source Code Pro', Monaco, monospace !default;
+$qboss-font-text: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
+$qboss-font-head: 'Montserrat', Helvetica, sans-serif !default;
+$qboss-font-mono: 'Source Code Pro', Monaco, monospace !default;
 
 
 // COLORS
 // ---------------------------------------------------------------------------
 
-// Grayscale
+// Font colors
 $qboss-gray-900: #212121 !default;
 $qboss-gray-800: #424242 !default;
 $qboss-gray-700: #616161 !default;
@@ -25,53 +25,80 @@ $qboss-gray-200: #eeeeee !default;
 $qboss-gray-100: #f5f5f5 !default;
 $qboss-gray-50: #fafafa !default;
 
-// Background Monochrome colors
-$qboss-color-bg-10: #21232e !default;
-$qboss-color-bg-09: #373942 !default;
-$qboss-color-bg-08: #4d4f57 !default;
-$qboss-color-bg-07: #63656c !default;
-$qboss-color-bg-06: #797b81 !default;
-$qboss-color-bg-05: #909196 !default;
-$qboss-color-bg-04: #a6a7ab !default;
-$qboss-color-bg-03: #bcbdc0 !default;
-$qboss-color-bg-02: #d2d3d5 !default;
-$qboss-color-bg-01: #e8e9ea !default;
+// Background colors
+$qboss-dark-50: #e8e7e8 !default;
+$qboss-dark-100: #d2cfd1 !default;
+$qboss-dark-200: #bcb7ba !default;
+$qboss-dark-300: #a6a0a3 !default;
+$qboss-dark-400: #90888c !default;
+$qboss-dark-500: #797075 !default;
+$qboss-dark-600: #63595e !default;
+$qboss-dark-700: #4d4147 !default;
+$qboss-dark-800: #372930 !default;
+$qboss-dark-900: #1c0f15 !default;
+
+// B&W colors
+$qboss-color-black: #000000 !default;
+$qboss-color-white: #ffffff !default;
+
+// Statuses colors
+$qboss-color-error: #e53935 !default;
+$qboss-color-success: #7cb342 !default;
+$qboss-color-warning: #ffb300 !default;
+$qboss-color-focus: #039be5 !default;
+
+// Button colors
+$qboss-color-primary: #3d5afe !default;
+$qboss-color-secondary: $qboss-dark-800 !default;
+$qboss-color-action: #00c853 !default;
+$qboss-color-accent: #f50057 !default;
+
 
 // Theme Colors
-$qboss-color-black: $qboss-gray-900 !default;
-$qboss-color-white: $qboss-gray-50 !default;
-$qboss-color-red: #d32f2f !default;
-$qboss-color-pink: #f50057 !default;
-$qboss-color-blue: #3d5afe !default;
-$qboss-color-cyan: #00e5ff !default;
-$qboss-color-green: #00e676 !default;
-$qboss-color-amber: #ffc400 !default;
-$qboss-color-orange: #ff3d00 !default;
-$qboss-color-purple: #d500f9 !default;
-
-// Text
-$qboss-color-back: $qboss-color-white;
-$qboss-color-back-inverted: $qboss-color-black;
-
-$qboss-color-head: $qboss-gray-800 !default;
+$qboss-color-back: $qboss-color-white !default;
+$qboss-color-back-negative: $qboss-dark-900 !default;
 
 $qboss-color-text: $qboss-gray-700 !default;
+$qboss-color-text-dark: $qboss-gray-800 !default;
 $qboss-color-text-light: $qboss-gray-500 !default;
-$qboss-color-text-dark: $qboss-gray-900 !default;
-$qboss-color-text-inverted: $qboss-gray-100 !default;
+$qboss-color-text-negative: $qboss-gray-200 !default;
 $qboss-color-text-disabled: $qboss-gray-400 !default;
 
-// Links
+$qboss-color-head: $qboss-gray-800 !default;
+$qboss-color-head-dark: $qboss-gray-900 !default;
+$qboss-color-head-light: $qboss-gray-600 !default;
+$qboss-color-head-negative: $qboss-gray-100 !default;
+$qboss-color-head-disabled: $qboss-gray-400 !default;
+
 $qboss-color-link: $qboss-color-text !default;
 $qboss-color-link-hover: $qboss-gray-900 !default;
+$qboss-color-link-negative: $qboss-color-text-negative !default;
+$qboss-color-link-negative-hover: $qboss-gray-50 !default;
 
-// States
- $qboss-color-error: $qboss-color-red !default;
- $qboss-color-success: $qboss-color-green !default;
- $qboss-color-warning: $qboss-color-amber !default;
- $qboss-color-focus: $qboss-color-cyan !default;
+$qboss-color-code-text: $qboss-gray-900 !default;
+$qboss-color-code-back: $qboss-dark-50 !default;
+$qboss-color-code-text-negative: $qboss-gray-50 !default;
+$qboss-color-code-back-negative: $qboss-dark-900 !default;
 
- // Theme
- $qboss-color-accent: $qboss-color-pink !default;
- $qboss-color-divider: rgba($qboss-color-black, 0.15) !default;
- $qboss-color-shadow: $qboss-color-bg-02;
+$qboss-color-border: $qboss-dark-600 !default;
+$qboss-color-border-negative: $qboss-dark-300 !default;
+
+$qboss-color-divider: $qboss-gray-300 !default;
+$qboss-color-divider-negative: $qboss-gray-600 !default;
+
+$qboss-color-shadow: $qboss-dark-200 !default;
+$qboss-color-shadow-negative: $qboss-dark-700 !default;
+
+$qboss-color-progress-back: $qboss-dark-50 !default;
+$qboss-color-progress-meter: $qboss-color-accent !default;
+
+
+// SECTIONS
+// ---------------------------------------------------------------------------
+
+// PAdding
+$qboss-padding-xs: 1rem 0 !default; 
+$qboss-padding-sm: 2rem 0 !default; 
+$qboss-padding-md: 4rem 0 !default; 
+$qboss-padding-lg: 6rem 0 !default; 
+$qboss-padding-xl: 8rem 0 !default; 

@@ -1,0 +1,209 @@
+/*---------------------------------------------------------------------------
+|    QBoss - Sections
+|--------------------------------------------------------------------------*/
+
+
+// Splash Section
+// ---------------------------------------------------------------------------
+.splash-section {
+    height: 100vh;
+    width: 100vw;
+
+    .container-row {
+        height: 100%;
+    }
+}
+
+
+// Header Section
+// ---------------------------------------------------------------------------
+#header {
+    height: 4rem;
+    border-bottom: 1px solid $qboss-color-divider;
+    @include transition(all ease 0.5s);
+    a.site-brand {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        &:hover {
+            @include transition(all linear 0.3s);
+            text-decoration: none;
+        }
+        .site-name {
+            margin-bottom: 0;
+            color: $qboss-color-head-dark;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .site-logo {
+            max-height: 32px;
+            margin-right: 0.5rem;
+        }
+    }
+    .container-wrap {
+        &.sticky {
+            position: relative;
+            z-index: 100;
+        }
+        &.fixed {
+            position: fixed;
+            background-color: rgba($qboss-color-back, 0.98);
+            box-shadow: 0 0 4px rgba($qboss-color-shadow, 0.99);
+        }    
+    }
+}
+
+#navbar-sm {
+    display: flex;
+    align-items: center;
+}
+
+#nav-toggle {
+    margin-left: auto;
+    color: $qboss-color-text;
+    text-decoration: none;
+}
+
+#navbar {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav.site-menu {
+        ul {
+            justify-content: flex-end;
+            li {
+                font-size: $font-size;
+                font-weight: 300;
+                margin-left: 1.75rem;
+                a {
+                    text-decoration: none;
+                    border-bottom: 2px solid transparent;
+                    &:hover {
+                        @include transition(all linear 0.3s);
+                        color: $qboss-color-text-dark;
+                        text-decoration: none;
+                        border-bottom-color: $qboss-color-accent;
+                    }
+                }
+                &.active {
+                    a {
+                        border-bottom-color: $qboss-color-accent;
+                    }
+                }
+            }
+        }
+        &.menu-last-bttn {
+            li:last-child {
+                @include qboss-menu-button($qboss-color-text, $qboss-color-back, $qboss-color-text-negative, $qboss-color-back-negative);
+            }
+        }
+    }
+}
+
+
+// Hero Section
+// ---------------------------------------------------------------------------
+
+
+// Text Section
+// ---------------------------------------------------------------------------
+
+
+// Features Section
+// ---------------------------------------------------------------------------
+.features-section {
+    .feature-item {
+        margin-bottom: 2%;
+        padding: 2rem 1.25rem;
+        border: 1px solid transparent;
+        background-color: $qboss-color-back;
+        text-align: center;
+        @include transition(all ease 0.3s);
+    
+        &:hover {
+            border-color:  $qboss-color-border;
+        }
+        .feature-icon {
+            font-size: $heading-font-size-1;
+            margin-bottom: 0.5rem;
+        }
+        .feature-content {
+            h4 {
+                font-weight: 500;
+            }
+            p {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+// Profile Section
+// ---------------------------------------------------------------------------
+.profile-section {
+    .skill-item {
+        margin-bottom: 1.5rem;
+        h6 {
+            margin-bottom: 0;
+        }
+        .skill-meter {
+            position: relative;
+            .skill-value {
+                display: block;
+                position: absolute;
+                top: -24px;
+                left: 0%;
+                padding: 4px;
+                color: $qboss-color-text-negative;
+                background: $qboss-color-back-negative;
+                border-radius: 4px 6px 4px 1px;
+                font-size: $font-size - 6px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+
+
+// Error Section
+// ---------------------------------------------------------------------------
+.error-section {
+    .container-row {
+        min-height: 25rem;
+        height: 70vh;
+    }
+    h2 {
+        border-left: .75rem solid $qboss-color-error;
+        padding-left: 1rem;
+        font-weight: 700;
+    }
+    h3 {
+        font-weight: 300;
+        margin-bottom: 3rem;
+    }
+}
+
+// Footer Section
+// ---------------------------------------------------------------------------
+#footer {
+    border-top: 1px solid $qboss-color-divider;
+
+    .copyright {
+        p {
+            text-align: center;
+            font-size: $font-size-smaller;
+            color: $qboss-color-text-light;
+            a {
+                color: $qboss-color-text-light;
+                &:hover {
+                    color: $qboss-color-text-dark;
+                }
+            }
+        }
+    }
+}

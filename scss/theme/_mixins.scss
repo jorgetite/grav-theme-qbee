@@ -5,12 +5,12 @@
 
 	&:hover {
 	    color: $color-text;
-	    background-color: lighten($color-back, 20%);
+	    background-color: lighten($color-back, 8%);
 	}
     &:disabled,
     &.disabled {
-	    color: rgba($color-text, .7);
-	    background-color: rgba($color-back, .7);
+	    color: rgba($color-text, .6);
+	    background-color: rgba($color-back, .6);
     }
     &.outline {
         background: none;
@@ -18,14 +18,14 @@
         border-color: $color-back;
 
         &:hover {
-            color: rgba($color-back, .6);
-            border-color: rgba($color-back, .5);
+            color: lighten($color-back, 20%);
+            border-color: lighten($color-back, 20%);
         }
         &:disabled,
         &.disabled {
             background: none;
-    	    color: rgba($color-back, .7);
-    	    border-color: rgba($color-back, .5);
+    	    color: rgba($color-back, .6);
+    	    border-color: rgba($color-back, .6);
         }
     }
 }
