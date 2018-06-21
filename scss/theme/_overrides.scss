@@ -87,6 +87,9 @@ pre code {
 .button.accent {
     @include qboss-button($qboss-color-text-negative, $qboss-color-accent);
 }
+.button.inverted {
+    @include qboss-button($qboss-color-text, $qboss-dark-50);
+}
 
 
 // input fields
