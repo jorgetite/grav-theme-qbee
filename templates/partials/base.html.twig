@@ -40,7 +40,7 @@
 
     {% block splash %}{% endblock %}
 
-    {% if header.show_page_header is not defined or header.show_page_header %}
+    {% if header.show_header is not defined or header.show_header %}
         {% block header %}
             {% include 'partials/fragments/header.html.twig'  
                 with { id: 'header'}

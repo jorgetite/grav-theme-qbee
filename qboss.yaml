@@ -1,3 +1,8 @@
 enabled: true
-dropdown:
-  enabled: true
+production_mode: true
+header_sticky: false
+menu_style: menu-links
+show_site_name: 1
+show_site_logo: 1
+site_copy: 
+site_copy: 

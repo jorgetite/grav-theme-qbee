@@ -26,7 +26,7 @@ form:
                       type: section
                       title: Page/Module Layout
                       underline: true
-                    header.show_page_header:
+                    header.show_header:
                       type: toggle
                       label: Show Header
                       help: Controls whether the page header is displayed or not.
