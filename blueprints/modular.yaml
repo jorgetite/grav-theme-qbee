@@ -10,7 +10,7 @@ form:
               fields:
                 column1:
                   fields:
-                    header.show_module_heading:
+                    header.show_heading:
                       unset@: true
                     header.onpage_menu:
                       type: toggle

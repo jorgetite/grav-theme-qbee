@@ -92,7 +92,9 @@ QBoss provides several options in the page frontmatter to fine control how pages
 ```yaml
 subtitle: ''                # The page subheading
 show_header: true           # Controls whether the site header is displayed or not
-show_footer: true      # Controls whether the site footer is displayed or not 
+show_footer: true           # Controls whether the site footer is displayed or not 
+show_heading: true          # Controls whether the title and subtitle is displayed or not
+onpage_menu: false          # Allows to create a on page menu for modular pages
 ```
 
 ## License

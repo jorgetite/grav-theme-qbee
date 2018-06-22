@@ -48,7 +48,7 @@ form:
                         0: PLUGIN_ADMIN.DISABLED
                       validate:
                         type: bool
-                    header.show_module_heading:
+                    header.show_heading:
                       type: toggle
                       label: Show Title & Subtitle
                       help: Controls whether the page/module Title and Subtitle are displayed or not.
