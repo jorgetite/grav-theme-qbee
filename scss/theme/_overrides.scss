@@ -76,19 +76,19 @@ pre code {
 
 // buttons
 .button {
-    @include qboss-button($qboss-color-text-negative, $qboss-color-primary);
+    @include qboss-button($qboss-color-button-primary-text, $qboss-color-button-primary);
 }
 .button.secondary {
-    @include qboss-button($qboss-color-text-negative, $qboss-color-secondary);
+    @include qboss-button($qboss-color-button-secondary-text, $qboss-color-button-secondary);
 }
 .button.action {
-    @include qboss-button($qboss-color-text-negative, $qboss-color-action);
+    @include qboss-button($qboss-color-button-action-text, $qboss-color-button-action);
 }
 .button.accent {
-    @include qboss-button($qboss-color-text-negative, $qboss-color-accent);
+    @include qboss-button($qboss-color-button-accent-text, $qboss-color-button-accent);
 }
 .button.inverted {
-    @include qboss-button($qboss-color-text, $qboss-dark-50);
+    @include qboss-button($qboss-color-button-inverted-text, $qboss-color-button-inverted);
 }
 
 

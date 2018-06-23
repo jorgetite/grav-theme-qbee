@@ -26,35 +26,41 @@ $qboss-gray-100: #f5f5f5 !default;
 $qboss-gray-50: #fafafa !default;
 
 // Background colors
-$qboss-dark-50: #e8e7e8 !default;
-$qboss-dark-100: #d2cfd1 !default;
-$qboss-dark-200: #bcb7ba !default;
-$qboss-dark-300: #a6a0a3 !default;
-$qboss-dark-400: #90888c !default;
-$qboss-dark-500: #797075 !default;
-$qboss-dark-600: #63595e !default;
-$qboss-dark-700: #4d4147 !default;
-$qboss-dark-800: #372930 !default;
-$qboss-dark-900: #1c0f15 !default;
+$qboss-dark-50: #e8e8e8 !default;
+$qboss-dark-100: #d1d1d1 !default;
+$qboss-dark-200: #bababa !default;
+$qboss-dark-300: #a3a3a4 !default;
+$qboss-dark-400: #8c8d8d !default;
+$qboss-dark-500: #757676 !default;
+$qboss-dark-600: #5e5f60 !default;
+$qboss-dark-700: #474849 !default;
+$qboss-dark-800: #303132 !default;
+$qboss-dark-900: #1a1b1c !default;
 
 // B&W colors
-$qboss-color-black: #000000 !default;
+$qboss-color-black: #0d0d0e !default;
 $qboss-color-white: #ffffff !default;
+$qboss-color-accent: #E91E63 !default;
 
 // Statuses colors
-$qboss-color-error: #e53935 !default;
-$qboss-color-success: #7cb342 !default;
-$qboss-color-warning: #ffb300 !default;
-$qboss-color-focus: #039be5 !default;
+$qboss-color-error: #f03c69 !default;
+$qboss-color-success: #35beb1 !default;
+$qboss-color-warning: #f7ba45 !default;
+$qboss-color-focus: #1c86f2 !default;
 
-// Button colors
-$qboss-color-primary: #3d5afe !default;
-$qboss-color-secondary: $qboss-dark-800 !default;
-$qboss-color-action: #00c853 !default;
-$qboss-color-accent: #f50057 !default;
+// Button
+$qboss-color-button-primary: #1c86f2 !default;
+$qboss-color-button-primary-text: #fdfdfd !default;
+$qboss-color-button-secondary: #313439 !default;
+$qboss-color-button-secondary-text: #fdfdfd !default;
+$qboss-color-button-action: #47B65D !default;
+$qboss-color-button-action-text: #fdfdfd !default;
+$qboss-color-button-accent: #E91E63 !default;
+$qboss-color-button-accent-text: #fdfdfd !default;
+$qboss-color-button-inverted: #f8f8f8 !default;
+$qboss-color-button-inverted-text: #313439 !default;
 
-
-// Theme Colors
+// Background
 $qboss-color-back: $qboss-color-white !default;
 $qboss-color-back-negative: $qboss-dark-900 !default;
 

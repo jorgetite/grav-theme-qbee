@@ -38,7 +38,7 @@
 
 // Menu Button
 // ---------------------------------------------------------------------------
-@mixin qboss-menu-button($color-text, $color-back, $color-hover-text, $color-hover-back)
+@mixin qboss-menu-button($color-text, $color-back, $color-text-hover, $color-back-hover)
 {
     font-size: $font-size-small;
     a {
@@ -52,8 +52,8 @@
         padding: 0 16px;
         &:hover {
             text-decoration: none;
-            background-color: $color-hover-back;
-            color: $color-hover-text;
+            background-color: $color-back-hover;
+            color: $color-text-hover;
         }
     }
 }
@@ -64,7 +64,7 @@
 {
     color: darken($color, 20%);
     border-left: 0.5rem solid $color;
-    background-color: lighten($color, 40%);
+    background-color: lighten($color, 25%);
     a {
         color: darken($color, 20%);
         &:hover {
