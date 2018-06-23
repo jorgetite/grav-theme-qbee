@@ -73,11 +73,10 @@ form:
                       size: medium
                       default: default-scheme
                       options:
-                        default-scheme: Default
-                        light-scheme: Light gray
-                        demi-light-scheme: Gray
-                        demi-dark-scheme: Demi-dark
-                        dark-scheme: Dark
+                        default-scheme: White (default)
+                        light-scheme: Lightgray
+                        gray-scheme: Dimgray
+                        dark-scheme: Charcoal
                     header.page_padding:
                       type: select
                       label: Padding

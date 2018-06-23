@@ -2,12 +2,32 @@
 |    QBoss - Section Color Schemes
 |--------------------------------------------------------------------------*/
 
-// Demi-Light Scheme
+// Light Scheme
 // ---------------------------------------------------------------------------
 section.light-scheme {
     background-color: $qboss-dark-50;
 }
 
+// Gray Scheme
+// ---------------------------------------------------------------------------
+section.gray-scheme {
+    @include qboss-scheme(
+        $qboss-dark-600,
+        $qboss-gray-400,
+        $qboss-gray-500,
+        $qboss-gray-300,
+        $qboss-gray-200,
+        $qboss-gray-400,
+        $qboss-gray-100,
+        $qboss-gray-400,
+        $qboss-gray-200,
+        $qboss-gray-300,
+        $qboss-dark-800,
+        $qboss-dark-500,
+        $qboss-dark-500,
+        $qboss-dark-700
+    );
+}
 
 // Dark Scheme
 // ---------------------------------------------------------------------------
