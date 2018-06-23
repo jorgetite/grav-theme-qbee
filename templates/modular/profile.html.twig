@@ -1,7 +1,7 @@
 {% include 'partials/fragments/profile.html.twig' 
     with {
         id: page.header.module_id,
-        classes: ['profile-section', page.header.module_padding, page.header.module_classes]|join(' '),
+        classes: ['profile-section', page.header.page_scheme, page.header.page_padding, page.header.module_classes]|join(' '),
         styles: page.header.module_styles,
         row_clss: 'auto'
     } 

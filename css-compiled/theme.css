@@ -5,6 +5,9 @@
 	  License: MIT
 *******************************************************************/
 /*---------------------------------------------------------------------------
+|    QBoss - Mixins
+|--------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------
 |    QBoss - Kube Overrides
 |--------------------------------------------------------------------------*/
 body {
@@ -642,6 +645,9 @@ progress {
 /*---------------------------------------------------------------------------
 |    QBoss - Section Color Schemes
 |--------------------------------------------------------------------------*/
+section.light-scheme {
+  background-color: #e8e7e8; }
+
 section.dark-scheme {
   background-color: #1c0f15;
   color: #e0e0e0; }
@@ -653,7 +659,7 @@ section.dark-scheme {
       color: #fafafa; }
   section.dark-scheme blockquote {
     border-color: #a6a0a3;
-    color: #e0e0e0; }
+    color: #bdbdbd; }
   section.dark-scheme pre,
   section.dark-scheme pre code {
     background-color: #4d4147;
@@ -665,12 +671,12 @@ section.dark-scheme {
   section.dark-scheme .img-wrap {
     box-shadow: 0 0 20px #4d4147; }
   section.dark-scheme .feature-item {
-    background-color: #1c0f15; }
-  section.dark-scheme:hover {
-    border-color: #a6a0a3; }
+    background-color: #372930; }
+    section.dark-scheme .feature-item:hover {
+      border-color: #a6a0a3; }
   section.dark-scheme .skill-item .skill-meter .skill-value {
-    color: #616161;
-    background: #ffffff; }
+    color: #e0e0e0;
+    background: #1c0f15; }
 
 /*---------------------------------------------------------------------------
 |    QBoss - Media breakpoints

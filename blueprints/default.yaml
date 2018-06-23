@@ -66,7 +66,19 @@ form:
                       type: section
                       title: Page/Module Style
                       underline: true
-                    header.module_padding:
+                    header.page_scheme:
+                      type: select
+                      label: Color Scheme
+                      description: 'Sets the color scheme for this page/module.'
+                      size: medium
+                      default: default-scheme
+                      options:
+                        default-scheme: Default
+                        light-scheme: Light gray
+                        demi-light-scheme: Gray
+                        demi-dark-scheme: Demi-dark
+                        dark-scheme: Dark
+                    header.page_padding:
                       type: select
                       label: Padding
                       description: 'Set the top and bottom padding.'

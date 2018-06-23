@@ -2,57 +2,30 @@
 |    QBoss - Section Color Schemes
 |--------------------------------------------------------------------------*/
 
+// Demi-Light Scheme
+// ---------------------------------------------------------------------------
+section.light-scheme {
+    background-color: $qboss-dark-50;
+}
+
 
 // Dark Scheme
 // ---------------------------------------------------------------------------
 section.dark-scheme {
-    background-color: $qboss-color-back-negative;
-    color: $qboss-color-text-negative;
-
-    h1.title, h1, h2, h3, h4, h5, h6 {
-        color: $qboss-color-head-negative;
-    }
-    a {
-        color: $qboss-color-link-negative;
-        &:hover,
-        &:focus {
-            color: $qboss-color-link-negative-hover;
-        }
-    }
-    blockquote {
-        border-color: $qboss-color-border-negative;
-        color: $qboss-gray-300;
-    }
-    pre,
-    pre code {
-        background-color: $qboss-color-code-back-negative;
-        color: $qboss-color-code-text-negative;
-    }
-    .heading {
-        h1.title {
-            color: $qboss-gray-50;
-            + h2 {
-                color: $qboss-gray-300;
-            }
-        }
-    }
-    .img-wrap {
-        box-shadow: 0 0 20px $qboss-color-shadow-negative;
-    }
-
-    .feature-item {
-        background-color: $qboss-color-back-negative;
-    }
-    &:hover {
-        border-color:  $qboss-color-border-negative;
-    }
-
-    .skill-item {
-        .skill-meter {
-            .skill-value {
-                color: $qboss-color-text;
-                background: $qboss-color-back;
-            }
-        }
-    }
+    @include qboss-scheme(
+        $qboss-color-back-negative,
+        $qboss-color-text-negative,
+        $qboss-gray-400,
+        $qboss-gray-200,
+        $qboss-color-head-negative,
+        $qboss-gray-300,
+        $qboss-gray-50,
+        $qboss-color-link-negative,
+        $qboss-color-link-negative-hover,
+        $qboss-color-code-text-negative,
+        $qboss-color-code-back-negative,
+        $qboss-color-border-negative,
+        $qboss-color-shadow-negative,
+        $qboss-dark-800
+    );
 }

@@ -1,3 +1,9 @@
+/*---------------------------------------------------------------------------
+|    QBoss - Mixins
+|--------------------------------------------------------------------------*/
+
+// Buttons
+// ---------------------------------------------------------------------------
 @mixin qboss-button($color-text, $color-back)
 {
 	color: $color-text;
@@ -30,6 +36,8 @@
     }
 }
 
+// Menu Button
+// ---------------------------------------------------------------------------
 @mixin qboss-menu-button($color-text, $color-back, $color-hover-text, $color-hover-back)
 {
     font-size: $font-size-small;
@@ -50,6 +58,8 @@
     }
 }
 
+// Notices
+// ---------------------------------------------------------------------------
 @mixin qboss-notices($color)
 {
     color: darken($color, 20%);
@@ -59,6 +69,74 @@
         color: darken($color, 20%);
         &:hover {
             color: $color;
+        }
+    }
+}
+
+// Color Scheme
+// ---------------------------------------------------------------------------
+@mixin qboss-scheme($color-back, 
+                    $color-text,
+                    $color-text-light,
+                    $color-text-dark,
+                    $color-head,
+                    $color-head-light,
+                    $color-head-dark, 
+                    $color-link, 
+                    $color-link-hover,
+                    $color-code,
+                    $color-code-back,
+                    $color-border,
+                    $color-shadow,
+                    $color-feature-back) {
+
+    background-color: $color-back;
+    color: $color-text;
+
+    h1.title, h1, h2, h3, h4, h5, h6 {
+        color: $color-head;
+    }
+    a {
+        color: $color-link;
+        &:hover,
+        &:focus {
+            color: $color-link-hover;
+        }
+    }
+    blockquote {
+        border-color: $color-border;
+        color: $color-text-light;
+    }
+    pre,
+    pre code {
+        background-color: $color-code-back;
+        color: $color-code;
+    }
+    .heading {
+        h1.title {
+            color: $color-head-dark;
+            + h2 {
+                color: $color-head-light;
+            }
+        }
+    }
+    .img-wrap {
+        box-shadow: 0 0 20px $color-shadow;
+    }
+
+    .feature-item {
+        background-color: $color-feature-back;
+        &:hover {
+            border-color:  $color-border;
+        }
+    }
+
+    .skill-item {
+        .skill-meter {
+            .skill-value {
+                color: $color-text;
+                background: $color-back;
+            }
         }
     }
 }

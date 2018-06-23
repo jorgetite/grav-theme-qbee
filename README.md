@@ -73,8 +73,8 @@ enabled: true               # Enable the theme
 production_mode: true       # Whether CSS and JS files are minimized (true), or not
 header_sticky: false        # Keeps the header sticky at the top of the page
 menu_style: menu-links      # Controls how menu items are rendered
-show_site_name: 1           # Displays or not the site name in the header
-show_site_logo: 1           # Displays or not the site logo in the header
+show_site_name: true        # Displays or not the site name in the header
+show_site_logo: true        # Displays or not the site logo in the header
 site_logo:                  # The relative path to the site logo, defaults to 'images/logo.png'
 site_copy:                  # The copyright notice displayed in the site footer
 ```
@@ -87,14 +87,25 @@ To make modifications, you can copy the `user/themes/qboss/qboss.yaml` file to `
 
 QBoss provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are divide in the following three categories:
 
-#### Layout Settings
+#### Content Settings
 
 ```yaml
 subtitle: ''                # The page subheading
+```
+
+#### Layout Settings
+
+```yaml
 show_header: true           # Controls whether the site header is displayed or not
 show_footer: true           # Controls whether the site footer is displayed or not 
 show_heading: true          # Controls whether the title and subtitle is displayed or not
 onpage_menu: false          # Allows to create a on page menu for modular pages
+```
+
+#### Style Settings
+
+```yaml
+page_padding: true          # Controls the top and bottom padding
 ```
 
 ## License
