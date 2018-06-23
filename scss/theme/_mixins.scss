@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------------------
-|    QBoss - Mixins
+|    QBee - Mixins
 |--------------------------------------------------------------------------*/
 
 // Buttons
 // ---------------------------------------------------------------------------
-@mixin qboss-button($color-text, $color-back)
+@mixin qbee-button($color-text, $color-back)
 {
 	color: $color-text;
 	background-color: $color-back;
@@ -38,7 +38,7 @@
 
 // Menu Button
 // ---------------------------------------------------------------------------
-@mixin qboss-menu-button($color-text, $color-back, $color-text-hover, $color-back-hover)
+@mixin qbee-menu-button($color-text, $color-back, $color-text-hover, $color-back-hover)
 {
     font-size: $font-size-small;
     a {
@@ -60,7 +60,7 @@
 
 // Notices
 // ---------------------------------------------------------------------------
-@mixin qboss-notices($color)
+@mixin qbee-notices($color)
 {
     color: darken($color, 20%);
     border-left: 0.5rem solid $color;
@@ -75,7 +75,7 @@
 
 // Color Scheme
 // ---------------------------------------------------------------------------
-@mixin qboss-scheme($color-back, 
+@mixin qbee-scheme($color-back, 
                     $color-text,
                     $color-text-light,
                     $color-text-dark,

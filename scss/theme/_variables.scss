@@ -1,110 +1,110 @@
 // ---------------------------------------------------------------------------
-//  QBoss Theme Variables
+//  QBee Theme Variables
 // ---------------------------------------------------------------------------
 
 
 // FONT FAMILY
 // ---------------------------------------------------------------------------
-$qboss-font-text: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
-$qboss-font-head: 'Montserrat', Helvetica, sans-serif !default;
-$qboss-font-mono: 'Source Code Pro', Monaco, monospace !default;
+$qbee-font-text: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
+$qbee-font-head: 'Montserrat', Helvetica, sans-serif !default;
+$qbee-font-mono: 'Source Code Pro', Monaco, monospace !default;
 
 
 // COLORS
 // ---------------------------------------------------------------------------
 
 // Font colors
-$qboss-gray-900: #212121 !default;
-$qboss-gray-800: #424242 !default;
-$qboss-gray-700: #616161 !default;
-$qboss-gray-600: #757575 !default;
-$qboss-gray-500: #9e9e9e !default;
-$qboss-gray-400: #bdbdbd !default;
-$qboss-gray-300: #e0e0e0 !default;
-$qboss-gray-200: #eeeeee !default;
-$qboss-gray-100: #f5f5f5 !default;
-$qboss-gray-50: #fafafa !default;
+$qbee-gray-900: #212121 !default;
+$qbee-gray-800: #424242 !default;
+$qbee-gray-700: #616161 !default;
+$qbee-gray-600: #757575 !default;
+$qbee-gray-500: #9e9e9e !default;
+$qbee-gray-400: #bdbdbd !default;
+$qbee-gray-300: #e0e0e0 !default;
+$qbee-gray-200: #eeeeee !default;
+$qbee-gray-100: #f5f5f5 !default;
+$qbee-gray-50: #fafafa !default;
 
 // Background colors
-$qboss-dark-50: #e8e8e8 !default;
-$qboss-dark-100: #d1d1d1 !default;
-$qboss-dark-200: #bababa !default;
-$qboss-dark-300: #a3a3a4 !default;
-$qboss-dark-400: #8c8d8d !default;
-$qboss-dark-500: #757676 !default;
-$qboss-dark-600: #5e5f60 !default;
-$qboss-dark-700: #474849 !default;
-$qboss-dark-800: #303132 !default;
-$qboss-dark-900: #1a1b1c !default;
+$qbee-dark-50: #e8e8e8 !default;
+$qbee-dark-100: #d1d1d1 !default;
+$qbee-dark-200: #bababa !default;
+$qbee-dark-300: #a3a3a4 !default;
+$qbee-dark-400: #8c8d8d !default;
+$qbee-dark-500: #757676 !default;
+$qbee-dark-600: #5e5f60 !default;
+$qbee-dark-700: #474849 !default;
+$qbee-dark-800: #303132 !default;
+$qbee-dark-900: #1a1b1c !default;
 
 // B&W colors
-$qboss-color-black: #0d0d0e !default;
-$qboss-color-white: #ffffff !default;
-$qboss-color-accent: #f50057 !default;
+$qbee-color-black: #0d0d0e !default;
+$qbee-color-white: #ffffff !default;
+$qbee-color-accent: #f50057 !default;
 
 // Statuses colors
-$qboss-color-error: #f03c69 !default;
-$qboss-color-success: #35beb1 !default;
-$qboss-color-warning: #f7ba45 !default;
-$qboss-color-focus: #1c86f2 !default;
+$qbee-color-error: #f03c69 !default;
+$qbee-color-success: #35beb1 !default;
+$qbee-color-warning: #f7ba45 !default;
+$qbee-color-focus: #1c86f2 !default;
 
 // Button
-$qboss-color-button-primary: #0071FF !default;
-$qboss-color-button-primary-text: #fdfdfd !default;
-$qboss-color-button-secondary: #313439 !default;
-$qboss-color-button-secondary-text: #fdfdfd !default;
-$qboss-color-button-action: #7cb342 !default;
-$qboss-color-button-action-text: #fdfdfd !default;
-$qboss-color-button-accent: $qboss-color-accent !default;
-$qboss-color-button-accent-text: #fdfdfd !default;
-$qboss-color-button-inverted: #f8f8f8 !default;
-$qboss-color-button-inverted-text: #313439 !default;
+$qbee-color-button-primary: #0071FF !default;
+$qbee-color-button-primary-text: #fdfdfd !default;
+$qbee-color-button-secondary: #313439 !default;
+$qbee-color-button-secondary-text: #fdfdfd !default;
+$qbee-color-button-action: #7cb342 !default;
+$qbee-color-button-action-text: #fdfdfd !default;
+$qbee-color-button-accent: $qbee-color-accent !default;
+$qbee-color-button-accent-text: #fdfdfd !default;
+$qbee-color-button-inverted: #f8f8f8 !default;
+$qbee-color-button-inverted-text: #313439 !default;
 
 // Background
-$qboss-color-back: $qboss-color-white !default;
-$qboss-color-back-negative: $qboss-dark-900 !default;
+$qbee-color-back: $qbee-color-white !default;
+$qbee-color-back-negative: $qbee-dark-900 !default;
 
-$qboss-color-text: $qboss-gray-700 !default;
-$qboss-color-text-dark: $qboss-gray-800 !default;
-$qboss-color-text-light: $qboss-gray-600 !default;
-$qboss-color-text-disabled: $qboss-gray-500 !default;
-$qboss-color-text-negative: $qboss-gray-300 !default;
+$qbee-color-text: $qbee-gray-700 !default;
+$qbee-color-text-dark: $qbee-gray-800 !default;
+$qbee-color-text-light: $qbee-gray-600 !default;
+$qbee-color-text-disabled: $qbee-gray-500 !default;
+$qbee-color-text-negative: $qbee-gray-300 !default;
 
-$qboss-color-head: $qboss-gray-800 !default;
-$qboss-color-head-dark: $qboss-gray-900 !default;
-$qboss-color-head-light: $qboss-gray-600 !default;
-$qboss-color-head-negative: $qboss-gray-100 !default;
-$qboss-color-head-disabled: $qboss-gray-400 !default;
+$qbee-color-head: $qbee-gray-800 !default;
+$qbee-color-head-dark: $qbee-gray-900 !default;
+$qbee-color-head-light: $qbee-gray-600 !default;
+$qbee-color-head-negative: $qbee-gray-100 !default;
+$qbee-color-head-disabled: $qbee-gray-400 !default;
 
-$qboss-color-link: $qboss-color-text !default;
-$qboss-color-link-hover: $qboss-gray-900 !default;
-$qboss-color-link-negative: $qboss-color-text-negative !default;
-$qboss-color-link-negative-hover: $qboss-gray-50 !default;
+$qbee-color-link: $qbee-color-text !default;
+$qbee-color-link-hover: $qbee-gray-900 !default;
+$qbee-color-link-negative: $qbee-color-text-negative !default;
+$qbee-color-link-negative-hover: $qbee-gray-50 !default;
 
-$qboss-color-code-text: $qboss-gray-900 !default;
-$qboss-color-code-back: $qboss-dark-50 !default;
-$qboss-color-code-text-negative: $qboss-gray-100 !default;
-$qboss-color-code-back-negative: $qboss-dark-700 !default;
+$qbee-color-code-text: $qbee-gray-900 !default;
+$qbee-color-code-back: $qbee-dark-50 !default;
+$qbee-color-code-text-negative: $qbee-gray-100 !default;
+$qbee-color-code-back-negative: $qbee-dark-700 !default;
 
-$qboss-color-border: $qboss-dark-600 !default;
-$qboss-color-border-negative: $qboss-dark-300 !default;
+$qbee-color-border: $qbee-dark-600 !default;
+$qbee-color-border-negative: $qbee-dark-300 !default;
 
-$qboss-color-divider: $qboss-gray-300 !default;
-$qboss-color-divider-negative: $qboss-gray-600 !default;
+$qbee-color-divider: $qbee-gray-300 !default;
+$qbee-color-divider-negative: $qbee-gray-600 !default;
 
-$qboss-color-shadow: $qboss-dark-200 !default;
-$qboss-color-shadow-negative: $qboss-dark-700 !default;
+$qbee-color-shadow: $qbee-dark-200 !default;
+$qbee-color-shadow-negative: $qbee-dark-700 !default;
 
-$qboss-color-progress-back: $qboss-dark-50 !default;
-$qboss-color-progress-meter: $qboss-color-accent !default;
+$qbee-color-progress-back: $qbee-dark-50 !default;
+$qbee-color-progress-meter: $qbee-color-accent !default;
 
 
 // SECTIONS
 // ---------------------------------------------------------------------------
 
 // PAdding
-$qboss-padding-xs: 1rem 0 !default; 
-$qboss-padding-sm: 2rem 0 !default; 
-$qboss-padding-md: 4rem 0 !default; 
-$qboss-padding-lg: 6rem 0 !default; 
-$qboss-padding-xl: 8rem 0 !default; 
+$qbee-padding-xs: 1rem 0 !default; 
+$qbee-padding-sm: 2rem 0 !default; 
+$qbee-padding-md: 4rem 0 !default; 
+$qbee-padding-lg: 6rem 0 !default; 
+$qbee-padding-xl: 8rem 0 !default; 

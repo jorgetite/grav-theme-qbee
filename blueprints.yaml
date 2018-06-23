@@ -1,15 +1,15 @@
-name: QBoss
+name: QBee
 version: 0.1.0
-description: QBoss is a clean, lightweight and minimal HTML 5 theme for Grav built with the Kube CSS &amp; JS Framework
+description: QBee is a clean, lightweight and minimal HTML 5 theme for Grav built with the Kube CSS &amp; JS Framework
 icon: rebel
 author:
   name: Jorge Tite
   email: me@jorgetite.com
-homepage: https://github.com/jorgetite/grav-theme-qboss
+homepage: https://github.com/jorgetite/grav-theme-qbee
 demo: http://demo.yoursite.com
 keywords: grav, theme, minimal, modern, responsive, html5, kube
-bugs: https://github.com/jorgetite/grav-theme-qboss/issues
-readme: https://github.com/jorgetite/grav-theme-qboss/blob/develop/README.md
+bugs: https://github.com/jorgetite/grav-theme-qbee/issues
+readme: https://github.com/jorgetite/grav-theme-qbee/blob/develop/README.md
 license: MIT
 
 dependencies:
@@ -27,7 +27,7 @@ form:
     production_mode:
       type: toggle
       label: Production mode
-      help: When enabled, QBoss will render with minified CSS and JS
+      help: When enabled, QBee will render with minified CSS and JS
       highlight: 1
       default: 1
       options:

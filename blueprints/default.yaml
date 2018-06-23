@@ -14,7 +14,7 @@ form:
 
         buttons:
           type: tab
-          title: QBoss
+          title: QBee
           fields:
             columns:
               type: columns
@@ -22,7 +22,7 @@ form:
                 column1:
                   type: column
                   fields:
-                    qboss_layout:
+                    qbee_layout:
                       type: section
                       title: Page/Module Layout
                       underline: true
@@ -62,7 +62,7 @@ form:
                 column2:
                   type: column
                   fields:
-                    qboss_style:
+                    qbee_style:
                       type: section
                       title: Page/Module Style
                       underline: true
@@ -96,7 +96,7 @@ form:
                       markdown: true
                       description: 'CSS classes applied to this module.'
 
-            qboss_advanced:
+            qbee_advanced:
               type: section
               title: Advanced Settings
               underline: true

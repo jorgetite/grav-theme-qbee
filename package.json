@@ -1,13 +1,13 @@
 {
-  "name": "qboss",
+  "name": "qbee",
   "version": "0.1.0",
-  "homepage": "https://github.com/jorgetite/grav-theme-qboss",
+  "homepage": "https://github.com/jorgetite/grav-theme-qbee",
   "author": "Jorge Tite <me@jorgetite.com>",
-  "description": "QBoss theme",
+  "description": "QBee theme",
   "main": "css-compiled/theme.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jorgetite/grav-theme-qboss"
+    "url": "https://github.com/jorgetite/grav-theme-qbee"
   },
   "license": "MIT",
   "keywords": [
@@ -20,7 +20,7 @@
     "modern"
   ],
   "bugs": {
-    "url": "https://github.com/jorgetite/grav-theme-qboss/issues"
+    "url": "https://github.com/jorgetite/grav-theme-qbee/issues"
   },
   "devDependencies": {
     "gulp": "latest",

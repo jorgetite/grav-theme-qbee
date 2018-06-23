@@ -1,5 +1,5 @@
 en:
-  QBOSS:
+  QBEE:
     BLOG:
       ITEM:
         CONTINUE_READING: Continue reading...
@@ -32,7 +32,7 @@ en:
       TITLE: Error
       MESSAGE: "Oops, something went wrong..."
 es:
-  QBOSS:
+  QBEE:
     BLOG:
       ITEM:
         CONTINUE_READING: Continuar leyendo...

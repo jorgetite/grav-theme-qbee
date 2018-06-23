@@ -1,51 +1,51 @@
 /*---------------------------------------------------------------------------
-|    QBoss - Section Color Schemes
+|    QBee - Section Color Schemes
 |--------------------------------------------------------------------------*/
 
 // Light Scheme
 // ---------------------------------------------------------------------------
 section.light-scheme {
-    background-color: $qboss-dark-50;
+    background-color: $qbee-dark-50;
 }
 
 // Gray Scheme
 // ---------------------------------------------------------------------------
 section.gray-scheme {
-    @include qboss-scheme(
-        $qboss-dark-600,
-        $qboss-gray-400,
-        $qboss-gray-500,
-        $qboss-gray-300,
-        $qboss-gray-200,
-        $qboss-gray-400,
-        $qboss-gray-100,
-        $qboss-gray-400,
-        $qboss-gray-200,
-        $qboss-gray-300,
-        $qboss-dark-800,
-        $qboss-dark-500,
-        $qboss-dark-500,
-        $qboss-dark-700
+    @include qbee-scheme(
+        $qbee-dark-600,
+        $qbee-gray-400,
+        $qbee-gray-500,
+        $qbee-gray-300,
+        $qbee-gray-200,
+        $qbee-gray-400,
+        $qbee-gray-100,
+        $qbee-gray-400,
+        $qbee-gray-200,
+        $qbee-gray-300,
+        $qbee-dark-800,
+        $qbee-dark-500,
+        $qbee-dark-500,
+        $qbee-dark-700
     );
 }
 
 // Dark Scheme
 // ---------------------------------------------------------------------------
 section.dark-scheme {
-    @include qboss-scheme(
-        $qboss-color-back-negative,
-        $qboss-color-text-negative,
-        $qboss-gray-400,
-        $qboss-gray-200,
-        $qboss-color-head-negative,
-        $qboss-gray-300,
-        $qboss-gray-50,
-        $qboss-color-link-negative,
-        $qboss-color-link-negative-hover,
-        $qboss-color-code-text-negative,
-        $qboss-color-code-back-negative,
-        $qboss-color-border-negative,
-        $qboss-color-shadow-negative,
-        $qboss-dark-800
+    @include qbee-scheme(
+        $qbee-color-back-negative,
+        $qbee-color-text-negative,
+        $qbee-gray-400,
+        $qbee-gray-200,
+        $qbee-color-head-negative,
+        $qbee-gray-300,
+        #ffc107,
+        $qbee-color-link-negative,
+        $qbee-color-link-negative-hover,
+        $qbee-color-code-text-negative,
+        $qbee-color-code-back-negative,
+        $qbee-color-border-negative,
+        $qbee-color-shadow-negative,
+        $qbee-dark-800
     );
 }

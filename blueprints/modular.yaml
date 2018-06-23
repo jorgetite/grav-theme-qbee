@@ -26,6 +26,6 @@ form:
                 column2:
                   unset@: true
 
-            qboss_advanced:
+            qbee_advanced:
               unset@: true
                 

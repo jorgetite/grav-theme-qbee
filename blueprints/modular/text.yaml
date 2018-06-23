@@ -7,7 +7,7 @@ form:
       fields:
         buttons:
           fields:
-            qboss_advanced:
+            qbee_advanced:
               fields:
                 header.module_image_position:
                   options:

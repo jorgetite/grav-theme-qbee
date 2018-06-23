@@ -1,14 +1,14 @@
 /*******************************************************************
-  QBoss. Grav-theme
+  QBee. Grav-theme
     
     Copyright (c) 2018, Jorge Tite.
 	  License: MIT
 *******************************************************************/
 /*---------------------------------------------------------------------------
-|    QBoss - Mixins
+|    QBee - Mixins
 |--------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------
-|    QBoss - Kube Overrides
+|    QBee - Kube Overrides
 |--------------------------------------------------------------------------*/
 body {
   background-color: #ffffff;
@@ -339,7 +339,7 @@ select.disabled {
   background-color: #1c86f2; }
 
 /*---------------------------------------------------------------------------
-|    QBoss - Common Elements
+|    QBee - Common Elements
 |--------------------------------------------------------------------------*/
 nav.site-menu ul {
   display: flex;
@@ -500,7 +500,7 @@ progress {
         color: #35beb1; }
 
 /*---------------------------------------------------------------------------
-|    QBoss - Sections
+|    QBee - Sections
 |--------------------------------------------------------------------------*/
 .splash-section {
   height: 100vh;
@@ -650,7 +650,7 @@ progress {
           color: #424242; }
 
 /*---------------------------------------------------------------------------
-|    QBoss - Section Color Schemes
+|    QBee - Section Color Schemes
 |--------------------------------------------------------------------------*/
 section.light-scheme {
   background-color: #e8e8e8; }
@@ -702,7 +702,7 @@ section.dark-scheme {
     background-color: #474849;
     color: #f5f5f5; }
   section.dark-scheme .heading h1.title {
-    color: #fafafa; }
+    color: #ffc107; }
     section.dark-scheme .heading h1.title + h2 {
       color: #e0e0e0; }
   section.dark-scheme .img-wrap {
@@ -716,7 +716,7 @@ section.dark-scheme {
     background: #e0e0e0; }
 
 /*---------------------------------------------------------------------------
-|    QBoss - Media breakpoints
+|    QBee - Media breakpoints
 |--------------------------------------------------------------------------*/
 @media (min-width: 768px) {
   .container {

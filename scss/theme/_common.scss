@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------
-|    QBoss - Common Elements
+|    QBee - Common Elements
 |--------------------------------------------------------------------------*/
 
 // Site Menu
@@ -30,19 +30,19 @@ nav.site-menu {
     padding: 0;
 }
 .xs-pad {
-    padding: $qboss-padding-xs;
+    padding: $qbee-padding-xs;
 }
 .sm-pad {
-    padding: $qboss-padding-sm;
+    padding: $qbee-padding-sm;
 }
 .md-pad {
-    padding: $qboss-padding-md;
+    padding: $qbee-padding-md;
 }
 .lg-pad {
-    padding: $qboss-padding-lg;
+    padding: $qbee-padding-lg;
 }
 .xl-pad {
-    padding: $qboss-padding-xl;
+    padding: $qbee-padding-xl;
 }
 
 .container-wrap {
@@ -73,11 +73,11 @@ nav.site-menu {
     margin-bottom: 4rem;
 
     h1.title {
-        color: $qboss-color-head-dark;
+        color: $qbee-color-head-dark;
         font-weight: 900;
         text-transform: uppercase;
         + h2 {
-            color: $qboss-color-head-light;
+            color: $qbee-color-head-light;
             font-weight: 300;
         }
     }
@@ -97,7 +97,7 @@ nav.site-menu {
                 top: -12px;
                 left: 50%;
                 margin-left: -1.5rem;
-                background: $qboss-color-accent;    
+                background: $qbee-color-accent;    
                 content: '';
             }
         }
@@ -107,7 +107,7 @@ nav.site-menu {
 // Section Images
 // ---------------------------------------------------------------------------
 .img-wrap {
-    box-shadow: 0 0 20px $qboss-color-shadow;
+    box-shadow: 0 0 20px $qbee-color-shadow;
     padding: 2rem;
     text-align: center;
 
@@ -123,7 +123,7 @@ nav.site-menu {
 // Progress bar
 // ---------------------------------------------------------------------------
 progress {
-    background-color: $qboss-color-progress-back;
+    background-color: $qbee-color-progress-back;
     width: 100%;
     height: 0.5rem;
     margin: 0.5rem 0;
@@ -131,22 +131,22 @@ progress {
 
     /*For firefox*/
     &::-moz-progress-bar { 
-        background: $qboss-color-progress-meter;
+        background: $qbee-color-progress-meter;
         border-radius: 90px;
     }
     /*For webkit browsers*/
     &::-webkit-progress-bar {
-        background: $qboss-color-progress-back;
+        background: $qbee-color-progress-back;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
         border-radius: 90px;
     }
     &::-webkit-progress-value {
-        background: $qboss-color-progress-meter;
+        background: $qbee-color-progress-meter;
         border-radius: 90px;
     }
     /*For IE*/
     &::-ms-fill { 
-        background: $qboss-color-progress-meter;
+        background: $qbee-color-progress-meter;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
         border-radius: 90px;
     }
@@ -154,11 +154,11 @@ progress {
     .progress-bar {
         height: 0.5rem;
         margin: 0.5rem 0;
-        background-color: $qboss-color-progress-back;
+        background-color: $qbee-color-progress-back;
         border-radius: 90px;
     }
     .progress-meter {
-        background-color: $qboss-color-progress-meter;
+        background-color: $qbee-color-progress-meter;
         display: block;
         height: 0.5rem;
         border-radius: 90px;
@@ -175,15 +175,15 @@ progress {
         font-size: $font-size-small;
     }
     &.yellow {
-        @include qboss-notices($qboss-color-warning);
+        @include qbee-notices($qbee-color-warning);
     }
     &.red {
-        @include qboss-notices($qboss-color-error);
+        @include qbee-notices($qbee-color-error);
     }
     &.blue {
-        @include qboss-notices($qboss-color-focus);
+        @include qbee-notices($qbee-color-focus);
     }
     &.green {
-        @include qboss-notices($qboss-color-success);
+        @include qbee-notices($qbee-color-success);
     }
 }

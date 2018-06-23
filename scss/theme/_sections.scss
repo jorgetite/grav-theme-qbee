@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------------
-|    QBoss - Sections
+|    QBee - Sections
 |--------------------------------------------------------------------------*/
 
 
@@ -23,7 +23,7 @@
 // ---------------------------------------------------------------------------
 #header {
     height: 4rem;
-    border-bottom: 1px solid $qboss-color-divider;
+    border-bottom: 1px solid $qbee-color-divider;
     @include transition(all ease 0.5s);
     a.site-brand {
         display: flex;
@@ -35,7 +35,7 @@
         }
         .site-name {
             margin-bottom: 0;
-            color: $qboss-color-head-dark;
+            color: $qbee-color-head-dark;
             font-size: 28px;
             font-weight: 700;
             text-transform: uppercase;
@@ -52,8 +52,8 @@
         }
         &.fixed {
             position: fixed;
-            background-color: rgba($qboss-color-back, 0.98);
-            box-shadow: 0 0 4px rgba($qboss-color-shadow, 0.99);
+            background-color: rgba($qbee-color-back, 0.98);
+            box-shadow: 0 0 4px rgba($qbee-color-shadow, 0.99);
         }    
     }
 }
@@ -65,7 +65,7 @@
 
 #nav-toggle {
     margin-left: auto;
-    color: $qboss-color-text;
+    color: $qbee-color-text;
     text-decoration: none;
 }
 
@@ -87,21 +87,21 @@
                     border-bottom: 2px solid transparent;
                     &:hover {
                         @include transition(all linear 0.3s);
-                        color: $qboss-color-text-dark;
+                        color: $qbee-color-text-dark;
                         text-decoration: none;
-                        border-bottom-color: $qboss-color-accent;
+                        border-bottom-color: $qbee-color-accent;
                     }
                 }
                 &.active {
                     a {
-                        border-bottom-color: $qboss-color-accent;
+                        border-bottom-color: $qbee-color-accent;
                     }
                 }
             }
         }
         &.menu-last-bttn {
             li:last-child {
-                @include qboss-menu-button($qboss-color-text, $qboss-color-back, $qboss-color-text-negative, $qboss-color-back-negative);
+                @include qbee-menu-button($qbee-color-text, $qbee-color-back, $qbee-color-text-negative, $qbee-color-back-negative);
             }
         }
     }
@@ -123,12 +123,12 @@
         margin-bottom: 2%;
         padding: 2rem 1.25rem;
         border: 1px solid transparent;
-        background-color: $qboss-color-back;
+        background-color: $qbee-color-back;
         text-align: center;
         @include transition(all ease 0.3s);
     
         &:hover {
-            border-color:  $qboss-color-border;
+            border-color:  $qbee-color-border;
         }
         .feature-icon {
             font-size: $heading-font-size-1;
@@ -162,8 +162,8 @@
                 top: -24px;
                 left: 0%;
                 padding: 4px;
-                color: $qboss-color-text-negative;
-                background: $qboss-color-back-negative;
+                color: $qbee-color-text-negative;
+                background: $qbee-color-back-negative;
                 border-radius: 4px 6px 4px 1px;
                 font-size: $font-size - 6px;
                 line-height: 16px;
@@ -182,7 +182,7 @@
         height: 70vh;
     }
     h2 {
-        border-left: .75rem solid $qboss-color-error;
+        border-left: .75rem solid $qbee-color-error;
         padding-left: 1rem;
         font-weight: 700;
     }
@@ -195,7 +195,7 @@
 // Footer Section
 // ---------------------------------------------------------------------------
 #footer {
-    border-top: 1px solid $qboss-color-divider;
+    border-top: 1px solid $qbee-color-divider;
 
     .container-wrap {
         padding: 1.5rem 0;
@@ -204,11 +204,11 @@
             p {
                 text-align: center;
                 font-size: $font-size-smaller;
-                color: $qboss-color-text-light;
+                color: $qbee-color-text-light;
                 a {
-                    color: $qboss-color-text-light;
+                    color: $qbee-color-text-light;
                     &:hover {
-                        color: $qboss-color-text-dark;
+                        color: $qbee-color-text-dark;
                     }
                 }
             }

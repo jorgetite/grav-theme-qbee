@@ -1,46 +1,46 @@
 /*---------------------------------------------------------------------------
-|    QBoss - Kube Overrides
+|    QBee - Kube Overrides
 |--------------------------------------------------------------------------*/
 
 // body
 body {
-    background-color: $qboss-color-back;
-    color: $qboss-color-text;
-    font-family: $qboss-font-text;
+    background-color: $qbee-color-back;
+    color: $qbee-color-text;
+    font-family: $qbee-font-text;
 }
 
 // headings
 h1.title, h1, h2, h3, h4, h5, h6 {
-    color: $qboss-color-head;
-    font-family: $qboss-font-head;
+    color: $qbee-color-head;
+    font-family: $qbee-font-head;
     font-weight: 500;
 }
 
 // input fields
 pre, code, samp, var, kbd {
-    font-family: $qboss-font-mono;
+    font-family: $qbee-font-mono;
 }
 
 /// buttons
 button, .button {
-    font-family: $qboss-font-text;
+    font-family: $qbee-font-text;
 }
 
 // links
 a {
-    color: $qboss-color-link; 
+    color: $qbee-color-link; 
     &:hover, 
     &:focus {
         text-decoration: none;
         outline: none;
-        color: $qboss-color-link-hover; 
+        color: $qbee-color-link-hover; 
     }
 }
 
 // blockquote
 blockquote {
-    border-color: $qboss-color-border;
-    color: $qboss-color-text-light;
+    border-color: $qbee-color-border;
+    color: $qbee-color-text-light;
 }
 
 // Top Space
@@ -70,25 +70,25 @@ cite {
 
 pre,
 pre code {
-  background-color: $qboss-color-code-back;
-  color: $qboss-color-code-text;
+  background-color: $qbee-color-code-back;
+  color: $qbee-color-code-text;
 }
 
 // buttons
 .button {
-    @include qboss-button($qboss-color-button-primary-text, $qboss-color-button-primary);
+    @include qbee-button($qbee-color-button-primary-text, $qbee-color-button-primary);
 }
 .button.secondary {
-    @include qboss-button($qboss-color-button-secondary-text, $qboss-color-button-secondary);
+    @include qbee-button($qbee-color-button-secondary-text, $qbee-color-button-secondary);
 }
 .button.action {
-    @include qboss-button($qboss-color-button-action-text, $qboss-color-button-action);
+    @include qbee-button($qbee-color-button-action-text, $qbee-color-button-action);
 }
 .button.accent {
-    @include qboss-button($qboss-color-button-accent-text, $qboss-color-button-accent);
+    @include qbee-button($qbee-color-button-accent-text, $qbee-color-button-accent);
 }
 .button.inverted {
-    @include qboss-button($qboss-color-button-inverted-text, $qboss-color-button-inverted);
+    @include qbee-button($qbee-color-button-inverted-text, $qbee-color-button-inverted);
 }
 
 
@@ -97,112 +97,112 @@ input,
 textarea,
 select {
     &:focus {
-    	border-color: $qboss-color-focus;
+    	border-color: $qbee-color-focus;
     }
     &.error {
-	    background-color: rgba($qboss-color-error, .1);
-    	border-color: lighten($qboss-color-error, 10%);
+	    background-color: rgba($qbee-color-error, .1);
+    	border-color: lighten($qbee-color-error, 10%);
     	&:focus {
-            border-color: $qboss-color-error;
+            border-color: $qbee-color-error;
     	}
 	}
     &.success  {
-    	background-color: rgba($qboss-color-success, .1);
-    	border-color: lighten($qboss-color-success, 10%);
+    	background-color: rgba($qbee-color-success, .1);
+    	border-color: lighten($qbee-color-success, 10%);
     	&:focus {
-            border-color: $qboss-color-success;
+            border-color: $qbee-color-success;
     	}
     }
     &:disabled,
     &.disabled {
-    	color: $qboss-color-text-disabled;
+    	color: $qbee-color-text-disabled;
 	}
 }
 
 .req {
-    color: $qboss-color-error;
+    color: $qbee-color-error;
 }
 
 // labels
 .label.success {
-    @include label($qboss-color-text-negative, $qboss-color-success);
+    @include label($qbee-color-text-negative, $qbee-color-success);
 }
 .label.error {
-    @include label($qboss-color-text-negative, $qboss-color-error);
+    @include label($qbee-color-text-negative, $qbee-color-error);
 }
 .label.warning {
-    @include label($qboss-color-text, $qboss-color-warning);
+    @include label($qbee-color-text, $qbee-color-warning);
 }
 .label.focus {
-    @include label($qboss-color-text-negative, $qboss-color-focus);
+    @include label($qbee-color-text-negative, $qbee-color-focus);
 }
 .label.black {
-    @include label($qboss-color-text-negative, $qboss-color-black);
+    @include label($qbee-color-text-negative, $qbee-color-black);
 }
 .label.inverted {
-    @include label($qboss-color-text, $qboss-color-white);
+    @include label($qbee-color-text, $qbee-color-white);
 }
 
 // messages
 .message.error {
-    background: $qboss-color-error;
-    color: $qboss-color-text-negative; 
+    background: $qbee-color-error;
+    color: $qbee-color-text-negative; 
 }
   
 .message.success {
-    background: $qboss-color-success;
-    color: $qboss-color-text-negative; 
+    background: $qbee-color-success;
+    color: $qbee-color-text-negative; 
 }
 
 .message.warning {
-    background: $qboss-color-warning; 
-    color: $qboss-color-text;
+    background: $qbee-color-warning; 
+    color: $qbee-color-text;
 }
 
 .message.focus {
-    background: $qboss-color-focus;
-    color: $qboss-color-text-negative; 
+    background: $qbee-color-focus;
+    color: $qbee-color-text-negative; 
 }
 
 .message.black {
-    background: $qboss-color-black;
-    color: $qboss-color-text-negative; 
+    background: $qbee-color-black;
+    color: $qbee-color-text-negative; 
 }
 
 .message.inverted {
-    background: $qboss-color-white;
-    color: $qboss-color-text;
+    background: $qbee-color-white;
+    color: $qbee-color-text;
 }
 
 // colors
 .error {
-    color: $qboss-color-error; 
+    color: $qbee-color-error; 
 }
 
 .success {
-    color: $qboss-color-success;
+    color: $qbee-color-success;
 }
 
 .warning {
-    color: $qboss-color-warning; 
+    color: $qbee-color-warning; 
 }
 
 .focus {
-    color: $qboss-color-focus; 
+    color: $qbee-color-focus; 
 }
 
 .bg-error {
-    background-color: $qboss-color-error; 
+    background-color: $qbee-color-error; 
 }
 
 .bg-success {
-    background-color: $qboss-color-success; 
+    background-color: $qbee-color-success; 
 }
 
 .bg-warning {
-    background-color: $qboss-color-warning; 
+    background-color: $qbee-color-warning; 
 }
 
 .bg-focus {
-    background-color: $qboss-color-focus; 
+    background-color: $qbee-color-focus; 
 }

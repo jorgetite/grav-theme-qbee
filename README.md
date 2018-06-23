@@ -1,6 +1,6 @@
-# QBoss - Grav Theme
+# QBee - Grav Theme
 
-QBoss is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav.org) built with the [Kube](https://imperavi.com/kube/) CSS &amp; JS Framework.
+QBee is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav.org) built with the [Kube](https://imperavi.com/kube/) CSS &amp; JS Framework.
 
 ## Features
 * Clean and minimal
@@ -24,7 +24,7 @@ QBoss is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgra
     + Text Modular view template `text.md`
 
 ### Supported Browsers
-QBoss supports the latest, stable releases of all major browsers:
+QBee supports the latest, stable releases of all major browsers:
 
 - Latest Chrome
 - Latest Firefox
@@ -35,7 +35,7 @@ QBoss supports the latest, stable releases of all major browsers:
 
 ## Installation
 
-Installing the QBoss theme can be done in one of two ways:
+Installing the QBee theme can be done in one of two ways:
 
 - The GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command
 - The manual method enables you to do so via a zip file.
@@ -45,19 +45,19 @@ Installing the QBoss theme can be done in one of two ways:
 The simplest way to install this theme is via the Grav Package Manager (GPM) through your system's Terminal (also called the command line). From the root of your Grav install type:
 
 ```Shell
-bin/gpm install qboss
+bin/gpm install qbee
 ```
 
-This will install the QBoss theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/qboss`.
+This will install the QBee theme into your `/user/themes` directory within Grav. Its files can be found under `/your/site/grav/user/themes/qbee`.
 
 ### Manual Installation
 
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `qboss`. You can find these files either on [GitHub](https://github.com/jorgetite/QBoss) or via [GetGrav.org](http://getgrav.org/downloads/themes).
+To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `qbee`. You can find these files either on [GitHub](https://github.com/jorgetite/QBee) or via [GetGrav.org](http://getgrav.org/downloads/themes).
 
 You should now have all the theme files under
 
 ```Shell
-/your/site/grav/user/themes/qboss
+/your/site/grav/user/themes/qbee
 ```
 
 ### Requirements
@@ -66,7 +66,7 @@ You should now have all the theme files under
 
 ## Theme Options
 
-QBoss allows you to set the following options site-wide:
+QBee allows you to set the following options site-wide:
 
 ```yaml
 enabled: true               # Enable the theme
@@ -79,13 +79,13 @@ site_logo:                  # The relative path to the site logo, defaults to 'i
 site_copy:                  # The copyright notice displayed in the site footer
 ```
 
-To make modifications, you can copy the `user/themes/qboss/qboss.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
+To make modifications, you can copy the `user/themes/qbee/qbee.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
 
-> NOTE: Do not modify the `user/themes/qboss/qboss.yaml` file directly or your changes will be lost with any updates
+> NOTE: Do not modify the `user/themes/qbee/qbee.yaml` file directly or your changes will be lost with any updates
 
 ### Page Options
 
-QBoss provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are divide in the following three categories:
+QBee provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are divide in the following three categories:
 
 #### Content Settings
 

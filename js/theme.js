@@ -1,5 +1,5 @@
 /*******************************************************************
-  QBoss. Grav-theme
+  QBee. Grav-theme
     
     Copyright (c) 2018, Jorge Tite.
 	  License: MIT
