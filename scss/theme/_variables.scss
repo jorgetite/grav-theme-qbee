@@ -40,7 +40,7 @@ $qboss-dark-900: #1a1b1c !default;
 // B&W colors
 $qboss-color-black: #0d0d0e !default;
 $qboss-color-white: #ffffff !default;
-$qboss-color-accent: #E91E63 !default;
+$qboss-color-accent: #f50057 !default;
 
 // Statuses colors
 $qboss-color-error: #f03c69 !default;
@@ -49,13 +49,13 @@ $qboss-color-warning: #f7ba45 !default;
 $qboss-color-focus: #1c86f2 !default;
 
 // Button
-$qboss-color-button-primary: #1c86f2 !default;
+$qboss-color-button-primary: #0071FF !default;
 $qboss-color-button-primary-text: #fdfdfd !default;
 $qboss-color-button-secondary: #313439 !default;
 $qboss-color-button-secondary-text: #fdfdfd !default;
-$qboss-color-button-action: #47B65D !default;
+$qboss-color-button-action: #7cb342 !default;
 $qboss-color-button-action-text: #fdfdfd !default;
-$qboss-color-button-accent: #E91E63 !default;
+$qboss-color-button-accent: $qboss-color-accent !default;
 $qboss-color-button-accent-text: #fdfdfd !default;
 $qboss-color-button-inverted: #f8f8f8 !default;
 $qboss-color-button-inverted-text: #313439 !default;

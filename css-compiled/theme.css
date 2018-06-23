@@ -104,24 +104,24 @@ pre code {
 
 .button {
   color: #fdfdfd;
-  background-color: #1c86f2; }
+  background-color: #0071FF; }
   .button:hover {
     color: #fdfdfd;
-    background-color: #439bf4; }
+    background-color: #2988ff; }
   .button:disabled, .button.disabled {
     color: rgba(253, 253, 253, 0.6);
-    background-color: rgba(28, 134, 242, 0.6); }
+    background-color: rgba(0, 113, 255, 0.6); }
   .button.outline {
     background: none;
-    color: #1c86f2;
-    border-color: #1c86f2; }
+    color: #0071FF;
+    border-color: #0071FF; }
     .button.outline:hover {
-      color: #7cb9f8;
-      border-color: #7cb9f8; }
+      color: #66aaff;
+      border-color: #66aaff; }
     .button.outline:disabled, .button.outline.disabled {
       background: none;
-      color: rgba(28, 134, 242, 0.6);
-      border-color: rgba(28, 134, 242, 0.6); }
+      color: rgba(0, 113, 255, 0.6);
+      border-color: rgba(0, 113, 255, 0.6); }
 
 .button.secondary {
   color: #fdfdfd;
@@ -146,45 +146,45 @@ pre code {
 
 .button.action {
   color: #fdfdfd;
-  background-color: #47B65D; }
+  background-color: #7cb342; }
   .button.action:hover {
     color: #fdfdfd;
-    background-color: #63c276; }
+    background-color: #90c35b; }
   .button.action:disabled, .button.action.disabled {
     color: rgba(253, 253, 253, 0.6);
-    background-color: rgba(71, 182, 93, 0.6); }
+    background-color: rgba(124, 179, 66, 0.6); }
   .button.action.outline {
     background: none;
-    color: #47B65D;
-    border-color: #47B65D; }
+    color: #7cb342;
+    border-color: #7cb342; }
     .button.action.outline:hover {
-      color: #8fd49d;
-      border-color: #8fd49d; }
+      color: #aed388;
+      border-color: #aed388; }
     .button.action.outline:disabled, .button.action.outline.disabled {
       background: none;
-      color: rgba(71, 182, 93, 0.6);
-      border-color: rgba(71, 182, 93, 0.6); }
+      color: rgba(124, 179, 66, 0.6);
+      border-color: rgba(124, 179, 66, 0.6); }
 
 .button.accent {
   color: #fdfdfd;
-  background-color: #E91E63; }
+  background-color: #f50057; }
   .button.accent:hover {
     color: #fdfdfd;
-    background-color: #ed437d; }
+    background-color: #ff1f6e; }
   .button.accent:disabled, .button.accent.disabled {
     color: rgba(253, 253, 253, 0.6);
-    background-color: rgba(233, 30, 99, 0.6); }
+    background-color: rgba(245, 0, 87, 0.6); }
   .button.accent.outline {
     background: none;
-    color: #E91E63;
-    border-color: #E91E63; }
+    color: #f50057;
+    border-color: #f50057; }
     .button.accent.outline:hover {
-      color: #f27ba3;
-      border-color: #f27ba3; }
+      color: #ff5c96;
+      border-color: #ff5c96; }
     .button.accent.outline:disabled, .button.accent.outline.disabled {
       background: none;
-      color: rgba(233, 30, 99, 0.6);
-      border-color: rgba(233, 30, 99, 0.6); }
+      color: rgba(245, 0, 87, 0.6);
+      border-color: rgba(245, 0, 87, 0.6); }
 
 .button.inverted {
   color: #313439;
@@ -414,7 +414,7 @@ nav.site-menu ul {
         top: -12px;
         left: 50%;
         margin-left: -1.5rem;
-        background: #E91E63;
+        background: #f50057;
         content: ''; }
 
 .img-wrap {
@@ -436,17 +436,17 @@ progress {
   /*For webkit browsers*/
   /*For IE*/ }
   progress::-moz-progress-bar {
-    background: #E91E63;
+    background: #f50057;
     border-radius: 90px; }
   progress::-webkit-progress-bar {
     background: #e8e8e8;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
     border-radius: 90px; }
   progress::-webkit-progress-value {
-    background: #E91E63;
+    background: #f50057;
     border-radius: 90px; }
   progress::-ms-fill {
-    background: #E91E63;
+    background: #f50057;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
     border-radius: 90px; }
   progress .progress-bar {
@@ -455,7 +455,7 @@ progress {
     background-color: #e8e8e8;
     border-radius: 90px; }
   progress .progress-meter {
-    background-color: #E91E63;
+    background-color: #f50057;
     display: block;
     height: 0.5rem;
     border-radius: 90px; }
@@ -568,9 +568,9 @@ progress {
           transition: all linear 0.3s;
           color: #424242;
           text-decoration: none;
-          border-bottom-color: #E91E63; }
+          border-bottom-color: #f50057; }
       #navbar nav.site-menu ul li.active a {
-        border-bottom-color: #E91E63; }
+        border-bottom-color: #f50057; }
   #navbar nav.site-menu.menu-last-bttn li:last-child {
     font-size: 14px; }
     #navbar nav.site-menu.menu-last-bttn li:last-child a {
