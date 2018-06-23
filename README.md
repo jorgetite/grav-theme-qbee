@@ -10,7 +10,8 @@ QBee is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav
 * Search engine optimized
 * Modern browser compatible
 * Very extensible and customizable
-* Kube Framewrok
+* Kube Framework
+* Font Awesome
 * HTML5, CSS3, JavaScript
 
 ### Supported Page Templates
