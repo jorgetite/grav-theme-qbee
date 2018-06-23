@@ -9,8 +9,12 @@
     height: 100vh;
     width: 100vw;
 
-    .container-row {
-        height: 100%;
+    .container-wrap {
+        display: flex;
+
+        .container-row {
+            height: 100%;
+        }
     }
 }
 
@@ -193,15 +197,19 @@
 #footer {
     border-top: 1px solid $qboss-color-divider;
 
-    .copyright {
-        p {
-            text-align: center;
-            font-size: $font-size-smaller;
-            color: $qboss-color-text-light;
-            a {
+    .container-wrap {
+        padding: 1.5rem 0;
+
+        .copyright {
+            p {
+                text-align: center;
+                font-size: $font-size-smaller;
                 color: $qboss-color-text-light;
-                &:hover {
-                    color: $qboss-color-text-dark;
+                a {
+                    color: $qboss-color-text-light;
+                    &:hover {
+                        color: $qboss-color-text-dark;
+                    }
                 }
             }
         }

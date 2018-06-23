@@ -66,10 +66,7 @@
     {% if header.show_footer is not defined or header.show_footer %}
         {% block footer %}
             {% include 'partials/fragments/footer.html.twig'
-                with {
-                    id: 'footer',
-                    classes: 'footer-section xs-pad'
-                }
+                with { id: 'footer'}
             %}
         {% endblock %}
     {% endif %}

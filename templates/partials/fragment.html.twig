@@ -21,8 +21,10 @@
 
 <section id="{{module_id}}" {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {{ _self.explode_data_attribs(data_atts) }}>
     {% block section %}
-    <div class="container">
-        {% block container %}{% endblock %}
+    <div class="container-wrap {{page.header.page_padding}}">
+        <div class="container">
+            {% block container %}{% endblock %}
+        </div>
     </div>
     {% endblock %}
 </section>

@@ -45,6 +45,10 @@ nav.site-menu {
     padding: $qboss-padding-xl;
 }
 
+.container-wrap {
+    width: 100%;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +57,8 @@ nav.site-menu {
     width: 100%;
 }
 
+// Section Backgrounds
+// ---------------------------------------------------------------------------
 .bg-img {
     background-size: cover;
     background-repeat: no-repeat;
