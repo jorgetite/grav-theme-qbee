@@ -633,17 +633,17 @@ header {
   font-weight: 300;
   margin-bottom: 3rem; }
 
-#footer {
+footer {
   border-top: 1px solid #e0e0e0; }
-  #footer .container-wrap {
+  footer .container-wrap {
     padding: 1.5rem 0; }
-    #footer .container-wrap .copyright p {
+    footer .container-wrap .copyright p {
       text-align: center;
       font-size: 12px;
       color: #757575; }
-      #footer .container-wrap .copyright p a {
+      footer .container-wrap .copyright p a {
         color: #757575; }
-        #footer .container-wrap .copyright p a:hover {
+        footer .container-wrap .copyright p a:hover {
           color: #424242; }
 
 /*---------------------------------------------------------------------------
