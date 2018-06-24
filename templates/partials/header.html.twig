@@ -1,8 +1,7 @@
-{% extends 'partials/fragment.html.twig' %}
 {% set sticky_cls = theme_var('header_sticky') ? 'sticky' : '' %}
 {% set site_logo = theme_var('site_logo') ? theme_var('site_logo') : 'images/logo.png'  %}
 
-{% block section %}
+<header>
     <div class="container-wrap {{sticky_cls}}" {% if sticky_cls %}data-component="sticky"{% endif %}>
         <div class="container">
             <nav id="navbar-sm" class="show-sm">
@@ -34,4 +33,4 @@
             </nav>
         </div>
     </div>
-{% endblock %}
+</header>

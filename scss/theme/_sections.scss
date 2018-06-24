@@ -21,7 +21,7 @@
 
 // Header Section
 // ---------------------------------------------------------------------------
-#header {
+header {
     height: 4rem;
     border-bottom: 1px solid $qbee-color-divider;
     @include transition(all ease 0.5s);
@@ -56,56 +56,57 @@
             box-shadow: 0 0 4px rgba($qbee-color-shadow, 0.99);
         }    
     }
-}
 
-#navbar-sm {
-    display: flex;
-    align-items: center;
-}
-
-#nav-toggle {
-    margin-left: auto;
-    color: $qbee-color-text;
-    text-decoration: none;
-}
-
-#navbar {
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    nav.site-menu {
-        ul {
-            justify-content: flex-end;
-            li {
-                font-size: $font-size;
-                font-weight: 300;
-                margin-left: 1.75rem;
-                a {
-                    text-decoration: none;
-                    border-bottom: 2px solid transparent;
-                    &:hover {
-                        @include transition(all linear 0.3s);
-                        color: $qbee-color-text-dark;
-                        text-decoration: none;
-                        border-bottom-color: $qbee-color-accent;
-                    }
-                }
-                &.active {
+    #navbar-sm {
+        display: flex;
+        align-items: center;
+    }
+    
+    #nav-toggle {
+        margin-left: auto;
+        color: $qbee-color-text;
+        text-decoration: none;
+    }
+    
+    #navbar {
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        nav.site-menu {
+            ul {
+                justify-content: flex-end;
+                li {
+                    font-size: $font-size;
+                    font-weight: 300;
+                    margin-left: 1.75rem;
                     a {
-                        border-bottom-color: $qbee-color-accent;
+                        text-decoration: none;
+                        border-bottom: 2px solid transparent;
+                        &:hover {
+                            @include transition(all linear 0.3s);
+                            color: $qbee-color-text-dark;
+                            text-decoration: none;
+                            border-bottom-color: $qbee-color-accent;
+                        }
+                    }
+                    &.active {
+                        a {
+                            border-bottom-color: $qbee-color-accent;
+                        }
                     }
                 }
             }
-        }
-        &.menu-last-bttn {
-            li:last-child {
-                @include qbee-menu-button($qbee-color-text, $qbee-color-back, $qbee-color-text-negative, $qbee-color-back-negative);
+            &.menu-last-bttn {
+                li:last-child {
+                    @include qbee-menu-button($qbee-color-text, $qbee-color-back, $qbee-color-text-negative, $qbee-color-back-negative);
+                }
             }
         }
     }
 }
+
 
 
 // Hero Section

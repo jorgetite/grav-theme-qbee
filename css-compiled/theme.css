@@ -510,82 +510,79 @@ progress {
     .splash-section .container-wrap .container-row {
       height: 100%; }
 
-#header {
+header {
   height: 4rem;
   border-bottom: 1px solid #e0e0e0;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s; }
-  #header a.site-brand {
+  header a.site-brand {
     display: flex;
     align-items: center;
     text-decoration: none; }
-    #header a.site-brand:hover {
+    header a.site-brand:hover {
       -moz-transition: all linear 0.3s;
       transition: all linear 0.3s;
       text-decoration: none; }
-    #header a.site-brand .site-name {
+    header a.site-brand .site-name {
       margin-bottom: 0;
       color: #212121;
       font-size: 28px;
       font-weight: 700;
       text-transform: uppercase; }
-    #header a.site-brand .site-logo {
+    header a.site-brand .site-logo {
       max-height: 32px;
       margin-right: 0.5rem; }
-  #header .container-wrap.sticky {
+  header .container-wrap.sticky {
     position: relative;
     z-index: 100; }
-  #header .container-wrap.fixed {
+  header .container-wrap.fixed {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 0 4px rgba(186, 186, 186, 0.99); }
-
-#navbar-sm {
-  display: flex;
-  align-items: center; }
-
-#nav-toggle {
-  margin-left: auto;
-  color: #616161;
-  text-decoration: none; }
-
-#navbar {
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  #navbar nav.site-menu ul {
-    justify-content: flex-end; }
-    #navbar nav.site-menu ul li {
-      font-size: 16px;
-      font-weight: 300;
-      margin-left: 1.75rem; }
-      #navbar nav.site-menu ul li a {
-        text-decoration: none;
-        border-bottom: 2px solid transparent; }
-        #navbar nav.site-menu ul li a:hover {
-          -moz-transition: all linear 0.3s;
-          transition: all linear 0.3s;
-          color: #424242;
+  header #navbar-sm {
+    display: flex;
+    align-items: center; }
+  header #nav-toggle {
+    margin-left: auto;
+    color: #616161;
+    text-decoration: none; }
+  header #navbar {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    header #navbar nav.site-menu ul {
+      justify-content: flex-end; }
+      header #navbar nav.site-menu ul li {
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 1.75rem; }
+        header #navbar nav.site-menu ul li a {
           text-decoration: none;
+          border-bottom: 2px solid transparent; }
+          header #navbar nav.site-menu ul li a:hover {
+            -moz-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+            color: #424242;
+            text-decoration: none;
+            border-bottom-color: #f50057; }
+        header #navbar nav.site-menu ul li.active a {
           border-bottom-color: #f50057; }
-      #navbar nav.site-menu ul li.active a {
-        border-bottom-color: #f50057; }
-  #navbar nav.site-menu.menu-last-bttn li:last-child {
-    font-size: 14px; }
-    #navbar nav.site-menu.menu-last-bttn li:last-child a {
-      display: inline-block;
-      background-color: #ffffff;
-      color: #616161;
-      border: 1px solid #616161;
-      text-decoration: none;
-      line-height: 28px;
-      border-radius: 4px;
-      padding: 0 16px; }
-      #navbar nav.site-menu.menu-last-bttn li:last-child a:hover {
+    header #navbar nav.site-menu.menu-last-bttn li:last-child {
+      font-size: 14px; }
+      header #navbar nav.site-menu.menu-last-bttn li:last-child a {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #616161;
+        border: 1px solid #616161;
         text-decoration: none;
-        background-color: #1a1b1c;
-        color: #e0e0e0; }
+        line-height: 28px;
+        border-radius: 4px;
+        padding: 0 16px; }
+        header #navbar nav.site-menu.menu-last-bttn li:last-child a:hover {
+          text-decoration: none;
+          background-color: #1a1b1c;
+          color: #e0e0e0; }
 
 .features-section .feature-item {
   margin-bottom: 2%;
