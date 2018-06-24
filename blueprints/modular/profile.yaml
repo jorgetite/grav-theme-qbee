@@ -24,9 +24,6 @@ form:
               label: Skills
 
               fields:
-                .icon:
-                  type: iconpicker
-                  label: Icon
                 .header:
                   type: text
                   label: Header
