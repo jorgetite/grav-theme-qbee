@@ -25,22 +25,25 @@ $qbee-gray-200: #eeeeee !default;
 $qbee-gray-100: #f5f5f5 !default;
 $qbee-gray-50: #fafafa !default;
 
-// Background colors
-$qbee-dark-50: #e8e8e8 !default;
-$qbee-dark-100: #d1d1d1 !default;
-$qbee-dark-200: #bababa !default;
-$qbee-dark-300: #a3a3a4 !default;
-$qbee-dark-400: #8c8d8d !default;
-$qbee-dark-500: #757676 !default;
-$qbee-dark-600: #5e5f60 !default;
-$qbee-dark-700: #474849 !default;
-$qbee-dark-800: #303132 !default;
-$qbee-dark-900: #1a1b1c !default;
+// Background gradient colors
+$qbee-black-50: #f0f1f3 !default;
+$qbee-black-100: #e2e3e5 !default;
+$qbee-black-200: #c9cacc !default;
+$qbee-black-300: #b0b1b3 !default;
+$qbee-black-400: #97989a !default;
+$qbee-black-500: #7e7f80 !default;
+$qbee-black-600: #656667 !default;
+$qbee-black-700: #4c4e4d !default;
+$qbee-black-800: #333435 !default;
+$qbee-black-900: #1a1b1c !default;
 
 // B&W colors
 $qbee-color-black: #0d0d0e !default;
-$qbee-color-white: #ffffff !default;
-$qbee-color-accent: #f50057 !default;
+$qbee-color-white: #fffffd !default;
+
+// Theme colors
+$qbee-color-primary: #ffc107 !default;
+$qbee-color-accent: #00D5F3 !default;
 
 // Statuses colors
 $qbee-color-error: #f03c69 !default;
@@ -50,10 +53,10 @@ $qbee-color-focus: #1c86f2 !default;
 
 // Button
 $qbee-color-button-primary: #0071FF !default;
-$qbee-color-button-primary-text: #fdfdfd !default;
+$qbee-color-button-primary-text: #f9fdff !default;
 $qbee-color-button-secondary: #313439 !default;
 $qbee-color-button-secondary-text: #fdfdfd !default;
-$qbee-color-button-action: #7cb342 !default;
+$qbee-color-button-action: #00BB80 !default;
 $qbee-color-button-action-text: #fdfdfd !default;
 $qbee-color-button-accent: $qbee-color-accent !default;
 $qbee-color-button-accent-text: #fdfdfd !default;
@@ -62,7 +65,7 @@ $qbee-color-button-inverted-text: #313439 !default;
 
 // Background
 $qbee-color-back: $qbee-color-white !default;
-$qbee-color-back-negative: $qbee-dark-900 !default;
+$qbee-color-back-negative: $qbee-black-900 !default;
 
 $qbee-color-text: $qbee-gray-700 !default;
 $qbee-color-text-dark: $qbee-gray-800 !default;
@@ -82,20 +85,20 @@ $qbee-color-link-negative: $qbee-color-text-negative !default;
 $qbee-color-link-negative-hover: $qbee-gray-50 !default;
 
 $qbee-color-code-text: $qbee-gray-900 !default;
-$qbee-color-code-back: $qbee-dark-50 !default;
+$qbee-color-code-back: $qbee-black-50 !default;
 $qbee-color-code-text-negative: $qbee-gray-100 !default;
-$qbee-color-code-back-negative: $qbee-dark-700 !default;
+$qbee-color-code-back-negative: $qbee-black-700 !default;
 
-$qbee-color-border: $qbee-dark-600 !default;
-$qbee-color-border-negative: $qbee-dark-300 !default;
+$qbee-color-border: $qbee-black-600 !default;
+$qbee-color-border-negative: $qbee-black-300 !default;
 
 $qbee-color-divider: $qbee-gray-300 !default;
 $qbee-color-divider-negative: $qbee-gray-600 !default;
 
-$qbee-color-shadow: $qbee-dark-200 !default;
-$qbee-color-shadow-negative: $qbee-dark-700 !default;
+$qbee-color-shadow: $qbee-black-200 !default;
+$qbee-color-shadow-negative: $qbee-black-700 !default;
 
-$qbee-color-progress-back: $qbee-dark-50 !default;
+$qbee-color-progress-back: $qbee-black-50 !default;
 $qbee-color-progress-meter: $qbee-color-accent !default;
 
 

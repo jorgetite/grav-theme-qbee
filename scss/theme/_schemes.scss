@@ -5,14 +5,14 @@
 // Light Scheme
 // ---------------------------------------------------------------------------
 section.light-scheme {
-    background-color: $qbee-dark-50;
+    background-color: $qbee-black-50;
 }
 
 // Gray Scheme
 // ---------------------------------------------------------------------------
 section.gray-scheme {
     @include qbee-scheme(
-        $qbee-dark-600,
+        $qbee-black-600,
         $qbee-gray-400,
         $qbee-gray-500,
         $qbee-gray-300,
@@ -22,10 +22,10 @@ section.gray-scheme {
         $qbee-gray-400,
         $qbee-gray-200,
         $qbee-gray-300,
-        $qbee-dark-800,
-        $qbee-dark-500,
-        $qbee-dark-500,
-        $qbee-dark-700
+        $qbee-black-800,
+        $qbee-black-500,
+        $qbee-black-500,
+        $qbee-black-700
     );
 }
 
@@ -46,6 +46,6 @@ section.dark-scheme {
         $qbee-color-code-back-negative,
         $qbee-color-border-negative,
         $qbee-color-shadow-negative,
-        $qbee-dark-800
+        $qbee-black-800
     );
 }
