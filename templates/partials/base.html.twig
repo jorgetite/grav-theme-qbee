@@ -50,12 +50,7 @@
 
     {% block messages %}
         {% if grav.messages.all %}
-            {% include 'partials/fragments/messages.html.twig'
-                with {
-                    id: 'messages',
-                    classes: 'msg-section'
-                }
-            %}
+            {% include 'partials/messages.html.twig' %}
         {% endif %}
     {% endblock %}
 

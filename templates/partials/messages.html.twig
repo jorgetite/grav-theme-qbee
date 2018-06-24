@@ -1,8 +1,7 @@
-{% extends 'partials/fragment.html.twig' %}
 {% set msg_map = {'info':'success', 'error': 'error', 'warning': 'warning'} %}
 
-{% if grav.messages.all %}
-    {% block container %}
+<section class="msg-section">
+    <div class="container-wrap">
         {% for message in grav.messages.fetch %}
             {% set scope = message.scope|e %}
 
@@ -11,5 +10,5 @@
                 <span class="close small"></span>
             </div>
         {% endfor %}
-    {% endblock %}
-{% endif %}
+    </div>
+</section>
