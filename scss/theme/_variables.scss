@@ -52,16 +52,25 @@ $qbee-color-warning: #f7ba45 !default;
 $qbee-color-focus: #1c86f2 !default;
 
 // Button
-$qbee-color-button-primary: #0071FF !default;
+$qbee-color-button-primary: $qbee-color-primary !default;
 $qbee-color-button-primary-text: #f9fdff !default;
-$qbee-color-button-secondary: #313439 !default;
-$qbee-color-button-secondary-text: #fdfdfd !default;
+$qbee-color-button-secondary: $qbee-black-800 !default;
+$qbee-color-button-secondary-text: #f9fdff !default;
 $qbee-color-button-action: #00BB80 !default;
-$qbee-color-button-action-text: #fdfdfd !default;
+$qbee-color-button-action-text: #f9fdff !default;
 $qbee-color-button-accent: $qbee-color-accent !default;
-$qbee-color-button-accent-text: #fdfdfd !default;
-$qbee-color-button-inverted: #f8f8f8 !default;
-$qbee-color-button-inverted-text: #313439 !default;
+$qbee-color-button-accent-text: #f9fdff !default;
+$qbee-color-button-inverted: $qbee-color-white !default;
+$qbee-color-button-inverted-text: $qbee-gray-900 !default;
+
+// Header
+$qbee-header-color-back: $qbee-color-black !default;
+$qbee-header-color-text: $qbee-gray-200 !default;
+$qbee-header-color-link: $qbee-gray-400 !default;
+$qbee-header-color-link-hover: $qbee-gray-50 !default;
+$qbee-header-font-size-head: 32px !default;
+$qbee-header-font-size-head-sm: 24px !default;
+
 
 // Background
 $qbee-color-back: $qbee-color-white !default;

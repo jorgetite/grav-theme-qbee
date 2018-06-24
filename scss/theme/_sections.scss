@@ -40,49 +40,56 @@
 // ---------------------------------------------------------------------------
 header {
     height: 4rem;
-    border-bottom: 1px solid $qbee-color-divider;
-    @include transition(all ease 0.5s);
-    a.site-brand {
-        display: flex;
-        align-items: center;
+    background-color: $qbee-header-color-back;
+    color: $qbee-header-color-text;
+
+    a {
+        color: $qbee-header-color-link;
         text-decoration: none;
         &:hover {
-            @include transition(all linear 0.3s);
+            color: $qbee-header-color-link-hover;
             text-decoration: none;
+            @include transition(all linear 0.3s);
         }
+    }
+    .container-wrap {
+        @include transition(all ease 0.5s);
+        &.sticky {
+            position: relative;
+            z-index: $z-over-control;
+        }
+        &.fixed {
+            position: fixed;
+            background-color: rgba($qbee-header-color-back, 0.95);
+            box-shadow: 0 0 8px 4px rgba($qbee-header-color-back, 0.50);
+        }    
+    }
+    .site-brand {
+        display: flex;
+        align-items: center;
         .site-name {
             margin-bottom: 0;
-            color: $qbee-color-head-dark;
-            font-size: 28px;
+            color: $qbee-header-color-text;
+            font-size: $qbee-header-font-size-head;
             font-weight: 700;
             text-transform: uppercase;
         }
         .site-logo {
-            max-height: 32px;
+            max-height: $qbee-header-font-size-head;
             margin-right: 0.5rem;
         }
-    }
-    .container-wrap {
-        &.sticky {
-            position: relative;
-            z-index: 100;
+        &:hover {
+            color: $qbee-header-color-link-hover;
         }
-        &.fixed {
-            position: fixed;
-            background-color: rgba($qbee-color-back, 0.98);
-            box-shadow: 0 0 4px rgba($qbee-color-shadow, 0.99);
-        }    
     }
 
     #navbar-sm {
+        height: 3rem;
         display: flex;
         align-items: center;
-    }
-    
-    #nav-toggle {
-        margin-left: auto;
-        color: $qbee-color-text;
-        text-decoration: none;
+        #nav-toggle {
+            margin-left: auto;
+        }
     }
     
     #navbar {
@@ -95,22 +102,18 @@ header {
             ul {
                 justify-content: flex-end;
                 li {
-                    font-size: $font-size;
                     font-weight: 300;
                     margin-left: 1.75rem;
                     a {
-                        text-decoration: none;
-                        border-bottom: 2px solid transparent;
+                        border-bottom: 4px solid transparent;
                         &:hover {
-                            @include transition(all linear 0.3s);
-                            color: $qbee-color-text-dark;
-                            text-decoration: none;
                             border-bottom-color: $qbee-color-accent;
                         }
                     }
                     &.active {
                         a {
-                            border-bottom-color: $qbee-color-accent;
+                            color: $qbee-header-color-link-hover;
+                            border-bottom-color: $qbee-color-primary;
                         }
                     }
                 }

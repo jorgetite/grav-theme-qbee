@@ -104,54 +104,54 @@ pre code {
 
 .button {
   color: #f9fdff;
-  background-color: #0071FF; }
+  background-color: #ffc107; }
   .button:hover {
     color: #f9fdff;
-    background-color: #2988ff; }
+    background-color: #ffcb30; }
   .button:disabled, .button.disabled {
     color: rgba(249, 253, 255, 0.6);
-    background-color: rgba(0, 113, 255, 0.6); }
+    background-color: rgba(255, 193, 7, 0.6); }
   .button.outline {
     background: none;
-    color: #0071FF;
-    border-color: #0071FF; }
+    color: #ffc107;
+    border-color: #ffc107; }
     .button.outline:hover {
-      color: #66aaff;
-      border-color: #66aaff; }
+      color: #ffdb6d;
+      border-color: #ffdb6d; }
     .button.outline:disabled, .button.outline.disabled {
       background: none;
-      color: rgba(0, 113, 255, 0.6);
-      border-color: rgba(0, 113, 255, 0.6); }
+      color: rgba(255, 193, 7, 0.6);
+      border-color: rgba(255, 193, 7, 0.6); }
 
 .button.secondary {
-  color: #fdfdfd;
-  background-color: #313439; }
+  color: #f9fdff;
+  background-color: #333435; }
   .button.secondary:hover {
-    color: #fdfdfd;
-    background-color: #44484f; }
+    color: #f9fdff;
+    background-color: #47484a; }
   .button.secondary:disabled, .button.secondary.disabled {
-    color: rgba(253, 253, 253, 0.6);
-    background-color: rgba(49, 52, 57, 0.6); }
+    color: rgba(249, 253, 255, 0.6);
+    background-color: rgba(51, 52, 53, 0.6); }
   .button.secondary.outline {
     background: none;
-    color: #313439;
-    border-color: #313439; }
+    color: #333435;
+    border-color: #333435; }
     .button.secondary.outline:hover {
-      color: #606670;
-      border-color: #606670; }
+      color: #656769;
+      border-color: #656769; }
     .button.secondary.outline:disabled, .button.secondary.outline.disabled {
       background: none;
-      color: rgba(49, 52, 57, 0.6);
-      border-color: rgba(49, 52, 57, 0.6); }
+      color: rgba(51, 52, 53, 0.6);
+      border-color: rgba(51, 52, 53, 0.6); }
 
 .button.action {
-  color: #fdfdfd;
+  color: #f9fdff;
   background-color: #00BB80; }
   .button.action:hover {
-    color: #fdfdfd;
+    color: #f9fdff;
     background-color: #00e49c; }
   .button.action:disabled, .button.action.disabled {
-    color: rgba(253, 253, 253, 0.6);
+    color: rgba(249, 253, 255, 0.6);
     background-color: rgba(0, 187, 128, 0.6); }
   .button.action.outline {
     background: none;
@@ -166,13 +166,13 @@ pre code {
       border-color: rgba(0, 187, 128, 0.6); }
 
 .button.accent {
-  color: #fdfdfd;
+  color: #f9fdff;
   background-color: #00D5F3; }
   .button.accent:hover {
-    color: #fdfdfd;
+    color: #f9fdff;
     background-color: #1de3ff; }
   .button.accent:disabled, .button.accent.disabled {
-    color: rgba(253, 253, 253, 0.6);
+    color: rgba(249, 253, 255, 0.6);
     background-color: rgba(0, 213, 243, 0.6); }
   .button.accent.outline {
     background: none;
@@ -187,25 +187,25 @@ pre code {
       border-color: rgba(0, 213, 243, 0.6); }
 
 .button.inverted {
-  color: #313439;
-  background-color: #f8f8f8; }
+  color: #212121;
+  background-color: #fffffd; }
   .button.inverted:hover {
-    color: #313439;
+    color: #212121;
     background-color: white; }
   .button.inverted:disabled, .button.inverted.disabled {
-    color: rgba(49, 52, 57, 0.6);
-    background-color: rgba(248, 248, 248, 0.6); }
+    color: rgba(33, 33, 33, 0.6);
+    background-color: rgba(255, 255, 253, 0.6); }
   .button.inverted.outline {
     background: none;
-    color: #f8f8f8;
-    border-color: #f8f8f8; }
+    color: #fffffd;
+    border-color: #fffffd; }
     .button.inverted.outline:hover {
       color: white;
       border-color: white; }
     .button.inverted.outline:disabled, .button.inverted.outline.disabled {
       background: none;
-      color: rgba(248, 248, 248, 0.6);
-      border-color: rgba(248, 248, 248, 0.6); }
+      color: rgba(255, 255, 253, 0.6);
+      border-color: rgba(255, 255, 253, 0.6); }
 
 input:focus,
 textarea:focus,
@@ -523,40 +523,46 @@ progress {
 
 header {
   height: 4rem;
-  border-bottom: 1px solid #e0e0e0;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s; }
-  header a.site-brand {
-    display: flex;
-    align-items: center;
+  background-color: #0d0d0e;
+  color: #eeeeee; }
+  header a {
+    color: #bdbdbd;
     text-decoration: none; }
-    header a.site-brand:hover {
+    header a:hover {
+      color: #fafafa;
+      text-decoration: none;
       -moz-transition: all linear 0.3s;
-      transition: all linear 0.3s;
-      text-decoration: none; }
-    header a.site-brand .site-name {
-      margin-bottom: 0;
-      color: #212121;
-      font-size: 28px;
-      font-weight: 700;
-      text-transform: uppercase; }
-    header a.site-brand .site-logo {
-      max-height: 32px;
-      margin-right: 0.5rem; }
-  header .container-wrap.sticky {
-    position: relative;
-    z-index: 100; }
-  header .container-wrap.fixed {
-    position: fixed;
-    background-color: rgba(255, 255, 253, 0.98);
-    box-shadow: 0 0 4px rgba(201, 202, 204, 0.99); }
-  header #navbar-sm {
+      transition: all linear 0.3s; }
+  header .container-wrap {
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s; }
+    header .container-wrap.sticky {
+      position: relative;
+      z-index: 200; }
+    header .container-wrap.fixed {
+      position: fixed;
+      background-color: rgba(13, 13, 14, 0.95);
+      box-shadow: 0 0 8px 4px rgba(13, 13, 14, 0.5); }
+  header .site-brand {
     display: flex;
     align-items: center; }
-  header #nav-toggle {
-    margin-left: auto;
-    color: #616161;
-    text-decoration: none; }
+    header .site-brand .site-name {
+      margin-bottom: 0;
+      color: #eeeeee;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    header .site-brand .site-logo {
+      max-height: 32px;
+      margin-right: 0.5rem; }
+    header .site-brand:hover {
+      color: #fafafa; }
+  header #navbar-sm {
+    height: 3rem;
+    display: flex;
+    align-items: center; }
+    header #navbar-sm #nav-toggle {
+      margin-left: auto; }
   header #navbar {
     height: 4rem;
     display: flex;
@@ -565,20 +571,15 @@ header {
     header #navbar nav.site-menu ul {
       justify-content: flex-end; }
       header #navbar nav.site-menu ul li {
-        font-size: 16px;
         font-weight: 300;
         margin-left: 1.75rem; }
         header #navbar nav.site-menu ul li a {
-          text-decoration: none;
-          border-bottom: 2px solid transparent; }
+          border-bottom: 4px solid transparent; }
           header #navbar nav.site-menu ul li a:hover {
-            -moz-transition: all linear 0.3s;
-            transition: all linear 0.3s;
-            color: #424242;
-            text-decoration: none;
             border-bottom-color: #00D5F3; }
         header #navbar nav.site-menu ul li.active a {
-          border-bottom-color: #00D5F3; }
+          color: #fafafa;
+          border-bottom-color: #ffc107; }
     header #navbar nav.site-menu.menu-last-bttn li:last-child {
       font-size: 14px; }
       header #navbar nav.site-menu.menu-last-bttn li:last-child a {
@@ -739,25 +740,31 @@ section.dark-scheme {
     max-width: 1104px; } }
 
 @media (max-width: 768px) {
-  .site-name {
-    font-size: 24px; }
   .notices {
     padding: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem; }
-  #navbar {
-    display: block;
-    height: auto;
-    padding-bottom: 24px; }
-    #navbar a.site-brand {
-      display: none; }
-    #navbar nav.site-menu {
-      padding: 0;
-      border: none; }
-      #navbar nav.site-menu ul {
-        display: block; }
-        #navbar nav.site-menu ul li {
-          text-align: center;
-          width: auto;
-          margin: 16px 0;
-          padding: 0; } }
+  header {
+    height: 3rem; }
+    header .container-wrap {
+      background-color: rgba(13, 13, 14, 0.95); }
+    header .site-brand .site-name {
+      font-size: 24px; }
+    header .site-brand .site-logo {
+      max-height: 24px; }
+    header #navbar {
+      display: block;
+      height: auto;
+      padding-bottom: 24px; }
+      header #navbar .site-brand {
+        display: none; }
+      header #navbar nav.site-menu {
+        padding: 0;
+        border: none; }
+        header #navbar nav.site-menu ul {
+          display: block; }
+          header #navbar nav.site-menu ul li {
+            margin: 0.5rem 0;
+            padding: 0;
+            width: auto;
+            text-align: center; } }
