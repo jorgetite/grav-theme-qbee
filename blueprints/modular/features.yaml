@@ -5,6 +5,16 @@ form:
   fields:
     tabs:
       fields:
+        buttons:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    header.show_header:
+                      unset@: true
+                    header.show_footer:
+                      unset@: true
         features:
           type: tab
           title: Features
