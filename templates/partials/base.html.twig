@@ -37,7 +37,6 @@
 {% endblock head%}
 </head>
 <body class="{{ header.body_classes }}">
-
     {% block splash %}{% endblock %}
 
     {% if header.show_header is not defined or header.show_header %}
@@ -46,21 +45,23 @@
         {% endblock %}
     {% endif %}
 
-    {% block hero %}{% endblock %}
-
-    {% block messages %}
-        {% if grav.messages.all %}
-            {% include 'partials/messages.html.twig' %}
-        {% endif %}
-    {% endblock %}
-
-    {% block body %}{% endblock %}
+    <main>
+        {% block hero %}{% endblock %}
+        
+        {% block body %}{% endblock %}
+    </main>
 
     {% if header.show_footer is not defined or header.show_footer %}
         {% block footer %}
             {% include 'partials/footer.html.twig' %}
         {% endblock %}
     {% endif %}
+
+    {% block messages %}
+        {% if grav.messages.all %}
+            {% include 'partials/messages.html.twig' %}
+        {% endif %}
+    {% endblock %}
 
     {% block bottom %}
         {{ assets.js('bottom') }}
