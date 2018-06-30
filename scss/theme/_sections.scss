@@ -118,11 +118,6 @@ header {
                     }
                 }
             }
-            &.menu-last-bttn {
-                li:last-child {
-                    @include qbee-menu-button($qbee-color-text, $qbee-color-back, $qbee-color-text-negative, $qbee-color-back-negative);
-                }
-            }
         }
     }
 }
@@ -144,7 +139,7 @@ header {
         margin-bottom: 2%;
         padding: 2rem 1.25rem;
         border: 1px solid transparent;
-        background-color: $qbee-color-back;
+        background-color: $qbee-feature-color-item-back;
         text-align: center;
         @include transition(all ease 0.3s);
     
@@ -152,6 +147,7 @@ header {
             border-color:  $qbee-color-border;
         }
         .feature-icon {
+            color: $qbee-color-head-light;
             font-size: $heading-font-size-1;
             margin-bottom: 0.5rem;
         }
@@ -174,6 +170,7 @@ header {
         margin-bottom: 1.5rem;
         h6 {
             margin-bottom: 0;
+            color: $qbee-color-head-light;
         }
         .skill-meter {
             position: relative;
@@ -183,8 +180,8 @@ header {
                 top: -24px;
                 left: 0%;
                 padding: 4px;
-                color: $qbee-color-text-negative;
-                background: $qbee-color-back-negative;
+                color: $qbee-profile-color-label-text;
+                background: $qbee-profile-color-label-back;
                 border-radius: 4px 6px 4px 1px;
                 font-size: $font-size - 6px;
                 line-height: 16px;

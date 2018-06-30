@@ -5,47 +5,47 @@
 // Light Scheme
 // ---------------------------------------------------------------------------
 section.light-scheme {
-    background-color: $qbee-black-50;
+    // background-color: $qbee-black-50;
 }
 
 // Gray Scheme
 // ---------------------------------------------------------------------------
 section.gray-scheme {
-    @include qbee-scheme(
-        $qbee-black-600,
-        $qbee-gray-400,
-        $qbee-gray-500,
-        $qbee-gray-300,
-        $qbee-gray-200,
-        $qbee-gray-400,
-        $qbee-gray-100,
-        $qbee-gray-400,
-        $qbee-gray-200,
-        $qbee-gray-300,
-        $qbee-black-800,
-        $qbee-black-500,
-        $qbee-black-500,
-        $qbee-black-700
-    );
+    // @include qbee-scheme(
+    //     $qbee-black-600,
+    //     $qbee-gray-400,
+    //     $qbee-gray-500,
+    //     $qbee-gray-300,
+    //     $qbee-gray-200,
+    //     $qbee-gray-400,
+    //     $qbee-gray-100,
+    //     $qbee-gray-400,
+    //     $qbee-gray-200,
+    //     $qbee-gray-300,
+    //     $qbee-black-800,
+    //     $qbee-black-500,
+    //     $qbee-black-500,
+    //     $qbee-black-700
+    // );
 }
 
 // Dark Scheme
 // ---------------------------------------------------------------------------
 section.dark-scheme {
-    @include qbee-scheme(
-        $qbee-color-back-negative,
-        $qbee-color-text-negative,
-        $qbee-gray-400,
-        $qbee-gray-200,
-        $qbee-color-head-negative,
-        $qbee-gray-300,
-        #ffc107,
-        $qbee-color-link-negative,
-        $qbee-color-link-negative-hover,
-        $qbee-color-code-text-negative,
-        $qbee-color-code-back-negative,
-        $qbee-color-border-negative,
-        $qbee-color-shadow-negative,
-        $qbee-black-800
-    );
+    // @include qbee-scheme(
+    //     $qbee-color-back-negative,
+    //     $qbee-color-text-negative,
+    //     $qbee-gray-400,
+    //     $qbee-gray-200,
+    //     $qbee-color-head-negative,
+    //     $qbee-gray-300,
+    //     #ffc107,
+    //     $qbee-color-link-negative,
+    //     $qbee-color-link-negative-hover,
+    //     $qbee-color-code-text-negative,
+    //     $qbee-color-code-back-negative,
+    //     $qbee-color-border-negative,
+    //     $qbee-color-shadow-negative,
+    //     $qbee-black-800
+    // );
 }
