@@ -73,6 +73,7 @@ nav.site-menu {
     margin-bottom: 4rem;
 
     h1.title {
+        margin-bottom: 2rem;
         color: $qbee-color-head-dark;
         font-weight: 900;
         text-transform: uppercase;
@@ -82,24 +83,22 @@ nav.site-menu {
         }
     }
     h2:first-child {
-        margin-bottom: 1.25rem;
+        position: relative;
+        margin-bottom: 2rem;
         font-weight: 700;
         text-transform: uppercase;
-        + h3 {
-            position: relative;
+        &:after {
+            position: absolute;
+            width: 5rem;
+            height: 4px;
+            bottom: -1rem;
+            left: 50%;
+            margin-left: -2.5rem;
+            background: $qbee-color-primary;    
+            content: '';
+        }
+        + h5 {
             font-weight: 300;
-            font-size: $heading-font-size-6;
-            line-height: $heading-base-line-6;
-            &:before {
-                position: absolute;
-                width: 3rem;
-                height: 2px;
-                top: -12px;
-                left: 50%;
-                margin-left: -1.5rem;
-                background: $qbee-color-accent;    
-                content: '';
-            }
         }
     }
 }

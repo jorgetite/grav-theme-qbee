@@ -392,6 +392,7 @@ nav.site-menu ul {
   text-align: center;
   margin-bottom: 4rem; }
   .heading h1.title {
+    margin-bottom: 2rem;
     color: #212121;
     font-weight: 900;
     text-transform: uppercase; }
@@ -399,23 +400,21 @@ nav.site-menu ul {
       color: #757575;
       font-weight: 300; }
   .heading h2:first-child {
-    margin-bottom: 1.25rem;
+    position: relative;
+    margin-bottom: 2rem;
     font-weight: 700;
     text-transform: uppercase; }
-    .heading h2:first-child + h3 {
-      position: relative;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 24px; }
-      .heading h2:first-child + h3:before {
-        position: absolute;
-        width: 3rem;
-        height: 2px;
-        top: -12px;
-        left: 50%;
-        margin-left: -1.5rem;
-        background: #00D5F3;
-        content: ''; }
+    .heading h2:first-child:after {
+      position: absolute;
+      width: 5rem;
+      height: 4px;
+      bottom: -1rem;
+      left: 50%;
+      margin-left: -2.5rem;
+      background: #ffc107;
+      content: ''; }
+    .heading h2:first-child + h5 {
+      font-weight: 300; }
 
 .img-wrap {
   box-shadow: 0 0 20px #c9cacc;
