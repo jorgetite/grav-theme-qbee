@@ -96,7 +96,7 @@ cite {
 
 pre,
 pre code {
-  background-color: #f4f4f5;
+  background-color: #e2e3e5;
   color: #212121; }
 
 .button {
@@ -410,7 +410,7 @@ nav.site-menu ul {
   margin-bottom: 4rem; }
   .heading h1.title {
     margin-bottom: 2rem;
-    color: #212121;
+    color: #ffc107;
     font-weight: 900;
     text-transform: uppercase; }
     .heading h1.title + h2 {
@@ -601,7 +601,7 @@ header {
   margin-bottom: 2%;
   padding: 2rem 1.25rem;
   border: 1px solid transparent;
-  background-color: #f4f4f5;
+  background-color: #f6f8fa;
   text-align: center;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s; }
@@ -660,6 +660,78 @@ footer {
         color: #757575; }
         footer .container-wrap .copyright p a:hover {
           color: #424242; }
+
+/*---------------------------------------------------------------------------
+|    QBee - Section Color Schemes
+|--------------------------------------------------------------------------*/
+.scheme-gray-light {
+  background-color: #f1f2f4; }
+  .scheme-gray-light .feature-item {
+    background-color: #fffffd; }
+
+.scheme-gray-dark {
+  background-color: #4c4e4d;
+  color: #eeeeee; }
+  .scheme-gray-dark h1, .scheme-gray-dark h2, .scheme-gray-dark h3, .scheme-gray-dark h4, .scheme-gray-dark h5, .scheme-gray-dark h6 {
+    color: #f5f5f5; }
+  .scheme-gray-dark a {
+    color: #eeeeee; }
+    .scheme-gray-dark a:hover, .scheme-gray-dark a:focus {
+      color: #fafafa; }
+  .scheme-gray-dark blockquote {
+    border-color: #97989a;
+    color: #bdbdbd; }
+  .scheme-gray-dark pre,
+  .scheme-gray-dark pre code {
+    background-color: #7e7f80;
+    color: #e0e0e0; }
+  .scheme-gray-dark .heading h1.title + h2 {
+    color: #e0e0e0; }
+  .scheme-gray-dark .img-wrap {
+    box-shadow: 0 0 20px rgba(255, 255, 253, 0.2); }
+  .scheme-gray-dark .feature-item {
+    background-color: #656667; }
+    .scheme-gray-dark .feature-item:hover {
+      border-color: #97989a; }
+    .scheme-gray-dark .feature-item .feature-icon {
+      color: #e0e0e0; }
+  .scheme-gray-dark .skill-item h6 {
+    color: #e0e0e0; }
+  .scheme-gray-dark .skill-item .skill-meter .skill-value {
+    color: #616161;
+    background: #c9cacc; }
+
+.scheme-dark {
+  background-color: #1a1b1c;
+  color: #e0e0e0; }
+  .scheme-dark h1, .scheme-dark h2, .scheme-dark h3, .scheme-dark h4, .scheme-dark h5, .scheme-dark h6 {
+    color: #eeeeee; }
+  .scheme-dark a {
+    color: #e0e0e0; }
+    .scheme-dark a:hover, .scheme-dark a:focus {
+      color: #f5f5f5; }
+  .scheme-dark blockquote {
+    border-color: #656667;
+    color: #9e9e9e; }
+  .scheme-dark pre,
+  .scheme-dark pre code {
+    background-color: #4c4e4d;
+    color: #eeeeee; }
+  .scheme-dark .heading h1.title + h2 {
+    color: #9e9e9e; }
+  .scheme-dark .img-wrap {
+    box-shadow: 0 0 20px rgba(255, 255, 253, 0.15); }
+  .scheme-dark .feature-item {
+    background-color: #333435; }
+    .scheme-dark .feature-item:hover {
+      border-color: #656667; }
+    .scheme-dark .feature-item .feature-icon {
+      color: #9e9e9e; }
+  .scheme-dark .skill-item h6 {
+    color: #9e9e9e; }
+  .scheme-dark .skill-item .skill-meter .skill-value {
+    color: #424242;
+    background: #e2e3e5; }
 
 /*---------------------------------------------------------------------------
 |    QBee - Media breakpoints

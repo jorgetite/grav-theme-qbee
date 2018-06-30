@@ -2,50 +2,58 @@
 |    QBee - Section Color Schemes
 |--------------------------------------------------------------------------*/
 
-// Light Scheme
+// Light Gray Scheme
 // ---------------------------------------------------------------------------
-section.light-scheme {
-    // background-color: $qbee-black-50;
+.scheme-gray-light {
+    background-color: $qbee-black-50;
+
+    .feature-item {
+        background-color: $qbee-color-white;
+    }
 }
 
-// Gray Scheme
+// Dark Gray Scheme
 // ---------------------------------------------------------------------------
-section.gray-scheme {
-    // @include qbee-scheme(
-    //     $qbee-black-600,
-    //     $qbee-gray-400,
-    //     $qbee-gray-500,
-    //     $qbee-gray-300,
-    //     $qbee-gray-200,
-    //     $qbee-gray-400,
-    //     $qbee-gray-100,
-    //     $qbee-gray-400,
-    //     $qbee-gray-200,
-    //     $qbee-gray-300,
-    //     $qbee-black-800,
-    //     $qbee-black-500,
-    //     $qbee-black-500,
-    //     $qbee-black-700
-    // );
+.scheme-gray-dark {
+    @include qbee-scheme(
+        $qbee-black-700,    // color-back
+        $qbee-gray-200,     // color-text
+        $qbee-gray-400,     // color-text-light
+        $qbee-gray-100,     // color-text-dark
+        $qbee-gray-100,     // color-head
+        $qbee-gray-300,     // color-head-light
+        $qbee-gray-50,      // color-head-dark
+        $qbee-gray-200,     // color-link
+        $qbee-gray-50,      // color-link-hover
+        $qbee-gray-300,     // color-code
+        $qbee-black-500,    // color-code-back
+        $qbee-black-400,    // color-border
+        rgba($qbee-color-white, 0.2),    // color-shadow
+        $qbee-black-600,    // color-feature-back
+        $qbee-black-200,    // color-profile-back
+        $qbee-gray-700      // color-profile-text
+    );
 }
 
 // Dark Scheme
 // ---------------------------------------------------------------------------
-section.dark-scheme {
-    // @include qbee-scheme(
-    //     $qbee-color-back-negative,
-    //     $qbee-color-text-negative,
-    //     $qbee-gray-400,
-    //     $qbee-gray-200,
-    //     $qbee-color-head-negative,
-    //     $qbee-gray-300,
-    //     #ffc107,
-    //     $qbee-color-link-negative,
-    //     $qbee-color-link-negative-hover,
-    //     $qbee-color-code-text-negative,
-    //     $qbee-color-code-back-negative,
-    //     $qbee-color-border-negative,
-    //     $qbee-color-shadow-negative,
-    //     $qbee-black-800
-    // );
+.scheme-dark {
+    @include qbee-scheme(
+        $qbee-black-900,    // color-back
+        $qbee-gray-300,     // color-text
+        $qbee-gray-500,     // color-text-light
+        $qbee-gray-200,     // color-text-dark
+        $qbee-gray-200,     // color-head
+        $qbee-gray-500,     // color-head-light
+        $qbee-gray-100,     // color-head-dark
+        $qbee-gray-300,     // color-link
+        $qbee-gray-100,     // color-link-hover
+        $qbee-gray-200,     // color-code
+        $qbee-black-700,    // color-code-back
+        $qbee-black-600,    // color-border
+        rgba($qbee-color-white, 0.15),    // color-shadow
+        $qbee-black-800,    // color-feature-back
+        $qbee-black-100,    // color-profile-back
+        $qbee-gray-800      // color-profile-text
+    );
 }

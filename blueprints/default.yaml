@@ -71,12 +71,12 @@ form:
                       label: Color Scheme
                       description: 'Sets the color scheme for this page/module.'
                       size: medium
-                      default: default-scheme
+                      default: scheme-light
                       options:
-                        default-scheme: White (default)
-                        light-scheme: Lightgray
-                        gray-scheme: Dimgray
-                        dark-scheme: Charcoal
+                        scheme-light: White (default)
+                        scheme-gray-light: Lightgray
+                        scheme-gray-dark: Dimgray
+                        scheme-dark: Black
                     header.page_padding:
                       type: select
                       label: Padding

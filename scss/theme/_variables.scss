@@ -26,7 +26,7 @@ $qbee-gray-100: #f5f5f5 !default;
 $qbee-gray-50: #fafafa !default;
 
 // Background gradient colors
-$qbee-black-50: #f4f4f5 !default;
+$qbee-black-50: #f1f2f4 !default;
 $qbee-black-100: #e2e3e5 !default;
 $qbee-black-200: #c9cacc !default;
 $qbee-black-300: #b0b1b3 !default;
@@ -96,7 +96,7 @@ $qbee-color-link: $qbee-color-text !default;
 $qbee-color-link-hover: $qbee-gray-900 !default;
 
 $qbee-color-code-text: $qbee-gray-900 !default;
-$qbee-color-code-back: $qbee-black-50 !default;
+$qbee-color-code-back: $qbee-black-100 !default;
 
 // Elements
 $qbee-color-border: $qbee-black-200 !default;
@@ -109,7 +109,7 @@ $qbee-color-progress-meter: $qbee-color-primary !default;
 // SECTIONS
 // ---------------------------------------------------------------------------
 
-// PAdding
+// Padding
 $qbee-padding-xs: 1rem 0 !default; 
 $qbee-padding-sm: 2rem 0 !default; 
 $qbee-padding-md: 4rem 0 !default; 
@@ -129,4 +129,4 @@ $qbee-profile-color-label-text: $qbee-gray-50 !default;
 $qbee-profile-color-label-back: $qbee-black-700 !default;
 
 // Features
-$qbee-feature-color-item-back: $qbee-black-50 !default;
+$qbee-feature-color-item-back: #f6f8fa !default;

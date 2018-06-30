@@ -91,12 +91,14 @@
                     $color-code-back,
                     $color-border,
                     $color-shadow,
-                    $color-feature-back) {
+                    $color-feature-back,
+                    $color-profile-back,
+                    $color-profile-text) {
 
     background-color: $color-back;
     color: $color-text;
 
-    h1.title, h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6 {
         color: $color-head;
     }
     a {
@@ -117,7 +119,6 @@
     }
     .heading {
         h1.title {
-            color: $color-head-dark;
             + h2 {
                 color: $color-head-light;
             }
@@ -132,13 +133,19 @@
         &:hover {
             border-color:  $color-border;
         }
+        .feature-icon {
+            color: $color-head-light;
+        }
     }
 
     .skill-item {
+        h6 {
+            color: $color-head-light;
+        }
         .skill-meter {
             .skill-value {
-                color: $color-back;
-                background: $color-text;
+                color: $color-profile-text;
+                background: $color-profile-back;
             }
         }
     }
