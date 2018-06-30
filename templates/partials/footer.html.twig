@@ -2,9 +2,9 @@
     <div class="container-wrap">
         <div class="container">
             <div class="row auto">
-                <div class="col copyright">
+                <div class="col">
                     {% block copy %}
-                        <p/>
+                        <p class="copyright small">
                             {% if theme.site_copy is not empty %}
                                 {{ theme.site_copy }}
                             {% else %}
@@ -12,9 +12,11 @@
                             {% endif %}
                         </p>
                     {% endblock %}
-                    <p><a href="https://github.com/jorgetite/grav-theme-qbee">QBee Theme</a> was <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a href="http://www.jorgetite.com">Jorge Tite</a></p>
+                    <p class="qbee smaller">
+                        <a href="https://github.com/jorgetite/grav-theme-qbee">QBee Theme</a> was <i class="fas fa-code text-accent"></i> with <i class="fas fa-heart text-beat"></i> by <a href="http://www.jorgetite.com">Jorge Tite</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-<footer>
+</footer>

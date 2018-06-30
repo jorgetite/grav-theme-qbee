@@ -22,6 +22,10 @@ nav.site-menu {
 
 // Sections
 // ---------------------------------------------------------------------------
+main {
+    background-color: $qbee-color-back;
+}
+
 [class*="-section"] {
     overflow: hidden;
     display: flex;

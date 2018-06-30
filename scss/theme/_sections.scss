@@ -213,21 +213,30 @@ header {
 // Footer Section
 // ---------------------------------------------------------------------------
 footer {
-    border-top: 1px solid $qbee-color-divider;
+    height: 100%;
+    background-color: $qbee-color-black;
 
     .container-wrap {
-        padding: 1.5rem 0;
+        padding: 1.5rem 0.5rem 1rem;
 
         .copyright {
-            p {
-                text-align: center;
-                font-size: $font-size-smaller;
-                color: $qbee-color-text-light;
-                a {
-                    color: $qbee-color-text-light;
-                    &:hover {
-                        color: $qbee-color-text-dark;
-                    }
+            text-align: center;
+            color: $qbee-gray-300;
+            font-weight: 300;
+            a {
+                color: $qbee-gray-300;
+                &:hover {
+                    color: $qbee-color-accent;
+                }
+            }
+        }
+        .qbee {
+            text-align: center;
+            color: $qbee-gray-500;
+            a {
+                color: $qbee-gray-500;
+                &:hover {
+                    color: $qbee-color-primary;
                 }
             }
         }

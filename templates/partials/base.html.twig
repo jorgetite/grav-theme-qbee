@@ -51,17 +51,17 @@
         {% block body %}{% endblock %}
     </main>
 
-    {% if header.show_footer is not defined or header.show_footer %}
-        {% block footer %}
-            {% include 'partials/footer.html.twig' %}
-        {% endblock %}
-    {% endif %}
-
     {% block messages %}
         {% if grav.messages.all %}
             {% include 'partials/messages.html.twig' %}
         {% endif %}
     {% endblock %}
+
+    {% if header.show_footer is not defined or header.show_footer %}
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+    {% endif %}
 
     {% block bottom %}
         {{ assets.js('bottom') }}
