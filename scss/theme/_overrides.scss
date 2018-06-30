@@ -76,19 +76,24 @@ pre code {
 
 // buttons
 .button {
-    @include qbee-button($qbee-color-button-primary-text, $qbee-color-button-primary);
+    @include qbee-button($qbee-color-button-primary-text, $qbee-color-button-primary, 
+    $qbee-color-button-primary-text-hover, $qbee-color-button-primary-hover);
 }
 .button.secondary {
-    @include qbee-button($qbee-color-button-secondary-text, $qbee-color-button-secondary);
+    @include qbee-button($qbee-color-button-secondary-text, $qbee-color-button-secondary, 
+    $qbee-color-button-secondary-text-hover, $qbee-color-button-secondary-hover);
 }
 .button.action {
-    @include qbee-button($qbee-color-button-action-text, $qbee-color-button-action);
+    @include qbee-button($qbee-color-button-action-text, $qbee-color-button-action, 
+    $qbee-color-button-action-text-hover, $qbee-color-button-action-hover);
 }
 .button.accent {
-    @include qbee-button($qbee-color-button-accent-text, $qbee-color-button-accent);
+    @include qbee-button($qbee-color-button-accent-text, $qbee-color-button-accent, 
+    $qbee-color-button-accent-text-hover, $qbee-color-button-accent-hover);
 }
 .button.inverted {
-    @include qbee-button($qbee-color-button-inverted-text, $qbee-color-button-inverted);
+    @include qbee-button($qbee-color-button-inverted-text, $qbee-color-button-inverted, 
+    $qbee-color-button-inverted-text-hover, $qbee-color-button-inverted-hover);
 }
 
 

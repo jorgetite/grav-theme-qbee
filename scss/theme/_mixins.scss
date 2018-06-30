@@ -1,17 +1,20 @@
-/*---------------------------------------------------------------------------
-|    QBee - Mixins
-|--------------------------------------------------------------------------*/
+//---------------------------------------------------------------------------
+//    QBee - Mixins
+//--------------------------------------------------------------------------
 
 // Buttons
 // ---------------------------------------------------------------------------
-@mixin qbee-button($color-text, $color-back)
+@mixin qbee-button($color-text, $color-back, $color-text-hover, $color-back-hover)
 {
-	color: $color-text;
 	background-color: $color-back;
+    color: $color-text;
+    border: 2px solid $color-back;
+    @include transition(all linear 0.3s);
 
 	&:hover {
-	    color: $color-text;
-	    background-color: lighten($color-back, 8%);
+	    background-color: $color-back-hover;
+        color: $color-text-hover;
+        opacity: 1;
 	}
     &:disabled,
     &.disabled {
@@ -24,8 +27,8 @@
         border-color: $color-back;
 
         &:hover {
-            color: lighten($color-back, 20%);
-            border-color: lighten($color-back, 20%);
+            color: $color-back-hover;
+            border-color: $color-back-hover;
         }
         &:disabled,
         &.disabled {
@@ -62,9 +65,9 @@
 // ---------------------------------------------------------------------------
 @mixin qbee-notices($color)
 {
+    background: lighten($color, 30%);
     color: darken($color, 20%);
     border-left: 0.5rem solid $color;
-    background-color: lighten($color, 25%);
     a {
         color: darken($color, 20%);
         &:hover {

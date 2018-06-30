@@ -26,7 +26,7 @@ $qbee-gray-100: #f5f5f5 !default;
 $qbee-gray-50: #fafafa !default;
 
 // Background gradient colors
-$qbee-black-50: #f0f1f3 !default;
+$qbee-black-50: #f4f4f5 !default;
 $qbee-black-100: #e2e3e5 !default;
 $qbee-black-200: #c9cacc !default;
 $qbee-black-300: #b0b1b3 !default;
@@ -53,16 +53,31 @@ $qbee-color-warning: #f7ba45 !default;
 $qbee-color-focus: #1c86f2 !default;
 
 // Button
-$qbee-color-button-primary: $qbee-black-800 !default;
-$qbee-color-button-primary-text: #f9fdff !default;
-$qbee-color-button-secondary: $qbee-color-primary !default;
-$qbee-color-button-secondary-text: #f9fdff !default;
-$qbee-color-button-action: #00BB80 !default;
-$qbee-color-button-action-text: #f9fdff !default;
-$qbee-color-button-accent: $qbee-color-accent !default;
-$qbee-color-button-accent-text: #f9fdff !default;
+$qbee-color-button-primary: $qbee-color-primary !default;
+$qbee-color-button-primary-text: $qbee-gray-50 !default;
+$qbee-color-button-primary-hover: $qbee-color-white !default;
+$qbee-color-button-primary-text-hover: $qbee-color-primary !default;
+
+$qbee-color-button-secondary: $qbee-black-700 !default;
+$qbee-color-button-secondary-text: $qbee-gray-50 !default;
+$qbee-color-button-secondary-hover: $qbee-color-white !default;
+$qbee-color-button-secondary-text-hover: $qbee-black-700 !default;
+
 $qbee-color-button-inverted: $qbee-color-white !default;
-$qbee-color-button-inverted-text: $qbee-gray-900 !default;
+$qbee-color-button-inverted-text: $qbee-gray-800 !default;
+$qbee-color-button-inverted-hover: $qbee-color-primary !default;
+$qbee-color-button-inverted-text-hover: $qbee-color-black !default;
+
+$qbee-color-button-action: #00c9b7 !default;
+$qbee-color-button-action-text: $qbee-gray-50 !default;
+$qbee-color-button-action-hover: $qbee-color-white !default;
+$qbee-color-button-action-text-hover: #00c9b7 !default;
+
+$qbee-color-button-accent: $qbee-color-accent !default;
+$qbee-color-button-accent-text: $qbee-gray-50 !default;
+$qbee-color-button-accent-hover: $qbee-color-white !default;
+$qbee-color-button-accent-text-hover: $qbee-color-accent !default;
+
 
 // Text
 $qbee-color-back: $qbee-color-white !default;
