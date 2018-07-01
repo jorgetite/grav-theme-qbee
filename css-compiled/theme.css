@@ -449,7 +449,6 @@ main {
 
 .img-wrap {
   margin: 2rem;
-  box-shadow: 0 0 20px rgba(13, 13, 14, 0.1);
   text-align: center; }
   .img-wrap img {
     max-width: 28rem; }
