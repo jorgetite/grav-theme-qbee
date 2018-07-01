@@ -84,8 +84,8 @@ pre code {
     $qbee-color-button-secondary-text-hover, $qbee-color-button-secondary-hover);
 }
 .button.action {
-    @include qbee-button($qbee-color-button-action-text, $qbee-color-button-action, 
-    $qbee-color-button-action-text-hover, $qbee-color-button-action-hover);
+    @include qbee-button($qbee-color-button-stress-text, $qbee-color-button-stress, 
+    $qbee-color-button-stress-text-hover, $qbee-color-button-stress-hover);
 }
 .button.accent {
     @include qbee-button($qbee-color-button-accent-text, $qbee-color-button-accent, 
