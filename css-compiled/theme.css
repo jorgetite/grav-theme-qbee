@@ -12,10 +12,15 @@ body {
   color: #616161;
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif; }
 
-h1.title, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #424242;
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 500; }
+
+h1.title {
+  color: #212121;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 700; }
 
 pre, code, samp, var, kbd {
   font-family: "Source Code Pro", Monaco, monospace; }
@@ -131,7 +136,7 @@ pre code {
   -moz-transition: all linear 0.3s;
   transition: all linear 0.3s; }
   .button.secondary:hover {
-    background-color: #fffffd;
+    background-color: #ffc107;
     color: #212121;
     opacity: 1; }
   .button.secondary:disabled, .button.secondary.disabled {
@@ -142,8 +147,8 @@ pre code {
     color: #4c4e4d;
     border-color: #4c4e4d; }
     .button.secondary.outline:hover {
-      color: #fffffd;
-      border-color: #fffffd; }
+      color: #ffc107;
+      border-color: #ffc107; }
     .button.secondary.outline:disabled, .button.secondary.outline.disabled {
       background: none;
       color: rgba(76, 78, 77, 0.6);
@@ -408,6 +413,12 @@ main {
   background-repeat: no-repeat;
   background-position: center center; }
 
+.bg-black-80 .container-wrap {
+  background-color: rgba(13, 13, 14, 0.8); }
+
+.bg-white-80 .container-wrap {
+  background-color: rgba(255, 255, 253, 0.8); }
+
 .heading {
   text-align: center;
   margin-bottom: 4rem; }
@@ -437,8 +448,8 @@ main {
       font-weight: 300; }
 
 .img-wrap {
-  box-shadow: 0 0 20px rgba(13, 13, 14, 0.3);
-  padding: 2rem;
+  margin: 2rem;
+  box-shadow: 0 0 20px rgba(13, 13, 14, 0.1);
   text-align: center; }
   .img-wrap img {
     max-width: 28rem; }
@@ -599,6 +610,11 @@ header {
         header #navbar nav.site-menu ul li.active a {
           color: #fafafa;
           border-bottom-color: #ffc107; }
+
+.hero-section .container-wrap {
+  display: flex; }
+  .hero-section .container-wrap .container-row {
+    height: 100%; }
 
 .features-section .feature-item {
   margin-bottom: 2%;

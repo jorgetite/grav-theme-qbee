@@ -61,7 +61,7 @@ $qbee-color-button-primary-text-hover: $qbee-gray-900 !default;
 
 $qbee-color-button-secondary: $qbee-black-700 !default;
 $qbee-color-button-secondary-text: $qbee-gray-50 !default;
-$qbee-color-button-secondary-hover: $qbee-color-white !default;
+$qbee-color-button-secondary-hover: $qbee-color-primary !default;
 $qbee-color-button-secondary-text-hover: $qbee-gray-900 !default;
 
 $qbee-color-button-inverted: $qbee-color-white !default;
@@ -107,7 +107,7 @@ $qbee-color-code-back: $qbee-black-100 !default;
 // Elements
 $qbee-color-border: $qbee-black-200 !default;
 $qbee-color-divider: $qbee-black-400 !default;
-$qbee-color-shadow: rgba($qbee-color-black, 0.3) !default;
+$qbee-color-shadow: rgba($qbee-color-black, 0.10) !default;
 $qbee-color-progress-back: $qbee-black-100 !default;
 $qbee-color-progress-meter: $qbee-color-primary !default;
 

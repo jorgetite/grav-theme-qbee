@@ -10,10 +10,15 @@ body {
 }
 
 // headings
-h1.title, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: $qbee-color-head;
     font-family: $qbee-font-head;
     font-weight: 500;
+}
+h1.title {
+    color: $qbee-color-head-dark;
+    font-family: $qbee-font-head;
+    font-weight: 700;
 }
 
 // input fields

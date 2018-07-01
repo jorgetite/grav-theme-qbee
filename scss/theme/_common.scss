@@ -69,6 +69,18 @@ main {
     background-position: center center;
 }
 
+.bg-black-80 {
+    .container-wrap {
+        background-color: rgba($qbee-color-black, 0.8);
+    }
+}
+
+.bg-white-80 {
+    .container-wrap {
+        background-color: rgba($qbee-color-white, 0.8);
+    }
+}
+
 
 // Section Heading
 // ---------------------------------------------------------------------------
@@ -110,8 +122,8 @@ main {
 // Section Images
 // ---------------------------------------------------------------------------
 .img-wrap {
+    margin: 2rem;
     box-shadow: 0 0 20px $qbee-color-shadow;
-    padding: 2rem;
     text-align: center;
 
     img {
