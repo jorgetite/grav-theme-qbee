@@ -1,8 +1,8 @@
 {% include 'partials/fragments/features.html.twig' 
     with {
-        id: page.header.module_id,
-        classes: ['features-section', page.header.page_scheme, page.header.module_classes]|join(' '),
-        styles: page.header.module_styles,
+        id: page.header.id,
+        classes: ['features-section', page.header.color_scheme, page.header.css_classes]|join(' '),
+        styles: page.header.css_styles,
         row_clss: 'auto'
     } 
 %}

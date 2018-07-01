@@ -6,22 +6,22 @@
     {% endfor %}
 {% endmacro %}
 
-{% set module_id = id ? id : (page.header.module_id ? page.header.module_id : '_' ~ page.menu|lower|replace({' ':'_'})) %}
-{% set module_image = page.header.module_image ? page.media[page.header.module_image] : page.media.images|first %}
-{% set render_image = module_image and page.header.module_image_position is defined and page.header.module_image_position != 'none' %}
-{% set img_position = render_image ? page.header.module_image_position : '' %}
+{% set id = id ? id : (page.header.id ? page.header.id : '_' ~ page.menu|lower|replace({' ':'_'})) %}
+{% set image = page.header.image ? page.media[page.header.image] : page.media.images|first %}
+{% set render_image = image and page.header.image_position is defined and page.header.image_position != 'none' %}
+{% set img_position = render_image ? page.header.image_position : '' %}
 
 {% if render_image and img_position == 'back' %}
     {% set classes = classes ~ ' bg-img' %}
-    {% set styles = styles ~ 'background-image: url(' ~ module_image.url ~ ');' %}
+    {% set styles = styles ~ 'background-image: url(' ~ image.url ~ ');' %}
     {% if page.header.parallax_enabled %}
         {% set data_atts = {'paroller-factor': page.header.parallax_factor, 'paroller-direction': page.header.parallax_direction} %}
     {% endif %}
 {% endif %}
 
-<section id="{{module_id}}" {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {{ _self.explode_data_attribs(data_atts) }}>
+<section id="{{id}}" {% if classes %}class="{{classes}}"{% endif %} {% if styles %}style="{{styles}}"{% endif %} {{ _self.explode_data_attribs(data_atts) }}>
     {% block section %}
-    <div class="container-wrap {{page.header.page_padding}}">
+    <div class="container-wrap {{page.header.padding}}">
         <div class="container">
             {% block container %}{% endblock %}
         </div>

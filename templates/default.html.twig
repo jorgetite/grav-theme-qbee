@@ -3,9 +3,9 @@
 {% block body %}
     {% include 'partials/fragments/default.html.twig' 
         with {
-            id: page.header.module_id, 
-            classes: ['default-section', page.header.page_scheme, page.header.module_classes]|join(' '),
-            styles: page.header.module_styles,
+            id: page.header.id, 
+            classes: ['default-section', page.header.color_scheme, page.header.css_classes]|join(' '),
+            styles: page.header.css_styles,
             row_clss: 'auto'
         } 
     %}

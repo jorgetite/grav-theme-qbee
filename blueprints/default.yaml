@@ -66,7 +66,7 @@ form:
                       type: section
                       title: Page/Module Style
                       underline: true
-                    header.page_scheme:
+                    header.color_scheme:
                       type: select
                       label: Color Scheme
                       description: 'Sets the color scheme for this page/module.'
@@ -77,10 +77,10 @@ form:
                         scheme-gray-light: Lightgray
                         scheme-gray-dark: Dimgray
                         scheme-dark: Black
-                    header.page_padding:
+                    header.padding:
                       type: select
                       label: Padding
-                      description: 'Set the top and bottom padding.'
+                      description: 'Set the top and bottom padding of thos page/module.'
                       size: medium
                       default: md-pad
                       options:
@@ -90,11 +90,11 @@ form:
                         md-pad: Midium (64px)
                         lg-pad: Large (96px)
                         xl-pad: Larger (128px)
-                    header.module_classes:
+                    header.css_classes:
                       type: text
                       label: CSS Classes
                       markdown: true
-                      description: 'CSS classes applied to this module.'
+                      description: 'CSS classes applied to this page/module.'
 
             qbee_advanced:
               type: section
@@ -102,24 +102,24 @@ form:
               underline: true
 
               fields:
-                header.module_id:
+                header.id:
                   type: text
                   size: medium
                   label: Element ID
-                  description: 'This module HTML element ID.'
+                  description: 'The element ID of this page/module.'
                   validate:
                   rule: slug
-                header.module_styles:
+                header.css_styles:
                   type: text
                   label: In-line CSS
                   markdown: true
-                  description: 'In-line CSS styles applied to this module.'
-                header.module_image:
+                  description: 'In-line CSS styles applied to this page/module.'
+                header.image:
                   type: filepicker
-                  label: Module Image
+                  label: Page Image
                   preview_images: true
                   description: 'When not specified, this defaults to the first image found in the page''s folder if image position is not ''None''.'
-                header.module_image_position:
+                header.image_position:
                   type: select
                   label: Image position
                   size: medium

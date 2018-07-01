@@ -4,7 +4,7 @@
         {% set page_url = p.url %}
 
         {% if local %}
-            {% set page_url = p.header.module_id ? '#' ~ p.header.module_id : '#_' ~ p.menu|lower|replace({' ':'_'}) %}
+            {% set page_url = p.header.id ? '#' ~ p.header.id : '#_' ~ p.menu|lower|replace({' ':'_'}) %}
         {% endif %}
 
         <li class="{{ active_page }}">

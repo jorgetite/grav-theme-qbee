@@ -3,9 +3,9 @@
 {% block body %}
     {% include 'partials/fragments/error.html.twig' 
         with {
-            id: page.header.module_id, 
-            classes: ['error-section', page.header.page_scheme, page.header.module_classes]|join(' '),
-            styles: page.header.module_styles,
+            id: page.header.id, 
+            classes: ['error-section', page.header.color_scheme, page.header.css_classes]|join(' '),
+            styles: page.header.css_styles,
             col_clss: 'push-center push-middle'
         } 
     %}

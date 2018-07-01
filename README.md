@@ -107,7 +107,7 @@ onpage_menu: false          # Allows to create a on page menu for modular pages
 #### Style Settings
 
 ```yaml
-page_padding: true          # Controls the top and bottom padding
+padding: true          # Controls the top and bottom padding
 ```
 
 ## License

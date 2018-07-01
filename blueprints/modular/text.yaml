@@ -17,7 +17,7 @@ form:
                       unset@: true
             qbee_advanced:
               fields:
-                header.module_image_position:
+                header.image_position:
                   options:
                     left: 'Left'
                     right: 'Right'

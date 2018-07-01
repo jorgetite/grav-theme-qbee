@@ -1,12 +1,12 @@
 {% extends 'partials/fragments/default.html.twig' %}
-{% set colw = module_image ? 'col-4' : 'col-6' %}
+{% set colw = image ? 'col-4' : 'col-6' %}
 
 {% block content %}
     <div class="content row gutters">
         {% if render_image and img_position != 'back' %}
             <div class="col {{colw}} {% if img_position == 'left' %}first{% else %}last{% endif %}">
                 <div class="img-wrap">
-                    <img class="profile" src="{{ module_image.url }}" />
+                    <img class="profile" src="{{ image.url }}" />
                 </div>
             </div>
         {% endif %}
