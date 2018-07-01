@@ -216,9 +216,18 @@ skills:
         value: '70'
 ```
 
+## Credits
+QBee was created using:
+
++ Kube Framework (https://imperavi.com/kube/)
++ Font Awesome (https://fontawesome.com)
++ JQuery One Page Nav (http://github.com/davist11/jQuery-One-Page-Nav)
++ JQuery Paroller (https://github.com/tgomilar/paroller.js)
++ Google Fonts (https://fonts.google.com)
+
+
 ## Contributing
 Contributions to QBee are greatly appreciated, whether they are related to bugs, grammar, or simply a suggestion or improvement!
 
 ## License
-The files contained in this project are released under the MIT License. You can
-find a copy of this license in LICENSE.txt file.
+The files contained in this project are released under the MIT License. You can find a copy of this license in LICENSE.txt file.
