@@ -2,7 +2,7 @@
 
 QBee is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav.org) built with the [Kube](https://imperavi.com/kube/) CSS &amp; JS Framework.
 
-![QBee Theme](https://raw.githubusercontent.com/jorgetite/grav-theme-qbee/master/screenshot.png "QBee Screenshot")
+![QBee Theme](screenshot.png "QBee Screenshot")
 
 ## Features
 * Clean and minimal
@@ -98,7 +98,7 @@ QBee supports the following page templates:
 
 ### Page Options
 
-QBee provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are divide in the following  categories:
+QBee provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are available for all page templates supported by QBee:
 
 #### Content Settings
 
@@ -114,10 +114,10 @@ subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 
 | Setting Name     | Default  | Description 
 |------------------|----------|----------------------
-| `show_header`    | `true`   | Controls whether the site header is displayed or not. This option is available only for top level pages
-| `show_footer`    | `true`   | Controls whether the site footer is displayed or not. This option is available only for top level pages
-| `show_heading`   | `true`   | Controls whether the title and subtitle are autiomatically displayed at the top of the page, or not
-| `onpage_menu`    | `false`  | Renders a on page menu for modular pages
+| `show_header`    | `true`   | Controls whether the site header is displayed or not. This option is available only for `default.md`, `error.md` and `modular.md` templates
+| `show_footer`    | `true`   | Controls whether the site footer is displayed or not. This option is available only for `default.md`, `error.md` and `modular.md` templates
+| `show_heading`   | `true`   | Controls whether the title and subtitle are autiomatically displayed at the top of the page, or not. This option is not available for `modular.md` templates
+| `onpage_menu`    | `false`  | Renders a on page menu for modular pages. This option is available only for `modular.md` templates
 
 ```yaml
 show_header: true
@@ -139,6 +139,85 @@ color_scheme: scheme-light
 padding: md-pad
 css_classes: 'my-css-class'
 ```
+
+> Note: These options are not available for `modular.md` templates
+
+
+#### Advanced Settings
+| Setting Name     | Default    | Description 
+|------------------|------------|----------------------
+| `id`             |            | Sets the ID of the HTML element representing the page
+| `css_styles`     |            | Sets additional css styles that are applied inline to the the page
+| `image`          |            | Sets an image to be displayed in this page. When not specified, this defaults to the first image found in the page''s folder if `image_position` is not `none`.
+| `image_position` | `none`     | Determines the position of the image in the page. Possible valueas are:<br />`none`: No display<br />`back`: Display in the background<br />`left`: Display image aligned to the left<br />`right` Display image aligned to the right
+| `parallax_enabled` | `false`  | Enables parallax scrolling effect with background image
+| `parallax_direction` | `vertical`  | Sets the direction `vertical` or `horizontal` of the background image while scrolling.
+| `parallax_factor` | `0.5`  | Sets elements offset and speed. It can be positive (0.5) or negative (-0.5). Less means slower 
+
+```yaml
+id: 'my-page-id'
+css_styles: 'background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d);'
+image: 'custom-image.png'
+image_position: back
+parallax_enabled: true
+parallax_direction: vertical
+parallax_factor: '0.5'
+```
+
+> Note: These options are not available for `modular.md` templates
+
+### Features Modular Settings
+
+The `features.md` modular template gives you the ability to define an array of feature items, as well as the column layout (in a 12 column grid layout) used to display the feature items.
+
+```yaml
+columns: col-3      # possible values: col-6, col-4, col-3, col-2
+features:
+    -
+        icon: 'fas fa-palette fa-fw'
+        header: Design
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis natus, nesciunt accusantium beatae quae doloremque'
+    -
+        icon: 'fas fa-code fa-fw'
+        header: Development
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis natus, nesciunt accusantium beatae quae doloremque'
+    -
+        icon: 'fas fa-cloud fa-fw'
+        header: Cloud
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis natus, nesciunt accusantium beatae quae doloremque'
+    -
+        icon: 'fas fa-database fa-fw'
+        header: Storage
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis natus, nesciunt accusantium beatae quae doloremque'
+```
+
+> NOTE: QBee uses Fontawesome version 5's syntax. For more information please refer to [Fontawesome's documentation](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use).
+
+### Profile Modular Settings
+
+The `profile.md` modular template gives you the ability to create an array of skills, for example:
+
+```yaml
+skills:
+    -
+        header: 'HTML & CSS'
+        value: '90'
+    -
+        header: JavaScript
+        value: '95'
+    -
+        header: PHP
+        value: '80'
+    -
+        header: iOS
+        value: '80'
+    -
+        header: MySQL
+        value: '70'
+```
+
+## Contributing
+Contributions to QBee are greatly appreciated, whether they are related to bugs, grammar, or simply a suggestion or improvement!
 
 ## License
 The files contained in this project are released under the MIT License. You can
