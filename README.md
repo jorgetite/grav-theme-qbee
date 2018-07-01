@@ -2,6 +2,8 @@
 
 QBee is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav.org) built with the [Kube](https://imperavi.com/kube/) CSS &amp; JS Framework.
 
+![QBee Theme](https://raw.githubusercontent.com/jorgetite/grav-theme-qbee/master/screenshot.png "QBee Screenshot")
+
 ## Features
 * Clean and minimal
 * Responsive and mobile friendly
@@ -70,18 +72,25 @@ You should now have all the theme files under
 
 QBee allows you to set the following options site-wide:
 
+| Setting Name     | Default  | Description 
+|------------------|----------|----------------------
+| `enabled`        | `true`   | Enables or disables the theme
+| `production_mode`| `true`   | Serves CSS and JS files minimized
+| `header_sticky`  | `false`  | Keeps the header always visible at the top of the page
+| show_site_name: true        # Displays or not the site name in the header
+| show_site_logo: true        # Displays or not the site logo in the header
+| site_logo:                  # The relative path to the site logo, defaults to 'images/logo.png'
+| site_copy:                  # The copyright notice displayed in the site footer
+
+To make modifications, you can copy the `user/themes/qbee/qbee.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
+
 ```yaml
 enabled: true               # Enable the theme
 production_mode: true       # Whether CSS and JS files are minimized (true), or not
 header_sticky: false        # Keeps the header sticky at the top of the page
-menu_style: menu-links      # Controls how menu items are rendered
 show_site_name: true        # Displays or not the site name in the header
 show_site_logo: true        # Displays or not the site logo in the header
-site_logo:                  # The relative path to the site logo, defaults to 'images/logo.png'
-site_copy:                  # The copyright notice displayed in the site footer
 ```
-
-To make modifications, you can copy the `user/themes/qbee/qbee.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
 
 > NOTE: Do not modify the `user/themes/qbee/qbee.yaml` file directly or your changes will be lost with any updates
 

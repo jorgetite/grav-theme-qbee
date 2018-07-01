@@ -48,16 +48,6 @@ form:
       validate:
         type: bool
 
-    menu_style:
-      type: select
-      label: Navigation Style
-      help: This setting control how top level navigation items are renderend.
-      size: medium
-      default: 'menu-links'
-      options:
-        'menu-links': All menu items as links
-        'menu-last-bttn': Last menu item as button
-
     show_site_name:
       type: toggle
       label: Show Site Title
