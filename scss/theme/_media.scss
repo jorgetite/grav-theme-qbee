@@ -26,6 +26,14 @@
 // max 768px
 @media (max-width: $sm) {
 
+    .img-wrap {
+        img {
+            max-width: 18rem;
+            &.profile {
+                max-width: 8rem;
+            }
+        }
+    }
     .notices {
         padding: 0.5rem;
         margin-left: 0.5rem;

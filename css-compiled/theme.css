@@ -792,6 +792,10 @@ footer {
     max-width: 1104px; } }
 
 @media (max-width: 768px) {
+  .img-wrap img {
+    max-width: 18rem; }
+    .img-wrap img.profile {
+      max-width: 8rem; }
   .notices {
     padding: 0.5rem;
     margin-left: 0.5rem;
