@@ -16,17 +16,6 @@ QBee is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav
 * Font Awesome
 * HTML5, CSS3, JavaScript
 
-### Supported Page Templates
-
-* Default view template `default.md`
-* Error view template `error.md`
-* Modular view templates: `modular.md`
-    + Splash Modular view template `splash.md`
-    + Profile Modular view template `profile.md`
-    + Features Modular view template `features.md`
-    + Hero Modular view template `hero.md`
-    + Text Modular view template `text.md`
-
 ### Supported Browsers
 QBee supports the latest, stable releases of all major browsers:
 
@@ -77,46 +66,78 @@ QBee allows you to set the following options site-wide:
 | `enabled`        | `true`   | Enables or disables the theme
 | `production_mode`| `true`   | Serves CSS and JS files minimized
 | `header_sticky`  | `false`  | Keeps the header always visible at the top of the page
-| show_site_name: true        # Displays or not the site name in the header
-| show_site_logo: true        # Displays or not the site logo in the header
-| site_logo:                  # The relative path to the site logo, defaults to 'images/logo.png'
-| site_copy:                  # The copyright notice displayed in the site footer
+| `show_site_name` | `true`   | Displays the site name in the header
+| `show_site_logo` | `true`   | Displays the site logo in the header
+| `site_logo`      |          | The relative path to the site logo. If no path is specified the them uses by default `images/logo.png`
+| `site_copy`      |          | The copyright notice displayed in the footer
 
 To make modifications, you can copy the `user/themes/qbee/qbee.yaml` file to `user/config/themes/` folder and modify, or you can use the admin plugin.
 
 ```yaml
-enabled: true               # Enable the theme
-production_mode: true       # Whether CSS and JS files are minimized (true), or not
-header_sticky: false        # Keeps the header sticky at the top of the page
-show_site_name: true        # Displays or not the site name in the header
-show_site_logo: true        # Displays or not the site logo in the header
+enabled: true
+production_mode: true
+header_sticky: false
+show_site_name: true
+show_site_logo: true
 ```
 
-> NOTE: Do not modify the `user/themes/qbee/qbee.yaml` file directly or your changes will be lost with any updates
+> WARNING: Do not modify the `user/themes/qbee/qbee.yaml` file directly or your changes will be lost with any updates
+
+## Pages
+
+QBee supports the following page templates:
+
+* Default view template `default.md`
+* Error view template `error.md`
+* Modular view templates: `modular.md`
+    + Splash Modular view template `splash.md`
+    + Profile Modular view template `profile.md`
+    + Features Modular view template `features.md`
+    + Hero Modular view template `hero.md`
+    + Text Modular view template `text.md`
 
 ### Page Options
 
-QBee provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are divide in the following three categories:
+QBee provides several options in the page frontmatter to fine control how pages are displayed and styled. These options are divide in the following  categories:
 
 #### Content Settings
 
+| Setting Name     | Default  | Description 
+|------------------|----------|----------------------
+| `subtitle`       |          | The page or module subheading
+
 ```yaml
-subtitle: ''                # The page subheading
+subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 ```
 
 #### Layout Settings
 
+| Setting Name     | Default  | Description 
+|------------------|----------|----------------------
+| `show_header`    | `true`   | Controls whether the site header is displayed or not. This option is available only for top level pages
+| `show_footer`    | `true`   | Controls whether the site footer is displayed or not. This option is available only for top level pages
+| `show_heading`   | `true`   | Controls whether the title and subtitle are autiomatically displayed at the top of the page, or not
+| `onpage_menu`    | `false`  | Renders a on page menu for modular pages
+
 ```yaml
-show_header: true           # Controls whether the site header is displayed or not
-show_footer: true           # Controls whether the site footer is displayed or not 
-show_heading: true          # Controls whether the title and subtitle is displayed or not
-onpage_menu: false          # Allows to create a on page menu for modular pages
+show_header: true
+show_footer: true
+show_heading: true
+onpage_menu: false
 ```
 
 #### Style Settings
 
+| Setting Name     | Default       | Description 
+|------------------|---------------|----------------------
+| `color_scheme`   | `scheme-light`| Sets the appearance of the page. The following values are available:<br />`scheme-light`: White (default)<br />`scheme-gray-light`: Lightgray<br />`scheme-gray-dark`: Dimgray<br />`scheme-dark`: Black
+| `padding`        | `md-pad` | Sets the top and bottom padding of the page. The following values are available:<br /> `no-pad`: No padding<br />`xs-pad`: Smaller (16px)<br />`sm-pad`: Small (32px)<br />`md-pad`: Midium (64px)<br />`lg-pad`: Large (96px)<br />`xl-pad`: Larger (128px)
+| `css_classes`    |          | Additional CSS classes space separated.
+
 ```yaml
-padding: true          # Controls the top and bottom padding
+color_scheme: scheme-light
+padding: md-pad
+css_classes: 'my-css-class'
 ```
 
 ## License
