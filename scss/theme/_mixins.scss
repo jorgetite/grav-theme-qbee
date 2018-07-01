@@ -117,6 +117,9 @@
         background-color: $color-code-back;
         color: $color-code;
     }
+    th, td {
+        border-bottom-color: $color-border;
+    }
     .heading {
         h1.title {
             + h2 {
