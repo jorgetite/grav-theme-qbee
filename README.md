@@ -4,6 +4,10 @@ QBee is a clean, lightweight and minimal HTML 5 theme for [Grav](https://getgrav
 
 ![QBee Theme](screenshot.png "QBee Screenshot")
 
+## Demo
+
+A live demo of QBee Theme is available at: http://qbee.jorgetite.com/
+
 ## Features
 * Clean and minimal
 * Responsive and mobile friendly
@@ -215,6 +219,12 @@ skills:
         header: MySQL
         value: '70'
 ```
+
+### Configuration with Admin plugin
+
+All the theme and page settings listed above can be easily managed using the [Admin Plug-in](https://github.com/getgrav/grav-plugin-admin).
+
+![Admin Plug-in](admin-screenshot.png "Admin")
 
 ## Credits
 QBee was created using:
