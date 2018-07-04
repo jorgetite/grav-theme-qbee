@@ -1,4 +1,5 @@
 {% set assets_ext = theme_var('production_mode') ? '.min' : '' %}
+{% set site_icon = theme_var('site_icon') ? theme_var('site_icon') : 'images/favicon.png'  %}
 
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
@@ -11,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="icon" type="image/png" href="{{ url('theme://' ~ site_icon) }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
@@ -21,7 +22,7 @@
         {% do assets.addCss('theme://css/font-source-code-pro' ~ assets_ext ~ '.css', 97) %}
         {% do assets.addCss('https://use.fontawesome.com/releases/v5.1.0/css/all.css', 96) %}
         {% do assets.addCss('theme://css-compiled/theme' ~ assets_ext ~ '.css', 01) %}
-        {% do assets.addCss('theme://css/custom.css', 00) %}
+        {% do assets.addCss('theme://user/css/user.css', 00) %}
     {% endblock %}
     {{ assets.css() }}
 
@@ -31,6 +32,7 @@
         {% do assets.addJs('theme://js/jquery.paroller' ~ assets_ext ~ '.js', {'priority': 98, 'group': 'bottom'})%}
         {% do assets.addJs('theme://js/jquery.onePageNav' ~ assets_ext ~ '.js', {'priority': 97, 'group': 'bottom'})%}
         {% do assets.addJs('theme://js/theme.js', {'priority': 1, 'group': 'bottom'})%}
+        {% do assets.addJs('theme://user/js/user.js', {'priority': 0, 'group': 'bottom'})%}
     {% endblock %}
     {{ assets.js() }}
 

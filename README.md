@@ -226,6 +226,23 @@ All the theme and page settings listed above can be easily managed using the [Ad
 
 ![Admin Plug-in](admin-screenshot.png "Admin")
 
+
+## Customizing QBee
+
+You can customize QBee by overriding or adding your own custom styles, scripts or theme images.
+
+#### Custom Styles
+
+Custom CSS styles or overrides should be added to the `css/custom.css` file.
+
+#### Custom Scripts
+
+Custom scripts should be added to `js/custom.js` file.
+
+#### Custom Images
+
+Your logo and favicon should be place inside the `images/custom` folder. This will ensure your images are not lost with theme updates.
+
 ## Credits
 QBee was created using:
 
@@ -234,7 +251,6 @@ QBee was created using:
 + JQuery One Page Nav (http://github.com/davist11/jQuery-One-Page-Nav)
 + JQuery Paroller (https://github.com/tgomilar/paroller.js)
 + Google Fonts (https://fonts.google.com)
-
 
 ## Contributing
 Contributions to QBee are greatly appreciated, whether they are related to bugs, grammar, or simply a suggestion or improvement!

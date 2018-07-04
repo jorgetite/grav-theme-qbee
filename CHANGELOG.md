@@ -1,3 +1,14 @@
+# v1.0.1
+##  07/04/2018
+
+1. [](#new)
+    * Support for custom favicon
+    * Support for custom JavaScript
+    * Support for Theme-custom images
+2. [](#improved)
+    * Support for custom copyright notice in footer
+    * Documentation
+
 # v1.0.0
 ##  07/01/2018
 
