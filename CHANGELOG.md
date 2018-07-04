@@ -1,3 +1,9 @@
+# v1.0.2
+##  07/04/2018
+
+1. [](#fixed)
+    * Load custom css and js files in base theme
+
 # v1.0.1
 ##  07/04/2018
 
