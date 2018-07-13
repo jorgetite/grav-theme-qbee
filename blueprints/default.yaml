@@ -59,6 +59,12 @@ form:
                         0: PLUGIN_ADMIN.DISABLED
                       validate:
                         type: bool
+                    header.menu_icon:
+                      type: iconpicker
+                      label: Menu Icon
+                      description: 'Sets the menu icon for this page/module.'
+                      size: medium
+                      
                 column2:
                   type: column
                   fields:

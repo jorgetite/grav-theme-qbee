@@ -8,7 +8,9 @@
         {% endif %}
 
         <li class="{{ active_page }}">
-            <a href="{{ page_url }}">{{ p.menu }}</a>
+            <a href="{{ page_url }}">
+                {% if p.header.menu_icon %}<i class="{{p.header.menu_icon}}"></i>{% endif %} {{ p.menu }}
+            </a>
             {% if p.children.visible.count > 0 %}
             <ul>
                 {{ _self.nav_loop(p.children.visible) }}
@@ -19,11 +21,11 @@
 {% endmacro %}
 
 {% if page.header.onpage_menu %}
-    <ul id="onpage-menu" class="flex">
+    <ul id="onpage-menu">
         {{ _self.nav_loop(page.collection(), true) }}
     </ul>
 {% else %}
-    <ul class="flex">
+    <ul>
         {{ _self.nav_loop(pages.children.visible, false) }}
     </ul>
 {% endif %}
