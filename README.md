@@ -138,7 +138,7 @@ menu_icon: 'fas fa-home'
 |------------------|---------------|----------------------
 | `color_scheme`   | `scheme-light`| Sets the appearance of the page. The following values are available:<br />`scheme-light`: White (default)<br />`scheme-gray-light`: Lightgray<br />`scheme-gray-dark`: Dimgray<br />`scheme-dark`: Black
 | `padding`        | `md-pad` | Sets the top and bottom padding of the page. The following values are available:<br /> `no-pad`: No padding<br />`xs-pad`: Smaller (16px)<br />`sm-pad`: Small (32px)<br />`md-pad`: Midium (64px)<br />`lg-pad`: Large (96px)<br />`xl-pad`: Larger (128px)
-| `css_classes`    |          | Additional CSS classes space separated. (see 'Page CSS Classes')
+| `css_classes`    |          | Additional CSS classes space separated. (see ' CSS Classes' below)
 
 ```yaml
 color_scheme: scheme-light
@@ -222,7 +222,7 @@ skills:
         value: '70'
 ```
 
-### Page CSS Classes
+### CSS Classes
 
 | CSS Class     | Description 
 |---------------|-----------------
