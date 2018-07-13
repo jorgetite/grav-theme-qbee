@@ -413,10 +413,10 @@ main {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.bg-black-80 .container-wrap {
+.bg-black-80 .container-wrap, .bg-blacken .container-wrap {
   background-color: rgba(13, 13, 14, 0.8); }
 
-.bg-white-80 .container-wrap {
+.bg-white-80 .container-wrap, .bg-whiten .container-wrap {
   background-color: rgba(255, 255, 253, 0.8); }
 
 .heading {

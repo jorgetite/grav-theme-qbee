@@ -69,13 +69,13 @@ main {
     background-position: center center;
 }
 
-.bg-black-80 {
+.bg-black-80, .bg-blacken {
     .container-wrap {
         background-color: rgba($qbee-color-black, 0.8);
     }
 }
 
-.bg-white-80 {
+.bg-white-80, .bg-whiten {
     .container-wrap {
         background-color: rgba($qbee-color-white, 0.8);
     }

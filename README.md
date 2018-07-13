@@ -122,12 +122,14 @@ subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 | `show_footer`    | `true`   | Controls whether the site footer is displayed or not. This option is available only for `default.md`, `error.md` and `modular.md` templates
 | `show_heading`   | `true`   | Controls whether the title and subtitle are autiomatically displayed at the top of the page, or not. This option is not available for `modular.md` templates
 | `onpage_menu`    | `false`  | Renders a on page menu for modular pages. This option is available only for `modular.md` templates
+| `menu_icon`      |          | Sets the menu icon for the page
 
 ```yaml
 show_header: true
 show_footer: true
 show_heading: true
 onpage_menu: false
+menu_icon: 'fas fa-home'
 ```
 
 #### Style Settings
@@ -136,7 +138,7 @@ onpage_menu: false
 |------------------|---------------|----------------------
 | `color_scheme`   | `scheme-light`| Sets the appearance of the page. The following values are available:<br />`scheme-light`: White (default)<br />`scheme-gray-light`: Lightgray<br />`scheme-gray-dark`: Dimgray<br />`scheme-dark`: Black
 | `padding`        | `md-pad` | Sets the top and bottom padding of the page. The following values are available:<br /> `no-pad`: No padding<br />`xs-pad`: Smaller (16px)<br />`sm-pad`: Small (32px)<br />`md-pad`: Midium (64px)<br />`lg-pad`: Large (96px)<br />`xl-pad`: Larger (128px)
-| `css_classes`    |          | Additional CSS classes space separated.
+| `css_classes`    |          | Additional CSS classes space separated. (see 'Page CSS Classes')
 
 ```yaml
 color_scheme: scheme-light
@@ -219,6 +221,17 @@ skills:
         header: MySQL
         value: '70'
 ```
+
+### Page CSS Classes
+
+| CSS Class     | Description 
+|---------------|-----------------
+| text-center   | centers the text/content of the page
+| text-left     | aligns left the text/content of the page
+| text-right    | aligns right the text/content of the page
+| bg-blacken    | darkens the background of the page (useful with image backgrounds)
+| bg-whiten     | whitens the bacground of the page (useful with image backgrounds)
+
 
 ### Configuration with Admin plugin
 
